@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn2:definitions xmlns="http://genmymodel.com/bpmn2" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="_pUE4sFDAEeuh5NpLcuE3vA" exporter="GenMyModel" exporterVersion="1.0" expressionLanguage="http://www.w3.org/1999/XPath" name="Recruitment-and-selection" targetNamespace="http://genmymodel.com/bpmn2" typeLanguage="http://www.w3.org/2001/XMLSchema">
+  <bpmn2:extensionElements/>
+  <bpmn2:process id="_pUE4sVDAEeuh5NpLcuE3vA" name="employee-process" processType="None">
+    <bpmn2:startEvent id="_pUE4slDAEeuh5NpLcuE3vA" name="Start" isInterrupting="true">
+      <bpmn2:outgoing>_pUE4s1DAEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:userTask id="_pUE4tFDAEeuh5NpLcuE3vA" name="Open position" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_pUE4s1DAEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_pUE4tVDAEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="_pUE4s1DAEeuh5NpLcuE3vA" name="" sourceRef="_pUE4slDAEeuh5NpLcuE3vA" targetRef="_pUE4tFDAEeuh5NpLcuE3vA"/>
+    <bpmn2:parallelGateway id="_pUE4tlDAEeuh5NpLcuE3vA" name="Offer dispatch" gatewayDirection="Unspecified">
+      <bpmn2:incoming>_pUE4tVDAEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_pUE4t1DAEeuh5NpLcuE3vA</bpmn2:outgoing>
+      <bpmn2:outgoing>_pUE4uFDAEeuh5NpLcuE3vA</bpmn2:outgoing>
+      <bpmn2:outgoing>_pUE4uVDAEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:parallelGateway>
+    <bpmn2:serviceTask id="_pUE4ulDAEeuh5NpLcuE3vA" name="Publish " completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##WebService">
+      <bpmn2:incoming>_pUE4t1DAEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_pUE4u1DAEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:serviceTask>
+    <bpmn2:serviceTask id="_pUE4vFDAEeuh5NpLcuE3vA" name="Distribute on job boards" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##WebService">
+      <bpmn2:incoming>_pUE4uVDAEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_pUE4vVDAEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:serviceTask>
+    <bpmn2:serviceTask id="_pUE4vlDAEeuh5NpLcuE3vA" name="Advertise on social media" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##WebService">
+      <bpmn2:incoming>_pUE4uFDAEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_pUE4v1DAEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:serviceTask>
+    <bpmn2:sequenceFlow id="_pUE4tVDAEeuh5NpLcuE3vA" name="" sourceRef="_pUE4tFDAEeuh5NpLcuE3vA" targetRef="_pUE4tlDAEeuh5NpLcuE3vA"/>
+    <bpmn2:sequenceFlow id="_pUE4t1DAEeuh5NpLcuE3vA" name="" sourceRef="_pUE4tlDAEeuh5NpLcuE3vA" targetRef="_pUE4ulDAEeuh5NpLcuE3vA"/>
+    <bpmn2:sequenceFlow id="_pUE4uVDAEeuh5NpLcuE3vA" name="" sourceRef="_pUE4tlDAEeuh5NpLcuE3vA" targetRef="_pUE4vFDAEeuh5NpLcuE3vA"/>
+    <bpmn2:sequenceFlow id="_pUE4uFDAEeuh5NpLcuE3vA" name="" sourceRef="_pUE4tlDAEeuh5NpLcuE3vA" targetRef="_pUE4vlDAEeuh5NpLcuE3vA"/>
+    <bpmn2:parallelGateway id="_pUE4wFDAEeuh5NpLcuE3vA" name="" gatewayDirection="Unspecified">
+      <bpmn2:incoming>_pUE4v1DAEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:incoming>_pUE4vVDAEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:incoming>_pUE4u1DAEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_pUE4wVDAEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:parallelGateway>
+    <bpmn2:sequenceFlow id="_pUE4vVDAEeuh5NpLcuE3vA" name="" sourceRef="_pUE4vFDAEeuh5NpLcuE3vA" targetRef="_pUE4wFDAEeuh5NpLcuE3vA"/>
+    <bpmn2:sequenceFlow id="_pUE4v1DAEeuh5NpLcuE3vA" name="" sourceRef="_pUE4vlDAEeuh5NpLcuE3vA" targetRef="_pUE4wFDAEeuh5NpLcuE3vA"/>
+    <bpmn2:sequenceFlow id="_pUE4u1DAEeuh5NpLcuE3vA" name="" sourceRef="_pUE4ulDAEeuh5NpLcuE3vA" targetRef="_pUE4wFDAEeuh5NpLcuE3vA"/>
+    <bpmn2:userTask id="_pUE4wlDAEeuh5NpLcuE3vA" name="Retrieve applications" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="">
+      <bpmn2:incoming>_pUE4wVDAEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:incoming>_pUE4w1DAEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_pUE4xFDAEeuh5NpLcuE3vA</bpmn2:outgoing>
+      <bpmn2:ioSpecification id="_pUE4xVDAEeuh5NpLcuE3vA">
+        <bpmn2:dataInput id="_pUE4xlDAEeuh5NpLcuE3vA" isCollection="false" name="dataInput"/>
+        <bpmn2:inputSet id="_pUE4x1DAEeuh5NpLcuE3vA">
+          <bpmn2:dataInputRefs>_pUE4xlDAEeuh5NpLcuE3vA</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_pUE4yFDAEeuh5NpLcuE3vA"/>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_pUE4yVDAEeuh5NpLcuE3vA">
+        <bpmn2:sourceRef>_pUE4ylDAEeuh5NpLcuE3vA</bpmn2:sourceRef>
+        <bpmn2:targetRef>_pUE4xlDAEeuh5NpLcuE3vA</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="_pUE4wVDAEeuh5NpLcuE3vA" name="" sourceRef="_pUE4wFDAEeuh5NpLcuE3vA" targetRef="_pUE4wlDAEeuh5NpLcuE3vA"/>
+    <bpmn2:userTask id="_pUFfwFDAEeuh5NpLcuE3vA" name="Pre-select candidates for interview" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="">
+      <bpmn2:incoming>_pUE4xFDAEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:incoming>_pUFfwVDAEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_pUFfwlDAEeuh5NpLcuE3vA</bpmn2:outgoing>
+      <bpmn2:ioSpecification id="_pUFfw1DAEeuh5NpLcuE3vA">
+        <bpmn2:dataInput id="_pUFfxFDAEeuh5NpLcuE3vA" isCollection="false" name="dataInput"/>
+        <bpmn2:inputSet id="_pUFfxVDAEeuh5NpLcuE3vA">
+          <bpmn2:dataInputRefs>_pUFfxFDAEeuh5NpLcuE3vA</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_pUFfxlDAEeuh5NpLcuE3vA"/>
+      </bpmn2:ioSpecification>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="_pUE4xFDAEeuh5NpLcuE3vA" name="" sourceRef="_pUE4wlDAEeuh5NpLcuE3vA" targetRef="_pUFfwFDAEeuh5NpLcuE3vA"/>
+    <bpmn2:task id="_pUFfx1DAEeuh5NpLcuE3vA" name="Interview pre-selected candidates" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_pUFfwlDAEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_pUFfyFDAEeuh5NpLcuE3vA</bpmn2:outgoing>
+      <bpmn2:multiInstanceLoopCharacteristics id="_pUFfyVDAEeuh5NpLcuE3vA" behavior="All" isSequential="false"/>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_pUFfwlDAEeuh5NpLcuE3vA" name="" sourceRef="_pUFfwFDAEeuh5NpLcuE3vA" targetRef="_pUFfx1DAEeuh5NpLcuE3vA"/>
+    <bpmn2:exclusiveGateway id="_pUFfylDAEeuh5NpLcuE3vA" name="Candidates selected after interview process ?" gatewayDirection="Unspecified" default="_pUE4w1DAEeuh5NpLcuE3vA">
+      <bpmn2:incoming>_pUFfyFDAEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_pUE4w1DAEeuh5NpLcuE3vA</bpmn2:outgoing>
+      <bpmn2:outgoing>_pUFfy1DAEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="_pUFfyFDAEeuh5NpLcuE3vA" name="" sourceRef="_pUFfx1DAEeuh5NpLcuE3vA" targetRef="_pUFfylDAEeuh5NpLcuE3vA"/>
+    <bpmn2:sequenceFlow id="_pUE4w1DAEeuh5NpLcuE3vA" name="no" sourceRef="_pUFfylDAEeuh5NpLcuE3vA" targetRef="_pUE4wlDAEeuh5NpLcuE3vA"/>
+    <bpmn2:userTask id="_pUFfzFDAEeuh5NpLcuE3vA" name="Select candidate for offer" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_pUFfy1DAEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:incoming>_pUFfzVDAEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_pUFfzlDAEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="_pUFfy1DAEeuh5NpLcuE3vA" name="yes" sourceRef="_pUFfylDAEeuh5NpLcuE3vA" targetRef="_pUFfzFDAEeuh5NpLcuE3vA"/>
+    <bpmn2:userTask id="_pUFfz1DAEeuh5NpLcuE3vA" name="Prepare offer" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_pUFfzlDAEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_pUFf0FDAEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="_pUFfzlDAEeuh5NpLcuE3vA" name="" sourceRef="_pUFfzFDAEeuh5NpLcuE3vA" targetRef="_pUFfz1DAEeuh5NpLcuE3vA"/>
+    <bpmn2:serviceTask id="_pUFf0VDAEeuh5NpLcuE3vA" name="Send offer to candidate" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##WebService">
+      <bpmn2:incoming>_pUFf0FDAEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_pUFf0lDAEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:serviceTask>
+    <bpmn2:sequenceFlow id="_pUFf0FDAEeuh5NpLcuE3vA" name="" sourceRef="_pUFfz1DAEeuh5NpLcuE3vA" targetRef="_pUFf0VDAEeuh5NpLcuE3vA"/>
+    <bpmn2:userTask id="_pUFf01DAEeuh5NpLcuE3vA" name="Get candidate reply" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_pUFf0lDAEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_pUFf1FDAEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="_pUFf0lDAEeuh5NpLcuE3vA" name="" sourceRef="_pUFf0VDAEeuh5NpLcuE3vA" targetRef="_pUFf01DAEeuh5NpLcuE3vA"/>
+    <bpmn2:exclusiveGateway id="_pUFf1VDAEeuh5NpLcuE3vA" name="is offer validated" gatewayDirection="Unspecified" default="_pUFf1lDAEeuh5NpLcuE3vA">
+      <bpmn2:incoming>_pUFf1FDAEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_pUFf1lDAEeuh5NpLcuE3vA</bpmn2:outgoing>
+      <bpmn2:outgoing>_pUFf11DAEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="_pUFf1FDAEeuh5NpLcuE3vA" name="" sourceRef="_pUFf01DAEeuh5NpLcuE3vA" targetRef="_pUFf1VDAEeuh5NpLcuE3vA"/>
+    <bpmn2:exclusiveGateway id="_pUFf2FDAEeuh5NpLcuE3vA" name="Other candidates selected?" gatewayDirection="Unspecified" default="_pUFfwVDAEeuh5NpLcuE3vA">
+      <bpmn2:incoming>_pUFf1lDAEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_pUFfzVDAEeuh5NpLcuE3vA</bpmn2:outgoing>
+      <bpmn2:outgoing>_pUFfwVDAEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="_pUFf1lDAEeuh5NpLcuE3vA" name="" sourceRef="_pUFf1VDAEeuh5NpLcuE3vA" targetRef="_pUFf2FDAEeuh5NpLcuE3vA"/>
+    <bpmn2:sequenceFlow id="_pUFfzVDAEeuh5NpLcuE3vA" name="yes" sourceRef="_pUFf2FDAEeuh5NpLcuE3vA" targetRef="_pUFfzFDAEeuh5NpLcuE3vA"/>
+    <bpmn2:sequenceFlow id="_pUFfwVDAEeuh5NpLcuE3vA" name="no" sourceRef="_pUFf2FDAEeuh5NpLcuE3vA" targetRef="_pUFfwFDAEeuh5NpLcuE3vA"/>
+    <bpmn2:parallelGateway id="_pUFf2VDAEeuh5NpLcuE3vA" name="" gatewayDirection="Unspecified">
+      <bpmn2:incoming>_pUFf11DAEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_pUFf2lDAEeuh5NpLcuE3vA</bpmn2:outgoing>
+      <bpmn2:outgoing>_pUFf21DAEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:parallelGateway>
+    <bpmn2:sequenceFlow id="_pUFf11DAEeuh5NpLcuE3vA" name="yes" sourceRef="_pUFf1VDAEeuh5NpLcuE3vA" targetRef="_pUFf2VDAEeuh5NpLcuE3vA"/>
+    <bpmn2:serviceTask id="_pUFf3FDAEeuh5NpLcuE3vA" name="Congratulate new hre" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##WebService">
+      <bpmn2:incoming>_pUFf2lDAEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_pUFf3VDAEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:serviceTask>
+    <bpmn2:sendTask id="_pUFf3lDAEeuh5NpLcuE3vA" name="Informe other candidates" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##WebService">
+      <bpmn2:incoming>_pUFf21DAEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_pUFf31DAEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:sendTask>
+    <bpmn2:sequenceFlow id="_pUFf2lDAEeuh5NpLcuE3vA" name="" sourceRef="_pUFf2VDAEeuh5NpLcuE3vA" targetRef="_pUFf3FDAEeuh5NpLcuE3vA"/>
+    <bpmn2:sequenceFlow id="_pUFf21DAEeuh5NpLcuE3vA" name="" sourceRef="_pUFf2VDAEeuh5NpLcuE3vA" targetRef="_pUFf3lDAEeuh5NpLcuE3vA"/>
+    <bpmn2:parallelGateway id="_pUFf4FDAEeuh5NpLcuE3vA" name="" gatewayDirection="Unspecified">
+      <bpmn2:incoming>_pUFf31DAEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:incoming>_pUFf3VDAEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_pUFf4VDAEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:parallelGateway>
+    <bpmn2:sequenceFlow id="_pUFf31DAEeuh5NpLcuE3vA" name="" sourceRef="_pUFf3lDAEeuh5NpLcuE3vA" targetRef="_pUFf4FDAEeuh5NpLcuE3vA"/>
+    <bpmn2:sequenceFlow id="_pUFf3VDAEeuh5NpLcuE3vA" name="" sourceRef="_pUFf3FDAEeuh5NpLcuE3vA" targetRef="_pUFf4FDAEeuh5NpLcuE3vA"/>
+    <bpmn2:endEvent id="_pUFf4lDAEeuh5NpLcuE3vA" name="End">
+      <bpmn2:incoming>_pUFf4VDAEeuh5NpLcuE3vA</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:sequenceFlow id="_pUFf4VDAEeuh5NpLcuE3vA" name="" sourceRef="_pUFf4FDAEeuh5NpLcuE3vA" targetRef="_pUFf4lDAEeuh5NpLcuE3vA"/>
+    <bpmn2:dataObjectReference id="_pUE4ylDAEeuh5NpLcuE3vA" name="applications" dataObjectRef="_pUFf41DAEeuh5NpLcuE3vA"/>
+    <bpmn2:dataObject id="_pUFf41DAEeuh5NpLcuE3vA" name="applications" isCollection="true"/>
+  </bpmn2:process>
+  <bpmn2:collaboration id="_pUFf5FDAEeuh5NpLcuE3vA" name="selection-and-recruitment-collaboration">
+    <bpmn2:participant id="_pUFf5VDAEeuh5NpLcuE3vA" name="Employee selection and recruitment" processRef="_pUE4sVDAEeuh5NpLcuE3vA"/>
+    <bpmn2:messageFlow id="_pUFf5lDAEeuh5NpLcuE3vA" name=""/>
+  </bpmn2:collaboration>
+  <bpmndi:BPMNDiagram id="_pUFf51DAEeuh5NpLcuE3vA" name="Selection and recruitment">
+    <bpmndi:BPMNPlane id="_pUFf6FDAEeuh5NpLcuE3vA" bpmnElement="_pUFf5FDAEeuh5NpLcuE3vA">
+      <bpmndi:BPMNShape id="_pUFf6VDAEeuh5NpLcuE3vA" bpmnElement="_pUE4tlDAEeuh5NpLcuE3vA">
+        <dc:Bounds height="40.0" width="40.0" x="320.0" y="160.0"/>
+        <bpmndi:BPMNLabel id="_pUFf6lDAEeuh5NpLcuE3vA">
+          <dc:Bounds height="5.0" width="88.0" x="296.0" y="204.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_pUFf61DAEeuh5NpLcuE3vA" bpmnElement="_pUE4vFDAEeuh5NpLcuE3vA">
+        <dc:Bounds height="60.0" width="90.0" x="450.0" y="150.0"/>
+        <bpmndi:BPMNLabel id="_pUFf7FDAEeuh5NpLcuE3vA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_pUFf7VDAEeuh5NpLcuE3vA" bpmnElement="_pUE4tFDAEeuh5NpLcuE3vA">
+        <dc:Bounds height="60.0" width="90.0" x="170.0" y="150.0"/>
+        <bpmndi:BPMNLabel id="_pUFf7lDAEeuh5NpLcuE3vA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_pUFf71DAEeuh5NpLcuE3vA" bpmnElement="_pUFf0VDAEeuh5NpLcuE3vA">
+        <dc:Bounds height="60.0" width="90.0" x="1560.0" y="150.0"/>
+        <bpmndi:BPMNLabel id="_pUFf8FDAEeuh5NpLcuE3vA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_pUFf8VDAEeuh5NpLcuE3vA" bpmnElement="_pUFf01DAEeuh5NpLcuE3vA">
+        <dc:Bounds height="60.0" width="90.0" x="1690.0" y="150.0"/>
+        <bpmndi:BPMNLabel id="_pUFf8lDAEeuh5NpLcuE3vA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_pUFf81DAEeuh5NpLcuE3vA" bpmnElement="_pUFfx1DAEeuh5NpLcuE3vA">
+        <dc:Bounds height="60.0" width="120.0" x="1030.0" y="150.0"/>
+        <bpmndi:BPMNLabel id="_pUFf9FDAEeuh5NpLcuE3vA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_pUFf9VDAEeuh5NpLcuE3vA" bpmnElement="_pUFfzFDAEeuh5NpLcuE3vA">
+        <dc:Bounds height="60.0" width="110.0" x="1270.0" y="150.0"/>
+        <bpmndi:BPMNLabel id="_pUFf9lDAEeuh5NpLcuE3vA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_pUFf91DAEeuh5NpLcuE3vA" bpmnElement="_pUE4vlDAEeuh5NpLcuE3vA">
+        <dc:Bounds height="60.0" width="90.0" x="450.0" y="240.0"/>
+        <bpmndi:BPMNLabel id="_pUFf-FDAEeuh5NpLcuE3vA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_pUFf-VDAEeuh5NpLcuE3vA" bpmnElement="_pUFf3lDAEeuh5NpLcuE3vA">
+        <dc:Bounds height="60.0" width="100.0" x="2070.0" y="220.0"/>
+        <bpmndi:BPMNLabel id="_pUFf-lDAEeuh5NpLcuE3vA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_pUFf-1DAEeuh5NpLcuE3vA" bpmnElement="_pUFfz1DAEeuh5NpLcuE3vA">
+        <dc:Bounds height="60.0" width="90.0" x="1420.0" y="150.0"/>
+        <bpmndi:BPMNLabel id="_pUFf_FDAEeuh5NpLcuE3vA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_pUFf_VDAEeuh5NpLcuE3vA" bpmnElement="_pUFf4FDAEeuh5NpLcuE3vA">
+        <dc:Bounds height="40.0" width="40.0" x="2250.0" y="170.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_pUFf_lDAEeuh5NpLcuE3vA" bpmnElement="_pUFfwFDAEeuh5NpLcuE3vA">
+        <dc:Bounds height="60.0" width="120.0" x="850.0" y="150.0"/>
+        <bpmndi:BPMNLabel id="_pUFf_1DAEeuh5NpLcuE3vA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_pUFgAFDAEeuh5NpLcuE3vA" bpmnElement="_pUE4slDAEeuh5NpLcuE3vA">
+        <dc:Bounds height="35.0" width="35.0" x="80.0" y="160.0"/>
+        <bpmndi:BPMNLabel id="_pUFgAVDAEeuh5NpLcuE3vA">
+          <dc:Bounds height="5.0" width="88.0" x="54.0" y="199.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_pUFgAlDAEeuh5NpLcuE3vA" bpmnElement="_pUFfylDAEeuh5NpLcuE3vA">
+        <dc:Bounds height="40.0" width="40.0" x="1190.0" y="160.0"/>
+        <bpmndi:BPMNLabel id="_pUFgA1DAEeuh5NpLcuE3vA">
+          <dc:Bounds height="5.0" width="88.0" x="1166.0" y="204.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_pUFgBFDAEeuh5NpLcuE3vA" bpmnElement="_pUFf2FDAEeuh5NpLcuE3vA">
+        <dc:Bounds height="40.0" width="40.0" x="1720.0" y="60.0"/>
+        <bpmndi:BPMNLabel id="_pUFgBVDAEeuh5NpLcuE3vA">
+          <dc:Bounds height="5.0" width="88.0" x="1696.0" y="104.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_pUFgBlDAEeuh5NpLcuE3vA" bpmnElement="_pUFf1VDAEeuh5NpLcuE3vA">
+        <dc:Bounds height="40.0" width="40.0" x="1840.0" y="160.0"/>
+        <bpmndi:BPMNLabel id="_pUFgB1DAEeuh5NpLcuE3vA">
+          <dc:Bounds height="5.0" width="88.0" x="1816.0" y="204.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_pUFgCFDAEeuh5NpLcuE3vA" bpmnElement="_pUE4wlDAEeuh5NpLcuE3vA">
+        <dc:Bounds height="60.0" width="90.0" x="710.0" y="150.0"/>
+        <bpmndi:BPMNLabel id="_pUFgCVDAEeuh5NpLcuE3vA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_pUFgClDAEeuh5NpLcuE3vA" bpmnElement="_pUE4wFDAEeuh5NpLcuE3vA">
+        <dc:Bounds height="40.0" width="40.0" x="630.0" y="160.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_pUFgC1DAEeuh5NpLcuE3vA" bpmnElement="_pUFf4lDAEeuh5NpLcuE3vA">
+        <dc:Bounds height="35.0" width="35.0" x="2340.0" y="170.0"/>
+        <bpmndi:BPMNLabel id="_pUFgDFDAEeuh5NpLcuE3vA">
+          <dc:Bounds height="5.0" width="88.0" x="2314.0" y="209.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_pUFgDVDAEeuh5NpLcuE3vA" bpmnElement="_pUE4ulDAEeuh5NpLcuE3vA">
+        <dc:Bounds height="60.0" width="90.0" x="450.0" y="60.0"/>
+        <bpmndi:BPMNLabel id="_pUFgDlDAEeuh5NpLcuE3vA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_pUFgD1DAEeuh5NpLcuE3vA" bpmnElement="_pUE4ylDAEeuh5NpLcuE3vA">
+        <dc:Bounds height="40.0" width="30.0" x="670.0" y="240.0"/>
+        <bpmndi:BPMNLabel id="_pUFgEFDAEeuh5NpLcuE3vA">
+          <dc:Bounds height="5.0" width="88.0" x="641.0" y="284.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_pUFgEVDAEeuh5NpLcuE3vA" bpmnElement="_pUFf2VDAEeuh5NpLcuE3vA">
+        <dc:Bounds height="40.0" width="40.0" x="1950.0" y="160.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_pUFgElDAEeuh5NpLcuE3vA" bpmnElement="_pUFf5VDAEeuh5NpLcuE3vA" isHorizontal="true">
+        <dc:Bounds height="322.0" width="2383.0" x="20.0" y="20.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_pUFgE1DAEeuh5NpLcuE3vA" bpmnElement="_pUFf3FDAEeuh5NpLcuE3vA">
+        <dc:Bounds height="60.0" width="100.0" x="2070.0" y="90.0"/>
+        <bpmndi:BPMNLabel id="_pUFgFFDAEeuh5NpLcuE3vA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="_pUFgFVDAEeuh5NpLcuE3vA" bpmnElement="_pUFfzlDAEeuh5NpLcuE3vA">
+        <di:waypoint x="1380.0" y="180.0"/>
+        <di:waypoint x="1420.0" y="180.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_pUFgFlDAEeuh5NpLcuE3vA" bpmnElement="_pUE4yVDAEeuh5NpLcuE3vA">
+        <di:waypoint x="700.0" y="242.0"/>
+        <di:waypoint x="728.0" y="210.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_pUFgF1DAEeuh5NpLcuE3vA" bpmnElement="_pUFfwVDAEeuh5NpLcuE3vA">
+        <di:waypoint x="1740.0" y="60.0"/>
+        <di:waypoint x="1740.0" y="34.0"/>
+        <di:waypoint x="916.0" y="34.0"/>
+        <di:waypoint x="916.0" y="150.0"/>
+        <bpmndi:BPMNLabel id="_pUFgGFDAEeuh5NpLcuE3vA">
+          <dc:Bounds height="15.0" width="1.0" x="1334.0" y="37.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_pUFgGVDAEeuh5NpLcuE3vA" bpmnElement="_pUFf0FDAEeuh5NpLcuE3vA">
+        <di:waypoint x="1510.0" y="180.0"/>
+        <di:waypoint x="1560.0" y="180.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_pUFgGlDAEeuh5NpLcuE3vA" bpmnElement="_pUFf1FDAEeuh5NpLcuE3vA">
+        <di:waypoint x="1780.0" y="180.0"/>
+        <di:waypoint x="1840.0" y="180.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_pUFgG1DAEeuh5NpLcuE3vA" bpmnElement="_pUFfzVDAEeuh5NpLcuE3vA">
+        <di:waypoint x="1720.0" y="79.0"/>
+        <di:waypoint x="1323.0" y="79.0"/>
+        <di:waypoint x="1323.0" y="150.0"/>
+        <bpmndi:BPMNLabel id="_pUFgHFDAEeuh5NpLcuE3vA">
+          <dc:Bounds height="15.0" width="6.0" x="1505.0" y="83.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_pUFgHVDAEeuh5NpLcuE3vA" bpmnElement="_pUE4tVDAEeuh5NpLcuE3vA">
+        <di:waypoint x="260.0" y="180.0"/>
+        <di:waypoint x="320.0" y="180.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_pUFgHlDAEeuh5NpLcuE3vA" bpmnElement="_pUFf21DAEeuh5NpLcuE3vA">
+        <di:waypoint x="1990.0" y="180.0"/>
+        <di:waypoint x="2030.0" y="180.0"/>
+        <di:waypoint x="2030.0" y="250.0"/>
+        <di:waypoint x="2070.0" y="250.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_pUFgH1DAEeuh5NpLcuE3vA" bpmnElement="_pUE4u1DAEeuh5NpLcuE3vA">
+        <di:waypoint x="540.0" y="90.0"/>
+        <di:waypoint x="585.0" y="90.0"/>
+        <di:waypoint x="585.0" y="180.0"/>
+        <di:waypoint x="630.0" y="180.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_pUFgIFDAEeuh5NpLcuE3vA" bpmnElement="_pUFf1lDAEeuh5NpLcuE3vA">
+        <di:waypoint x="1861.0" y="160.0"/>
+        <di:waypoint x="1861.0" y="80.0"/>
+        <di:waypoint x="1760.0" y="80.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_pUFgIVDAEeuh5NpLcuE3vA" bpmnElement="_pUE4wVDAEeuh5NpLcuE3vA">
+        <di:waypoint x="670.0" y="180.0"/>
+        <di:waypoint x="710.0" y="180.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_pUFgIlDAEeuh5NpLcuE3vA" bpmnElement="_pUFfy1DAEeuh5NpLcuE3vA">
+        <di:waypoint x="1230.0" y="180.0"/>
+        <di:waypoint x="1270.0" y="180.0"/>
+        <bpmndi:BPMNLabel id="_pUFgI1DAEeuh5NpLcuE3vA">
+          <dc:Bounds height="15.0" width="6.0" x="1236.0" y="163.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_pUFgJFDAEeuh5NpLcuE3vA" bpmnElement="_pUE4v1DAEeuh5NpLcuE3vA">
+        <di:waypoint x="540.0" y="270.0"/>
+        <di:waypoint x="585.0" y="270.0"/>
+        <di:waypoint x="585.0" y="180.0"/>
+        <di:waypoint x="630.0" y="180.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_pUFgJVDAEeuh5NpLcuE3vA" bpmnElement="_pUFf3VDAEeuh5NpLcuE3vA">
+        <di:waypoint x="2170.0" y="120.0"/>
+        <di:waypoint x="2210.0" y="120.0"/>
+        <di:waypoint x="2210.0" y="190.0"/>
+        <di:waypoint x="2250.0" y="190.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_pUFgJlDAEeuh5NpLcuE3vA" bpmnElement="_pUE4w1DAEeuh5NpLcuE3vA">
+        <di:waypoint x="1209.0" y="160.0"/>
+        <di:waypoint x="1209.0" y="112.0"/>
+        <di:waypoint x="745.0" y="112.0"/>
+        <di:waypoint x="745.0" y="150.0"/>
+        <bpmndi:BPMNLabel id="_pUGG0FDAEeuh5NpLcuE3vA">
+          <dc:Bounds height="15.0" width="1.0" x="985.0" y="92.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_pUGG0VDAEeuh5NpLcuE3vA" bpmnElement="_pUFf2lDAEeuh5NpLcuE3vA">
+        <di:waypoint x="1990.0" y="180.0"/>
+        <di:waypoint x="2030.0" y="180.0"/>
+        <di:waypoint x="2030.0" y="120.0"/>
+        <di:waypoint x="2070.0" y="120.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_pUGG0lDAEeuh5NpLcuE3vA" bpmnElement="_pUE4xFDAEeuh5NpLcuE3vA">
+        <di:waypoint x="800.0" y="180.0"/>
+        <di:waypoint x="850.0" y="180.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_pUGG01DAEeuh5NpLcuE3vA" bpmnElement="_pUFf11DAEeuh5NpLcuE3vA">
+        <di:waypoint x="1880.0" y="180.0"/>
+        <di:waypoint x="1950.0" y="180.0"/>
+        <bpmndi:BPMNLabel id="_pUGG1FDAEeuh5NpLcuE3vA">
+          <dc:Bounds height="15.0" width="6.0" x="1906.0" y="163.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_pUGG1VDAEeuh5NpLcuE3vA" bpmnElement="_pUE4uVDAEeuh5NpLcuE3vA">
+        <di:waypoint x="360.0" y="180.0"/>
+        <di:waypoint x="450.0" y="180.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_pUGG1lDAEeuh5NpLcuE3vA" bpmnElement="_pUE4t1DAEeuh5NpLcuE3vA">
+        <di:waypoint x="360.0" y="180.0"/>
+        <di:waypoint x="405.0" y="180.0"/>
+        <di:waypoint x="405.0" y="90.0"/>
+        <di:waypoint x="450.0" y="90.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_pUGG11DAEeuh5NpLcuE3vA" bpmnElement="_pUE4s1DAEeuh5NpLcuE3vA">
+        <di:waypoint x="115.0" y="177.0"/>
+        <di:waypoint x="170.0" y="177.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_pUGG2FDAEeuh5NpLcuE3vA" bpmnElement="_pUFf31DAEeuh5NpLcuE3vA">
+        <di:waypoint x="2170.0" y="250.0"/>
+        <di:waypoint x="2210.0" y="250.0"/>
+        <di:waypoint x="2210.0" y="190.0"/>
+        <di:waypoint x="2250.0" y="190.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_pUGG2VDAEeuh5NpLcuE3vA" bpmnElement="_pUFf0lDAEeuh5NpLcuE3vA">
+        <di:waypoint x="1650.0" y="180.0"/>
+        <di:waypoint x="1690.0" y="180.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_pUGG2lDAEeuh5NpLcuE3vA" bpmnElement="_pUE4uFDAEeuh5NpLcuE3vA">
+        <di:waypoint x="360.0" y="180.0"/>
+        <di:waypoint x="405.0" y="180.0"/>
+        <di:waypoint x="405.0" y="270.0"/>
+        <di:waypoint x="450.0" y="270.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_pUGG21DAEeuh5NpLcuE3vA" bpmnElement="_pUE4vVDAEeuh5NpLcuE3vA">
+        <di:waypoint x="540.0" y="180.0"/>
+        <di:waypoint x="630.0" y="180.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_pUGG3FDAEeuh5NpLcuE3vA" bpmnElement="_pUFfyFDAEeuh5NpLcuE3vA">
+        <di:waypoint x="1150.0" y="180.0"/>
+        <di:waypoint x="1190.0" y="180.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_pUGG3VDAEeuh5NpLcuE3vA" bpmnElement="_pUFf4VDAEeuh5NpLcuE3vA">
+        <di:waypoint x="2290.0" y="187.0"/>
+        <di:waypoint x="2340.0" y="187.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_pUGG3lDAEeuh5NpLcuE3vA" bpmnElement="_pUFfwlDAEeuh5NpLcuE3vA">
+        <di:waypoint x="970.0" y="180.0"/>
+        <di:waypoint x="1030.0" y="180.0"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn2:definitions>

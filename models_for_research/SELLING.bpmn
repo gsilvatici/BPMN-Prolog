@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn2:definitions xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://genmymodel.com/bpmn2" id="_PXVX8FDCEeuh5NpLcuE3vA" name="SELLING" targetNamespace="http://genmymodel.com/bpmn2" exporter="Camunda Modeler" exporterVersion="4.11.1">
+  <bpmn2:process id="_PXVX8VDCEeuh5NpLcuE3vA" name="Process" processType="None" isClosed="true" isExecutable="false">
+    <bpmn2:laneSet id="_PXVX8lDCEeuh5NpLcuE3vA">
+      <bpmn2:lane id="_PXVYB1DCEeuh5NpLcuE3vA" name="WHOLE SELLER">
+        <bpmn2:flowNodeRef>_PXVYC1DCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_PXVYDFDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_PXVYDVDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_PXVYDlDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_PXVYD1DCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_PXVYEFDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_PXVYEVDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_PXVYElDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_PXVYE1DCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_PXVYFFDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_PXVYFVDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_PXVYFlDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_PXVYF1DCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_PXVYGFDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_PXVYGVDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_PXVYGlDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_PXVYHFDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_PXVYG1DCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_PXVYClDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:childLaneSet id="_PXVYCFDCEeuh5NpLcuE3vA">
+          <bpmn2:lane id="_PXVYCVDCEeuh5NpLcuE3vA" name="">
+            <bpmn2:flowNodeRef>_PXVYC1DCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_PXVYDFDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_PXVYDVDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_PXVYDlDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_PXVYD1DCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_PXVYEFDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_PXVYEVDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_PXVYElDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_PXVYE1DCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_PXVYFFDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_PXVYFVDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_PXVYFlDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_PXVYF1DCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_PXVYGFDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_PXVYGVDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_PXVYGlDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_PXVYHFDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_PXVYG1DCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_PXVYClDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+          </bpmn2:lane>
+        </bpmn2:childLaneSet>
+      </bpmn2:lane>
+      <bpmn2:lane id="_PXVX-VDCEeuh5NpLcuE3vA" name="SELLER ">
+        <bpmn2:flowNodeRef>_PXVX_FDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_PXVX_VDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_PXVX_lDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_PXVX_1DCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_PXVYAFDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_PXVYBlDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_PXVYAVDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_PXVYAlDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_PXVYA1DCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_PXVYBFDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_PXVYBVDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:childLaneSet id="_PXVX-lDCEeuh5NpLcuE3vA">
+          <bpmn2:lane id="_PXVX-1DCEeuh5NpLcuE3vA" name="">
+            <bpmn2:flowNodeRef>_PXVX_FDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_PXVX_VDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_PXVX_lDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_PXVX_1DCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_PXVYAFDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_PXVYBlDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_PXVYAVDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_PXVYAlDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_PXVYA1DCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_PXVYBFDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_PXVYBVDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+          </bpmn2:lane>
+        </bpmn2:childLaneSet>
+      </bpmn2:lane>
+      <bpmn2:lane id="_PXVX81DCEeuh5NpLcuE3vA" name="BUYER">
+        <bpmn2:flowNodeRef>_PXVX9lDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_PXVX91DCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_PXVX-FDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:childLaneSet id="_PXVX9FDCEeuh5NpLcuE3vA">
+          <bpmn2:lane id="_PXVX9VDCEeuh5NpLcuE3vA" name="">
+            <bpmn2:flowNodeRef>_PXVX9lDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_PXVX91DCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_PXVX-FDCEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+          </bpmn2:lane>
+        </bpmn2:childLaneSet>
+      </bpmn2:lane>
+    </bpmn2:laneSet>
+    <bpmn2:startEvent id="_PXVX9lDCEeuh5NpLcuE3vA" name="Start">
+      <bpmn2:outgoing>_PXVYHVDCEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:task id="_PXVX91DCEeuh5NpLcuE3vA" name="SHOP VISIT">
+      <bpmn2:incoming>_PXVYHVDCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_PXVYHlDCEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:task id="_PXVX-FDCEeuh5NpLcuE3vA" name="SELECT PRODUCTS">
+      <bpmn2:incoming>_PXVYHlDCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:incoming>_PXVYH1DCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_PXVYIFDCEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:task id="_PXVX_FDCEeuh5NpLcuE3vA" name="SHOP OWNER">
+      <bpmn2:incoming>_PXVYIFDCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_PXVYIVDCEeuh5NpLcuE3vA</bpmn2:outgoing>
+      <bpmn2:outgoing>_PXVYIlDCEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:task id="_PXVX_VDCEeuh5NpLcuE3vA" name="SELLER SUGGESTION">
+      <bpmn2:incoming>_PXVYIVDCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_PXVYI1DCEeuh5NpLcuE3vA</bpmn2:outgoing>
+      <bpmn2:outgoing>_PXVYJFDCEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:exclusiveGateway id="_PXVX_lDCEeuh5NpLcuE3vA" name="LIKE IT">
+      <bpmn2:incoming>_PXVYJFDCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_PXVYJVDCEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:task id="_PXVX_1DCEeuh5NpLcuE3vA" name="BUY IT">
+      <bpmn2:incoming>_PXVYI1DCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_PXVYJlDCEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:task id="_PXVYAFDCEeuh5NpLcuE3vA" name="CHOOSE DIFFERENT VARIETY">
+      <bpmn2:incoming>_PXVYJVDCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_PXVYH1DCEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:task id="_PXVYBlDCEeuh5NpLcuE3vA" name="MAKE PAYMENT">
+      <bpmn2:incoming>_PXVYJlDCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_PXVYJ1DCEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:parallelGateway id="_PXVYAVDCEeuh5NpLcuE3vA" name="WAY OF PAYMENT">
+      <bpmn2:incoming>_PXVYJ1DCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_PXVYKFDCEeuh5NpLcuE3vA</bpmn2:outgoing>
+      <bpmn2:outgoing>_PXVYKVDCEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:parallelGateway>
+    <bpmn2:task id="_PXVYAlDCEeuh5NpLcuE3vA" name="Task">
+      <bpmn2:incoming>_PXVYKFDCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_PXVYKlDCEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:task id="_PXVYA1DCEeuh5NpLcuE3vA" name="Task">
+      <bpmn2:incoming>_PXVYKVDCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_PXVYK1DCEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:parallelGateway id="_PXVYBFDCEeuh5NpLcuE3vA">
+      <bpmn2:incoming>_PXVYKlDCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:incoming>_PXVYK1DCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_PXVYLFDCEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:parallelGateway>
+    <bpmn2:endEvent id="_PXVYBVDCEeuh5NpLcuE3vA" name="HAPPY SHOPING">
+      <bpmn2:incoming>_PXVYLFDCEeuh5NpLcuE3vA</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:task id="_PXVYC1DCEeuh5NpLcuE3vA" name="BULK 1">
+      <bpmn2:incoming>_PXVYLVDCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_PXVYLlDCEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:task id="_PXVYDFDCEeuh5NpLcuE3vA" name="BULK 2">
+      <bpmn2:incoming>_PXVYL1DCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_PXVYMFDCEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:task id="_PXVYDVDCEeuh5NpLcuE3vA" name="BULK3">
+      <bpmn2:incoming>_PXVYMVDCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_PXVYMlDCEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:task id="_PXVYDlDCEeuh5NpLcuE3vA" name="SELECT ITEM (IF LIKED)">
+      <bpmn2:incoming>_PXVYLlDCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_PXVYM1DCEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:task id="_PXVYD1DCEeuh5NpLcuE3vA" name="SELECT ITEM (IF LIKED">
+      <bpmn2:incoming>_PXVYMFDCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_PXVYNFDCEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:task id="_PXVYEFDCEeuh5NpLcuE3vA" name="SELECT ITEM(IF LIKED)">
+      <bpmn2:incoming>_PXVYMlDCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_PXVYNVDCEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:exclusiveGateway id="_PXVYEVDCEeuh5NpLcuE3vA">
+      <bpmn2:incoming>_PXVYM1DCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_PXVYNlDCEeuh5NpLcuE3vA</bpmn2:outgoing>
+      <bpmn2:outgoing>_PXVYN1DCEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:exclusiveGateway id="_PXVYElDCEeuh5NpLcuE3vA">
+      <bpmn2:incoming>_PXVYNFDCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_PXVYOFDCEeuh5NpLcuE3vA</bpmn2:outgoing>
+      <bpmn2:outgoing>_PXVYOVDCEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:exclusiveGateway id="_PXVYE1DCEeuh5NpLcuE3vA">
+      <bpmn2:incoming>_PXVYNVDCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_PXVYOlDCEeuh5NpLcuE3vA</bpmn2:outgoing>
+      <bpmn2:outgoing>_PXVYO1DCEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:task id="_PXVYFFDCEeuh5NpLcuE3vA" name="REAL TIME PAYMENT">
+      <bpmn2:incoming>_PXVYNlDCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_PXVYPFDCEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:task id="_PXVYFVDCEeuh5NpLcuE3vA" name="AFTER SOME TIME PAYMENT">
+      <bpmn2:incoming>_PXVYN1DCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_PXVYPVDCEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:task id="_PXVYFlDCEeuh5NpLcuE3vA" name="REAL TIME PAYMENT">
+      <bpmn2:incoming>_PXVYOFDCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_PXVYPlDCEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:task id="_PXVYF1DCEeuh5NpLcuE3vA" name="AFTER SOMETIME PAYMENT">
+      <bpmn2:incoming>_PXVYOVDCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_PXVYP1DCEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:task id="_PXVYGFDCEeuh5NpLcuE3vA" name="REAL TIME PAYMENT">
+      <bpmn2:incoming>_PXVYOlDCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_PXVYQFDCEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:task id="_PXVYGVDCEeuh5NpLcuE3vA" name="AFTER SOME TIME PAYMENT">
+      <bpmn2:incoming>_PXVYO1DCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_PXVYQVDCEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:parallelGateway id="_PXVYGlDCEeuh5NpLcuE3vA">
+      <bpmn2:incoming>_PXVYPFDCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:incoming>_PXVYPVDCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:incoming>_PXVYPlDCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:incoming>_PXVYP1DCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:incoming>_PXVYQFDCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:incoming>_PXVYQVDCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_PXVYQlDCEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:parallelGateway>
+    <bpmn2:endEvent id="_PXVYHFDCEeuh5NpLcuE3vA" name="REACHED SHOP">
+      <bpmn2:incoming>_PXVYQlDCEeuh5NpLcuE3vA</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:sequenceFlow id="_PXVYHVDCEeuh5NpLcuE3vA" sourceRef="_PXVX9lDCEeuh5NpLcuE3vA" targetRef="_PXVX91DCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYHlDCEeuh5NpLcuE3vA" sourceRef="_PXVX91DCEeuh5NpLcuE3vA" targetRef="_PXVX-FDCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYH1DCEeuh5NpLcuE3vA" sourceRef="_PXVYAFDCEeuh5NpLcuE3vA" targetRef="_PXVX-FDCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYIFDCEeuh5NpLcuE3vA" sourceRef="_PXVX-FDCEeuh5NpLcuE3vA" targetRef="_PXVX_FDCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYIVDCEeuh5NpLcuE3vA" sourceRef="_PXVX_FDCEeuh5NpLcuE3vA" targetRef="_PXVX_VDCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYI1DCEeuh5NpLcuE3vA" name="YES" sourceRef="_PXVX_VDCEeuh5NpLcuE3vA" targetRef="_PXVX_1DCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYJFDCEeuh5NpLcuE3vA" sourceRef="_PXVX_VDCEeuh5NpLcuE3vA" targetRef="_PXVX_lDCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYJVDCEeuh5NpLcuE3vA" name="NO" sourceRef="_PXVX_lDCEeuh5NpLcuE3vA" targetRef="_PXVYAFDCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYJlDCEeuh5NpLcuE3vA" sourceRef="_PXVX_1DCEeuh5NpLcuE3vA" targetRef="_PXVYBlDCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYJ1DCEeuh5NpLcuE3vA" sourceRef="_PXVYBlDCEeuh5NpLcuE3vA" targetRef="_PXVYAVDCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYKFDCEeuh5NpLcuE3vA" sourceRef="_PXVYAVDCEeuh5NpLcuE3vA" targetRef="_PXVYAlDCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYKVDCEeuh5NpLcuE3vA" sourceRef="_PXVYAVDCEeuh5NpLcuE3vA" targetRef="_PXVYA1DCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYKlDCEeuh5NpLcuE3vA" sourceRef="_PXVYAlDCEeuh5NpLcuE3vA" targetRef="_PXVYBFDCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYK1DCEeuh5NpLcuE3vA" sourceRef="_PXVYA1DCEeuh5NpLcuE3vA" targetRef="_PXVYBFDCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYLFDCEeuh5NpLcuE3vA" sourceRef="_PXVYBFDCEeuh5NpLcuE3vA" targetRef="_PXVYBVDCEeuh5NpLcuE3vA" />
+    <bpmn2:exclusiveGateway id="_PXVYG1DCEeuh5NpLcuE3vA" name="PRODUCT ">
+      <bpmn2:incoming>_PXVYQ1DCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_PXVYLVDCEeuh5NpLcuE3vA</bpmn2:outgoing>
+      <bpmn2:outgoing>_PXVYL1DCEeuh5NpLcuE3vA</bpmn2:outgoing>
+      <bpmn2:outgoing>_PXVYMVDCEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="_PXVYQ1DCEeuh5NpLcuE3vA" sourceRef="_PXVYClDCEeuh5NpLcuE3vA" targetRef="_PXVYG1DCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYLVDCEeuh5NpLcuE3vA" name="BRANDED " sourceRef="_PXVYG1DCEeuh5NpLcuE3vA" targetRef="_PXVYC1DCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYL1DCEeuh5NpLcuE3vA" name="firsst COPY" sourceRef="_PXVYG1DCEeuh5NpLcuE3vA" targetRef="_PXVYDFDCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYMVDCEeuh5NpLcuE3vA" name="DUPLICATE" sourceRef="_PXVYG1DCEeuh5NpLcuE3vA" targetRef="_PXVYDVDCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYLlDCEeuh5NpLcuE3vA" sourceRef="_PXVYC1DCEeuh5NpLcuE3vA" targetRef="_PXVYDlDCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYMFDCEeuh5NpLcuE3vA" sourceRef="_PXVYDFDCEeuh5NpLcuE3vA" targetRef="_PXVYD1DCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYMlDCEeuh5NpLcuE3vA" sourceRef="_PXVYDVDCEeuh5NpLcuE3vA" targetRef="_PXVYEFDCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYM1DCEeuh5NpLcuE3vA" sourceRef="_PXVYDlDCEeuh5NpLcuE3vA" targetRef="_PXVYEVDCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYNFDCEeuh5NpLcuE3vA" sourceRef="_PXVYD1DCEeuh5NpLcuE3vA" targetRef="_PXVYElDCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYNVDCEeuh5NpLcuE3vA" sourceRef="_PXVYEFDCEeuh5NpLcuE3vA" targetRef="_PXVYE1DCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYNlDCEeuh5NpLcuE3vA" sourceRef="_PXVYEVDCEeuh5NpLcuE3vA" targetRef="_PXVYFFDCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYN1DCEeuh5NpLcuE3vA" sourceRef="_PXVYEVDCEeuh5NpLcuE3vA" targetRef="_PXVYFVDCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYOFDCEeuh5NpLcuE3vA" sourceRef="_PXVYElDCEeuh5NpLcuE3vA" targetRef="_PXVYFlDCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYOVDCEeuh5NpLcuE3vA" sourceRef="_PXVYElDCEeuh5NpLcuE3vA" targetRef="_PXVYF1DCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYOlDCEeuh5NpLcuE3vA" sourceRef="_PXVYE1DCEeuh5NpLcuE3vA" targetRef="_PXVYGFDCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYO1DCEeuh5NpLcuE3vA" sourceRef="_PXVYE1DCEeuh5NpLcuE3vA" targetRef="_PXVYGVDCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYPFDCEeuh5NpLcuE3vA" sourceRef="_PXVYFFDCEeuh5NpLcuE3vA" targetRef="_PXVYGlDCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYPVDCEeuh5NpLcuE3vA" sourceRef="_PXVYFVDCEeuh5NpLcuE3vA" targetRef="_PXVYGlDCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYPlDCEeuh5NpLcuE3vA" sourceRef="_PXVYFlDCEeuh5NpLcuE3vA" targetRef="_PXVYGlDCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYP1DCEeuh5NpLcuE3vA" sourceRef="_PXVYF1DCEeuh5NpLcuE3vA" targetRef="_PXVYGlDCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYQFDCEeuh5NpLcuE3vA" sourceRef="_PXVYGFDCEeuh5NpLcuE3vA" targetRef="_PXVYGlDCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYQVDCEeuh5NpLcuE3vA" sourceRef="_PXVYGVDCEeuh5NpLcuE3vA" targetRef="_PXVYGlDCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYQlDCEeuh5NpLcuE3vA" name="JOIN" sourceRef="_PXVYGlDCEeuh5NpLcuE3vA" targetRef="_PXVYHFDCEeuh5NpLcuE3vA" />
+    <bpmn2:sequenceFlow id="_PXVYIlDCEeuh5NpLcuE3vA" sourceRef="_PXVX_FDCEeuh5NpLcuE3vA" targetRef="_PXVYClDCEeuh5NpLcuE3vA" />
+    <bpmn2:task id="_PXVYClDCEeuh5NpLcuE3vA" name="BULK ITEM PURCHASE">
+      <bpmn2:incoming>_PXVYIlDCEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_PXVYQ1DCEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="_PXVYRFDCEeuh5NpLcuE3vA" name="process-diagram">
+    <bpmndi:BPMNPlane id="_PXVYRVDCEeuh5NpLcuE3vA" bpmnElement="_PXVX8VDCEeuh5NpLcuE3vA">
+      <bpmndi:BPMNShape id="_PXVYXlDCEeuh5NpLcuE3vA" bpmnElement="_PXVYB1DCEeuh5NpLcuE3vA" isHorizontal="true">
+        <dc:Bounds x="155" y="450" width="1220" height="322" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXV_G1DCEeuh5NpLcuE3vA" bpmnElement="_PXVYCVDCEeuh5NpLcuE3vA" isHorizontal="true">
+        <dc:Bounds x="180" y="450" width="1195" height="322" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXVYaFDCEeuh5NpLcuE3vA" bpmnElement="_PXVX-VDCEeuh5NpLcuE3vA" isHorizontal="true">
+        <dc:Bounds x="155" y="221" width="1220" height="204" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXV_FFDCEeuh5NpLcuE3vA" bpmnElement="_PXVX-1DCEeuh5NpLcuE3vA" isHorizontal="true">
+        <dc:Bounds x="180" y="221" width="1195" height="204" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXV_BFDCEeuh5NpLcuE3vA" bpmnElement="_PXVX81DCEeuh5NpLcuE3vA" isHorizontal="true">
+        <dc:Bounds x="155" y="50" width="1220" height="180" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXV_CVDCEeuh5NpLcuE3vA" bpmnElement="_PXVX9VDCEeuh5NpLcuE3vA" isHorizontal="true">
+        <dc:Bounds x="180" y="50" width="1195" height="180" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="_PXV_HFDCEeuh5NpLcuE3vA" bpmnElement="_PXVYIlDCEeuh5NpLcuE3vA">
+        <di:waypoint x="275" y="360" />
+        <di:waypoint x="275" y="586" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_MlDCEeuh5NpLcuE3vA" bpmnElement="_PXVYQlDCEeuh5NpLcuE3vA">
+        <di:waypoint x="1140" y="565" />
+        <di:waypoint x="1240" y="565" />
+        <bpmndi:BPMNLabel id="_PXV_M1DCEeuh5NpLcuE3vA">
+          <dc:Bounds x="1152" y="550" width="26" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_RlDCEeuh5NpLcuE3vA" bpmnElement="_PXVYQVDCEeuh5NpLcuE3vA">
+        <di:waypoint x="995" y="712" />
+        <di:waypoint x="1120" y="712" />
+        <di:waypoint x="1120" y="596" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_MFDCEeuh5NpLcuE3vA" bpmnElement="_PXVYQFDCEeuh5NpLcuE3vA">
+        <di:waypoint x="990" y="660" />
+        <di:waypoint x="1120" y="660" />
+        <di:waypoint x="1120" y="596" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_R1DCEeuh5NpLcuE3vA" bpmnElement="_PXVYP1DCEeuh5NpLcuE3vA">
+        <di:waypoint x="990" y="616" />
+        <di:waypoint x="1120" y="616" />
+        <di:waypoint x="1120" y="596" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_J1DCEeuh5NpLcuE3vA" bpmnElement="_PXVYPlDCEeuh5NpLcuE3vA">
+        <di:waypoint x="990" y="576" />
+        <di:waypoint x="1100" y="576" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_QFDCEeuh5NpLcuE3vA" bpmnElement="_PXVYPVDCEeuh5NpLcuE3vA">
+        <di:waypoint x="990" y="534" />
+        <di:waypoint x="1120" y="534" />
+        <di:waypoint x="1120" y="556" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_KVDCEeuh5NpLcuE3vA" bpmnElement="_PXVYPFDCEeuh5NpLcuE3vA">
+        <di:waypoint x="985" y="488" />
+        <di:waypoint x="1120" y="488" />
+        <di:waypoint x="1120" y="556" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_IFDCEeuh5NpLcuE3vA" bpmnElement="_PXVYO1DCEeuh5NpLcuE3vA">
+        <di:waypoint x="850" y="700" />
+        <di:waypoint x="865" y="700" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_IVDCEeuh5NpLcuE3vA" bpmnElement="_PXVYOlDCEeuh5NpLcuE3vA">
+        <di:waypoint x="850" y="672" />
+        <di:waypoint x="870" y="672" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_H1DCEeuh5NpLcuE3vA" bpmnElement="_PXVYOVDCEeuh5NpLcuE3vA">
+        <di:waypoint x="850" y="614" />
+        <di:waypoint x="870" y="614" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_NFDCEeuh5NpLcuE3vA" bpmnElement="_PXVYOFDCEeuh5NpLcuE3vA">
+        <di:waypoint x="830" y="594" />
+        <di:waypoint x="870" y="574" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_QVDCEeuh5NpLcuE3vA" bpmnElement="_PXVYN1DCEeuh5NpLcuE3vA">
+        <di:waypoint x="850" y="534" />
+        <di:waypoint x="870" y="534" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_KFDCEeuh5NpLcuE3vA" bpmnElement="_PXVYNlDCEeuh5NpLcuE3vA">
+        <di:waypoint x="830" y="514" />
+        <di:waypoint x="830" y="488" />
+        <di:waypoint x="865" y="488" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_MVDCEeuh5NpLcuE3vA" bpmnElement="_PXVYNVDCEeuh5NpLcuE3vA">
+        <di:waypoint x="763" y="689" />
+        <di:waypoint x="810" y="689" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_OlDCEeuh5NpLcuE3vA" bpmnElement="_PXVYNFDCEeuh5NpLcuE3vA">
+        <di:waypoint x="763" y="614" />
+        <di:waypoint x="810" y="614" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_NVDCEeuh5NpLcuE3vA" bpmnElement="_PXVYM1DCEeuh5NpLcuE3vA">
+        <di:waypoint x="763" y="534" />
+        <di:waypoint x="810" y="534" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_JlDCEeuh5NpLcuE3vA" bpmnElement="_PXVYMlDCEeuh5NpLcuE3vA">
+        <di:waypoint x="580" y="679" />
+        <di:waypoint x="673" y="679" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_PVDCEeuh5NpLcuE3vA" bpmnElement="_PXVYMFDCEeuh5NpLcuE3vA">
+        <di:waypoint x="575" y="614" />
+        <di:waypoint x="673" y="614" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_LVDCEeuh5NpLcuE3vA" bpmnElement="_PXVYLlDCEeuh5NpLcuE3vA">
+        <di:waypoint x="575" y="554" />
+        <di:waypoint x="673" y="554" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_KlDCEeuh5NpLcuE3vA" bpmnElement="_PXVYMVDCEeuh5NpLcuE3vA">
+        <di:waypoint x="380" y="634" />
+        <di:waypoint x="380" y="679" />
+        <di:waypoint x="460" y="679" />
+        <bpmndi:BPMNLabel id="_PXV_K1DCEeuh5NpLcuE3vA">
+          <dc:Bounds x="404" y="631" width="62" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_IlDCEeuh5NpLcuE3vA" bpmnElement="_PXVYL1DCEeuh5NpLcuE3vA">
+        <di:waypoint x="400" y="614" />
+        <di:waypoint x="465" y="614" />
+        <bpmndi:BPMNLabel id="_PXV_I1DCEeuh5NpLcuE3vA">
+          <dc:Bounds x="450" y="546" width="58" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_RFDCEeuh5NpLcuE3vA" bpmnElement="_PXVYLVDCEeuh5NpLcuE3vA">
+        <di:waypoint x="380" y="594" />
+        <di:waypoint x="380" y="554" />
+        <di:waypoint x="465" y="554" />
+        <bpmndi:BPMNLabel id="_PXV_RVDCEeuh5NpLcuE3vA">
+          <dc:Bounds x="320" y="489" width="54" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_LlDCEeuh5NpLcuE3vA" bpmnElement="_PXVYQ1DCEeuh5NpLcuE3vA">
+        <di:waypoint x="330" y="614" />
+        <di:waypoint x="360" y="614" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_HVDCEeuh5NpLcuE3vA" bpmnElement="_PXVYLFDCEeuh5NpLcuE3vA">
+        <di:waypoint x="1290" y="310" />
+        <di:waypoint x="1318" y="310" />
+        <di:waypoint x="1318" y="340" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_Q1DCEeuh5NpLcuE3vA" bpmnElement="_PXVYK1DCEeuh5NpLcuE3vA">
+        <di:waypoint x="1230" y="370" />
+        <di:waypoint x="1270" y="370" />
+        <di:waypoint x="1270" y="330" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_JFDCEeuh5NpLcuE3vA" bpmnElement="_PXVYKlDCEeuh5NpLcuE3vA">
+        <di:waypoint x="1226" y="291" />
+        <di:waypoint x="1250" y="291" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_PlDCEeuh5NpLcuE3vA" bpmnElement="_PXVYKVDCEeuh5NpLcuE3vA">
+        <di:waypoint x="1070" y="310" />
+        <di:waypoint x="1070" y="370" />
+        <di:waypoint x="1140" y="370" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_LFDCEeuh5NpLcuE3vA" bpmnElement="_PXVYKFDCEeuh5NpLcuE3vA">
+        <di:waypoint x="1090" y="281" />
+        <di:waypoint x="1136" y="281" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_HlDCEeuh5NpLcuE3vA" bpmnElement="_PXVYJ1DCEeuh5NpLcuE3vA">
+        <di:waypoint x="970" y="281" />
+        <di:waypoint x="1050" y="281" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_N1DCEeuh5NpLcuE3vA" bpmnElement="_PXVYJlDCEeuh5NpLcuE3vA">
+        <di:waypoint x="692" y="262" />
+        <di:waypoint x="880" y="262" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_OFDCEeuh5NpLcuE3vA" bpmnElement="_PXVYJVDCEeuh5NpLcuE3vA">
+        <di:waypoint x="540" y="330" />
+        <di:waypoint x="540" y="366" />
+        <di:waypoint x="733" y="366" />
+        <bpmndi:BPMNLabel id="_PXV_OVDCEeuh5NpLcuE3vA">
+          <dc:Bounds x="610" y="369" width="17" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_SFDCEeuh5NpLcuE3vA" bpmnElement="_PXVYJFDCEeuh5NpLcuE3vA">
+        <di:waypoint x="440" y="262" />
+        <di:waypoint x="541" y="262" />
+        <di:waypoint x="541" y="290" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_O1DCEeuh5NpLcuE3vA" bpmnElement="_PXVYI1DCEeuh5NpLcuE3vA">
+        <di:waypoint x="440" y="262" />
+        <di:waypoint x="602" y="262" />
+        <bpmndi:BPMNLabel id="_PXV_PFDCEeuh5NpLcuE3vA">
+          <dc:Bounds x="566" y="265" width="22" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_L1DCEeuh5NpLcuE3vA" bpmnElement="_PXVYIVDCEeuh5NpLcuE3vA">
+        <di:waypoint x="320" y="330" />
+        <di:waypoint x="335" y="330" />
+        <di:waypoint x="335" y="262" />
+        <di:waypoint x="350" y="262" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_P1DCEeuh5NpLcuE3vA" bpmnElement="_PXVYIFDCEeuh5NpLcuE3vA">
+        <di:waypoint x="755" y="110" />
+        <di:waypoint x="755" y="150" />
+        <di:waypoint x="247" y="150" />
+        <di:waypoint x="247" y="300" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_JVDCEeuh5NpLcuE3vA" bpmnElement="_PXVYH1DCEeuh5NpLcuE3vA">
+        <di:waypoint x="766" y="336" />
+        <di:waypoint x="766" y="110" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_NlDCEeuh5NpLcuE3vA" bpmnElement="_PXVYHlDCEeuh5NpLcuE3vA">
+        <di:waypoint x="440" y="80" />
+        <di:waypoint x="710" y="80" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_PXV_QlDCEeuh5NpLcuE3vA" bpmnElement="_PXVYHVDCEeuh5NpLcuE3vA">
+        <di:waypoint x="266" y="80" />
+        <di:waypoint x="350" y="80" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="_PXV_FVDCEeuh5NpLcuE3vA" bpmnElement="_PXVX9lDCEeuh5NpLcuE3vA">
+        <dc:Bounds x="231" y="63" width="35" height="35" />
+        <bpmndi:BPMNLabel id="_PXV_FlDCEeuh5NpLcuE3vA">
+          <dc:Bounds x="237" y="105" width="25" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXV_DlDCEeuh5NpLcuE3vA" bpmnElement="_PXVX91DCEeuh5NpLcuE3vA">
+        <dc:Bounds x="350" y="50" width="90" height="60" />
+        <bpmndi:BPMNLabel id="_PXV_D1DCEeuh5NpLcuE3vA" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXV_ElDCEeuh5NpLcuE3vA" bpmnElement="_PXVX-FDCEeuh5NpLcuE3vA">
+        <dc:Bounds x="710" y="50" width="90" height="60" />
+        <bpmndi:BPMNLabel id="_PXV_E1DCEeuh5NpLcuE3vA" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXVYR1DCEeuh5NpLcuE3vA" bpmnElement="_PXVX_FDCEeuh5NpLcuE3vA">
+        <dc:Bounds x="230" y="300" width="90" height="60" />
+        <bpmndi:BPMNLabel id="_PXVYSFDCEeuh5NpLcuE3vA" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXVYUFDCEeuh5NpLcuE3vA" bpmnElement="_PXVX_VDCEeuh5NpLcuE3vA">
+        <dc:Bounds x="350" y="232" width="90" height="60" />
+        <bpmndi:BPMNLabel id="_PXVYUVDCEeuh5NpLcuE3vA" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXVYWlDCEeuh5NpLcuE3vA" bpmnElement="_PXVX_lDCEeuh5NpLcuE3vA" isMarkerVisible="true">
+        <dc:Bounds x="520" y="290" width="40" height="40" />
+        <bpmndi:BPMNLabel id="_PXVYW1DCEeuh5NpLcuE3vA">
+          <dc:Bounds x="501" y="334" width="37" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXV_B1DCEeuh5NpLcuE3vA" bpmnElement="_PXVX_1DCEeuh5NpLcuE3vA">
+        <dc:Bounds x="602" y="232" width="90" height="60" />
+        <bpmndi:BPMNLabel id="_PXV_CFDCEeuh5NpLcuE3vA" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXVYaVDCEeuh5NpLcuE3vA" bpmnElement="_PXVYAFDCEeuh5NpLcuE3vA">
+        <dc:Bounds x="733" y="336" width="90" height="60" />
+        <bpmndi:BPMNLabel id="_PXVYalDCEeuh5NpLcuE3vA" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXV_AlDCEeuh5NpLcuE3vA" bpmnElement="_PXVYBlDCEeuh5NpLcuE3vA">
+        <dc:Bounds x="880" y="232" width="90" height="60" />
+        <bpmndi:BPMNLabel id="_PXV_A1DCEeuh5NpLcuE3vA" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXV_BVDCEeuh5NpLcuE3vA" bpmnElement="_PXVYAVDCEeuh5NpLcuE3vA">
+        <dc:Bounds x="1050" y="270" width="40" height="40" />
+        <bpmndi:BPMNLabel id="_PXV_BlDCEeuh5NpLcuE3vA">
+          <dc:Bounds x="1044" y="254" width="52" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXVYZlDCEeuh5NpLcuE3vA" bpmnElement="_PXVYAlDCEeuh5NpLcuE3vA">
+        <dc:Bounds x="1136" y="232" width="90" height="60" />
+        <bpmndi:BPMNLabel id="_PXVYZ1DCEeuh5NpLcuE3vA" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXVYSVDCEeuh5NpLcuE3vA" bpmnElement="_PXVYA1DCEeuh5NpLcuE3vA">
+        <dc:Bounds x="1140" y="340" width="90" height="60" />
+        <bpmndi:BPMNLabel id="_PXVYSlDCEeuh5NpLcuE3vA" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXVYS1DCEeuh5NpLcuE3vA" bpmnElement="_PXVYBFDCEeuh5NpLcuE3vA">
+        <dc:Bounds x="1250" y="290" width="40" height="40" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXVYVlDCEeuh5NpLcuE3vA" bpmnElement="_PXVYBVDCEeuh5NpLcuE3vA">
+        <dc:Bounds x="1300" y="340" width="35" height="35" />
+        <bpmndi:BPMNLabel id="_PXVYV1DCEeuh5NpLcuE3vA">
+          <dc:Bounds x="1292" y="382" width="52" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXVYVFDCEeuh5NpLcuE3vA" bpmnElement="_PXVYC1DCEeuh5NpLcuE3vA">
+        <dc:Bounds x="465" y="539" width="110" height="30" />
+        <bpmndi:BPMNLabel id="_PXVYVVDCEeuh5NpLcuE3vA" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXV_EFDCEeuh5NpLcuE3vA" bpmnElement="_PXVYDFDCEeuh5NpLcuE3vA">
+        <dc:Bounds x="465" y="594" width="110" height="40" />
+        <bpmndi:BPMNLabel id="_PXV_EVDCEeuh5NpLcuE3vA" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXVYX1DCEeuh5NpLcuE3vA" bpmnElement="_PXVYDVDCEeuh5NpLcuE3vA">
+        <dc:Bounds x="460" y="659" width="120" height="40" />
+        <bpmndi:BPMNLabel id="_PXVYYFDCEeuh5NpLcuE3vA" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXVYYlDCEeuh5NpLcuE3vA" bpmnElement="_PXVYDlDCEeuh5NpLcuE3vA">
+        <dc:Bounds x="673" y="513" width="90" height="60" />
+        <bpmndi:BPMNLabel id="_PXVYY1DCEeuh5NpLcuE3vA" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXV_DFDCEeuh5NpLcuE3vA" bpmnElement="_PXVYD1DCEeuh5NpLcuE3vA">
+        <dc:Bounds x="673" y="584" width="90" height="60" />
+        <bpmndi:BPMNLabel id="_PXV_DVDCEeuh5NpLcuE3vA" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXVYUlDCEeuh5NpLcuE3vA" bpmnElement="_PXVYEFDCEeuh5NpLcuE3vA">
+        <dc:Bounds x="673" y="659" width="90" height="60" />
+        <bpmndi:BPMNLabel id="_PXVYU1DCEeuh5NpLcuE3vA" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXVYa1DCEeuh5NpLcuE3vA" bpmnElement="_PXVYEVDCEeuh5NpLcuE3vA" isMarkerVisible="true">
+        <dc:Bounds x="810" y="514" width="40" height="40" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXVYbFDCEeuh5NpLcuE3vA" bpmnElement="_PXVYElDCEeuh5NpLcuE3vA" isMarkerVisible="true">
+        <dc:Bounds x="810" y="594" width="40" height="40" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXVYRlDCEeuh5NpLcuE3vA" bpmnElement="_PXVYE1DCEeuh5NpLcuE3vA" isMarkerVisible="true">
+        <dc:Bounds x="810" y="669" width="40" height="40" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXVYXFDCEeuh5NpLcuE3vA" bpmnElement="_PXVYFFDCEeuh5NpLcuE3vA">
+        <dc:Bounds x="865" y="473" width="120" height="30" />
+        <bpmndi:BPMNLabel id="_PXVYXVDCEeuh5NpLcuE3vA" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXVYTFDCEeuh5NpLcuE3vA" bpmnElement="_PXVYFVDCEeuh5NpLcuE3vA">
+        <dc:Bounds x="870" y="519" width="120" height="30" />
+        <bpmndi:BPMNLabel id="_PXVYTVDCEeuh5NpLcuE3vA" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXV_AFDCEeuh5NpLcuE3vA" bpmnElement="_PXVYFlDCEeuh5NpLcuE3vA">
+        <dc:Bounds x="870" y="561" width="120" height="30" />
+        <bpmndi:BPMNLabel id="_PXV_AVDCEeuh5NpLcuE3vA" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXV_ClDCEeuh5NpLcuE3vA" bpmnElement="_PXVYF1DCEeuh5NpLcuE3vA">
+        <dc:Bounds x="870" y="599" width="120" height="30" />
+        <bpmndi:BPMNLabel id="_PXV_C1DCEeuh5NpLcuE3vA" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXVYZFDCEeuh5NpLcuE3vA" bpmnElement="_PXVYGFDCEeuh5NpLcuE3vA">
+        <dc:Bounds x="870" y="645" width="120" height="30" />
+        <bpmndi:BPMNLabel id="_PXVYZVDCEeuh5NpLcuE3vA" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXV_F1DCEeuh5NpLcuE3vA" bpmnElement="_PXVYGVDCEeuh5NpLcuE3vA">
+        <dc:Bounds x="865" y="692" width="130" height="40" />
+        <bpmndi:BPMNLabel id="_PXV_GFDCEeuh5NpLcuE3vA" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXVYYVDCEeuh5NpLcuE3vA" bpmnElement="_PXVYGlDCEeuh5NpLcuE3vA">
+        <dc:Bounds x="1100" y="556" width="40" height="40" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXVYTlDCEeuh5NpLcuE3vA" bpmnElement="_PXVYHFDCEeuh5NpLcuE3vA">
+        <dc:Bounds x="1240" y="540" width="35" height="35" />
+        <bpmndi:BPMNLabel id="_PXVYT1DCEeuh5NpLcuE3vA">
+          <dc:Bounds x="1214" y="582" width="89" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_PXV_GVDCEeuh5NpLcuE3vA" bpmnElement="_PXVYG1DCEeuh5NpLcuE3vA" isMarkerVisible="true">
+        <dc:Bounds x="360" y="594" width="40" height="40" />
+        <bpmndi:BPMNLabel id="_PXV_GlDCEeuh5NpLcuE3vA">
+          <dc:Bounds x="353" y="638" width="55" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1j5vvde_di" bpmnElement="_PXVYClDCEeuh5NpLcuE3vA">
+        <dc:Bounds x="230" y="586" width="100" height="80" />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn2:definitions>

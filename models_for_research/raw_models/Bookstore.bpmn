@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn2:definitions xmlns="http://genmymodel.com/bpmn2" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="_KFTNMHQaEeuCM8KqVoRWiA" exporter="GenMyModel" exporterVersion="1.0" expressionLanguage="http://www.w3.org/1999/XPath" name="Bookstore" targetNamespace="http://genmymodel.com/bpmn2" typeLanguage="http://www.w3.org/2001/XMLSchema">
+  <bpmn2:extensionElements/>
+  <bpmn2:process id="_KFTNMXQaEeuCM8KqVoRWiA" name="Process" processType="None">
+    <bpmn2:laneSet id="_KFTNMnQaEeuCM8KqVoRWiA" name="Lane Set">
+      <bpmn2:lane id="_KFTNM3QaEeuCM8KqVoRWiA" name="Sales">
+        <bpmn2:documentation id="_KFTNN3QaEeuCM8KqVoRWiA" textFormat="text/plain">Sales Department Responsible for Make the order and Sending it to Finance for charging System&lt;br></bpmn2:documentation>
+        <bpmn2:flowNodeRef>_KFTNNHQaEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_KFTNNXQaEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_KFTNNnQaEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+      </bpmn2:lane>
+      <bpmn2:lane id="_KFTNOHQaEeuCM8KqVoRWiA" name="Financing">
+        <bpmn2:documentation id="_KFTNPnQaEeuCM8KqVoRWiA" textFormat="text/plain">Charging and creating the bills&lt;br></bpmn2:documentation>
+        <bpmn2:flowNodeRef>_KFTNOXQaEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_KFTNOnQaEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_KFTNO3QaEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_KFTNPHQaEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_KFTNPXQaEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+      </bpmn2:lane>
+      <bpmn2:lane id="_KFTNP3QaEeuCM8KqVoRWiA" name="Deliver">
+        <bpmn2:documentation id="_KFTNRnQaEeuCM8KqVoRWiA" textFormat="text/plain">Shipping and Delivering Department &lt;br></bpmn2:documentation>
+        <bpmn2:flowNodeRef>_KFTNQHQaEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_KFTNQXQaEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_KFTNQnQaEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_KFTNQ3QaEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_KFTNRHQaEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_KFTNRXQaEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+      </bpmn2:lane>
+    </bpmn2:laneSet>
+    <bpmn2:serviceTask id="_KFTNNHQaEeuCM8KqVoRWiA" name="Record Order" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##WebService">
+      <bpmn2:documentation id="_KFT0QHQaEeuCM8KqVoRWiA" textFormat="text/plain">add the order to database after checking it&lt;br></bpmn2:documentation>
+      <bpmn2:incoming>_KFTNR3QaEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_KFTNSHQaEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:serviceTask>
+    <bpmn2:startEvent id="_KFTNNXQaEeuCM8KqVoRWiA" name="Receiving Request" isInterrupting="true">
+      <bpmn2:documentation id="_KFT0QXQaEeuCM8KqVoRWiA" textFormat="text/plain">Receive the Request from web service&lt;br></bpmn2:documentation>
+      <bpmn2:outgoing>_KFTNR3QaEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:messageEventDefinition id="_KFT0QnQaEeuCM8KqVoRWiA"/>
+    </bpmn2:startEvent>
+    <bpmn2:sequenceFlow id="_KFTNR3QaEeuCM8KqVoRWiA" name="" sourceRef="_KFTNNXQaEeuCM8KqVoRWiA" targetRef="_KFTNNHQaEeuCM8KqVoRWiA"/>
+    <bpmn2:exclusiveGateway id="_KFTNNnQaEeuCM8KqVoRWiA" name="Check Stock" gatewayDirection="Unspecified">
+      <bpmn2:documentation id="_KFT0RXQaEeuCM8KqVoRWiA" textFormat="text/plain">check if the order is exist as a hard copy in the store :&lt;br>- if yes : send the request to Finance Department &lt;br>- if No : make an order for a new hard copy from the manufacture to print a new book&lt;br>&lt;br></bpmn2:documentation>
+      <bpmn2:incoming>_KFTNSHQaEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_KFT0Q3QaEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:outgoing>_KFT0RHQaEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:exclusiveGateway id="_KFTNOXQaEeuCM8KqVoRWiA" name="All Items Available" gatewayDirection="Unspecified">
+      <bpmn2:documentation id="_KFT0SHQaEeuCM8KqVoRWiA" textFormat="text/plain">All Items are exist now in the store and ready to deliver and charging&lt;br></bpmn2:documentation>
+      <bpmn2:incoming>_KFT0RHQaEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:incoming>_KFT0RnQaEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_KFT0R3QaEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="_KFTNSHQaEeuCM8KqVoRWiA" name="" sourceRef="_KFTNNHQaEeuCM8KqVoRWiA" targetRef="_KFTNNnQaEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_KFT0RHQaEeuCM8KqVoRWiA" name="" sourceRef="_KFTNNnQaEeuCM8KqVoRWiA" targetRef="_KFTNOXQaEeuCM8KqVoRWiA">
+      <bpmn2:documentation id="_KFT0SXQaEeuCM8KqVoRWiA" textFormat="text/plain">&lt;br></bpmn2:documentation>
+    </bpmn2:sequenceFlow>
+    <bpmn2:parallelGateway id="_KFTNOnQaEeuCM8KqVoRWiA" gatewayDirection="Unspecified">
+      <bpmn2:documentation id="_KFT0THQaEeuCM8KqVoRWiA" textFormat="text/plain">All Items are exist now in the store and ready to deliver and charging&lt;br></bpmn2:documentation>
+      <bpmn2:incoming>_KFT0R3QaEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_KFT0SnQaEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:outgoing>_KFT0S3QaEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:parallelGateway>
+    <bpmn2:serviceTask id="_KFTNO3QaEeuCM8KqVoRWiA" name="Charging Issue" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##WebService">
+      <bpmn2:documentation id="_KFT0TnQaEeuCM8KqVoRWiA" textFormat="text/plain">Make a charging bill and send it to the customer&lt;br></bpmn2:documentation>
+      <bpmn2:incoming>_KFT0S3QaEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_KFT0TXQaEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:serviceTask>
+    <bpmn2:intermediateCatchEvent id="_KFTNPHQaEeuCM8KqVoRWiA" name="Confirm Recieving">
+      <bpmn2:documentation id="_KFT0UHQaEeuCM8KqVoRWiA" textFormat="text/plain">Get confirmation of Payment from the customer&lt;br></bpmn2:documentation>
+      <bpmn2:incoming>_KFT0TXQaEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_KFT0T3QaEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:messageEventDefinition id="_KFT0UXQaEeuCM8KqVoRWiA"/>
+    </bpmn2:intermediateCatchEvent>
+    <bpmn2:manualTask id="_KFTNQXQaEeuCM8KqVoRWiA" name="Seperate Books For Request and Packing" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:documentation id="_KFUbUXQaEeuCM8KqVoRWiA" textFormat="text/plain">Separate the orders of all clients and send the required book with its bill and Packing them&lt;br></bpmn2:documentation>
+      <bpmn2:incoming>_KFT0SnQaEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_KFUbUHQaEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:manualTask>
+    <bpmn2:serviceTask id="_KFTNPXQaEeuCM8KqVoRWiA" name="Create Invoice" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##WebService">
+      <bpmn2:documentation id="_KFUbU3QaEeuCM8KqVoRWiA" textFormat="text/plain">Create hard copy of the bill and send it with the book to the customer&lt;br></bpmn2:documentation>
+      <bpmn2:incoming>_KFT0T3QaEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_KFUbUnQaEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:serviceTask>
+    <bpmn2:parallelGateway id="_KFTNQnQaEeuCM8KqVoRWiA" gatewayDirection="Unspecified">
+      <bpmn2:documentation id="_KFUbVXQaEeuCM8KqVoRWiA" textFormat="text/plain">Gather the all info &lt;br></bpmn2:documentation>
+      <bpmn2:incoming>_KFUbUHQaEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:incoming>_KFUbUnQaEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_KFUbVHQaEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:parallelGateway>
+    <bpmn2:manualTask id="_KFTNQ3QaEeuCM8KqVoRWiA" name="Deliver The Books to Customer" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:documentation id="_KFUbV3QaEeuCM8KqVoRWiA" textFormat="text/plain">Send the books to the customer&lt;br></bpmn2:documentation>
+      <bpmn2:incoming>_KFUbVHQaEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_KFUbVnQaEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:manualTask>
+    <bpmn2:sendTask id="_KFTNRHQaEeuCM8KqVoRWiA" name="Confirm Delivery" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##WebService">
+      <bpmn2:documentation id="_KFUbWXQaEeuCM8KqVoRWiA" textFormat="text/plain">Get Confirmation of delivering the book from the costumer&lt;br></bpmn2:documentation>
+      <bpmn2:incoming>_KFUbVnQaEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_KFUbWHQaEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:sendTask>
+    <bpmn2:endEvent id="_KFTNRXQaEeuCM8KqVoRWiA" name=" End">
+      <bpmn2:documentation id="_KFUbWnQaEeuCM8KqVoRWiA" textFormat="text/plain">Process Finished&lt;br></bpmn2:documentation>
+      <bpmn2:incoming>_KFUbWHQaEeuCM8KqVoRWiA</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:businessRuleTask id="_KFTNQHQaEeuCM8KqVoRWiA" name="Requset" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:documentation id="_KFVCYHQaEeuCM8KqVoRWiA" textFormat="text/plain">Request new book from Manufacture via delivery Department&lt;br></bpmn2:documentation>
+      <bpmn2:incoming>_KFT0Q3QaEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_KFT0RnQaEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:businessRuleTask>
+    <bpmn2:sequenceFlow id="_KFT0Q3QaEeuCM8KqVoRWiA" name="One or more&#xA;item&#xA;unavailable" sourceRef="_KFTNNnQaEeuCM8KqVoRWiA" targetRef="_KFTNQHQaEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_KFT0RnQaEeuCM8KqVoRWiA" name="" sourceRef="_KFTNQHQaEeuCM8KqVoRWiA" targetRef="_KFTNOXQaEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_KFT0R3QaEeuCM8KqVoRWiA" name="" sourceRef="_KFTNOXQaEeuCM8KqVoRWiA" targetRef="_KFTNOnQaEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_KFT0S3QaEeuCM8KqVoRWiA" name="" sourceRef="_KFTNOnQaEeuCM8KqVoRWiA" targetRef="_KFTNO3QaEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_KFT0SnQaEeuCM8KqVoRWiA" name="" sourceRef="_KFTNOnQaEeuCM8KqVoRWiA" targetRef="_KFTNQXQaEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_KFT0TXQaEeuCM8KqVoRWiA" name="" sourceRef="_KFTNO3QaEeuCM8KqVoRWiA" targetRef="_KFTNPHQaEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_KFUbUHQaEeuCM8KqVoRWiA" name="" sourceRef="_KFTNQXQaEeuCM8KqVoRWiA" targetRef="_KFTNQnQaEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_KFT0T3QaEeuCM8KqVoRWiA" name="" sourceRef="_KFTNPHQaEeuCM8KqVoRWiA" targetRef="_KFTNPXQaEeuCM8KqVoRWiA">
+      <bpmn2:documentation id="_KFVCYXQaEeuCM8KqVoRWiA" textFormat="text/plain">&lt;br></bpmn2:documentation>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="_KFUbUnQaEeuCM8KqVoRWiA" name="" sourceRef="_KFTNPXQaEeuCM8KqVoRWiA" targetRef="_KFTNQnQaEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_KFUbVHQaEeuCM8KqVoRWiA" name="" sourceRef="_KFTNQnQaEeuCM8KqVoRWiA" targetRef="_KFTNQ3QaEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_KFUbVnQaEeuCM8KqVoRWiA" name="" sourceRef="_KFTNQ3QaEeuCM8KqVoRWiA" targetRef="_KFTNRHQaEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_KFUbWHQaEeuCM8KqVoRWiA" name="" sourceRef="_KFTNRHQaEeuCM8KqVoRWiA" targetRef="_KFTNRXQaEeuCM8KqVoRWiA">
+      <bpmn2:documentation id="_KFVCYnQaEeuCM8KqVoRWiA" textFormat="text/plain">&lt;br></bpmn2:documentation>
+    </bpmn2:sequenceFlow>
+  </bpmn2:process>
+  <bpmn2:collaboration id="_KFVCY3QaEeuCM8KqVoRWiA" name="Collaboration">
+    <bpmn2:documentation id="_KFVCZHQaEeuCM8KqVoRWiA" textFormat="text/plain">&lt;br></bpmn2:documentation>
+    <bpmn2:participant id="_KFVCZXQaEeuCM8KqVoRWiA" name="Online Books Selling Process" processRef="_KFTNMXQaEeuCM8KqVoRWiA">
+      <bpmn2:documentation id="_KFVCZnQaEeuCM8KqVoRWiA" textFormat="text/plain">&lt;br></bpmn2:documentation>
+    </bpmn2:participant>
+    <bpmn2:participant id="_KFVCZ3QaEeuCM8KqVoRWiA" name="Client" processRef="_KFVCaHQaEeuCM8KqVoRWiA">
+      <bpmn2:documentation id="_KFVCaXQaEeuCM8KqVoRWiA" textFormat="text/plain">The client who will request the hardcopy of the book online &lt;br></bpmn2:documentation>
+    </bpmn2:participant>
+    <bpmn2:participant id="_KFVCanQaEeuCM8KqVoRWiA" name="Manufacture" processRef="_KFVCa3QaEeuCM8KqVoRWiA">
+      <bpmn2:documentation id="_KFVCbHQaEeuCM8KqVoRWiA" textFormat="text/plain">&lt;br></bpmn2:documentation>
+    </bpmn2:participant>
+    <bpmn2:messageFlow id="_KFVCbXQaEeuCM8KqVoRWiA" name="" sourceRef="_KFVCbnQaEeuCM8KqVoRWiA" targetRef="_KFTNNHQaEeuCM8KqVoRWiA">
+      <bpmn2:documentation id="_KFVCb3QaEeuCM8KqVoRWiA" textFormat="text/plain">&lt;br></bpmn2:documentation>
+    </bpmn2:messageFlow>
+    <bpmn2:messageFlow id="_KFVCcHQaEeuCM8KqVoRWiA" name="" sourceRef="_KFTNQHQaEeuCM8KqVoRWiA" targetRef="_KFVCcXQaEeuCM8KqVoRWiA"/>
+    <bpmn2:messageFlow id="_KFVCcnQaEeuCM8KqVoRWiA" name="" sourceRef="_KFVCc3QaEeuCM8KqVoRWiA" targetRef="_KFTNPHQaEeuCM8KqVoRWiA"/>
+    <bpmn2:messageFlow id="_KFVCdHQaEeuCM8KqVoRWiA" name="" sourceRef="_KFTNQ3QaEeuCM8KqVoRWiA" targetRef="_KFVCdXQaEeuCM8KqVoRWiA"/>
+    <bpmn2:messageFlow id="_KFVCdnQaEeuCM8KqVoRWiA" name="" sourceRef="_KFVCd3QaEeuCM8KqVoRWiA" targetRef="_KFTNRHQaEeuCM8KqVoRWiA"/>
+  </bpmn2:collaboration>
+  <bpmn2:process id="_KFVCeHQaEeuCM8KqVoRWiA" processType="None">
+    <bpmn2:laneSet id="_KFVCeXQaEeuCM8KqVoRWiA" name="Lane Set">
+      <bpmn2:lane id="_KFVCenQaEeuCM8KqVoRWiA" name="Lane"/>
+    </bpmn2:laneSet>
+  </bpmn2:process>
+  <bpmn2:process id="_KFVCe3QaEeuCM8KqVoRWiA" processType="None">
+    <bpmn2:laneSet id="_KFVCfHQaEeuCM8KqVoRWiA" name="Lane Set">
+      <bpmn2:lane id="_KFVCfXQaEeuCM8KqVoRWiA" name="Lane"/>
+    </bpmn2:laneSet>
+  </bpmn2:process>
+  <bpmn2:process id="_KFVCaHQaEeuCM8KqVoRWiA" name="process" processType="None">
+    <bpmn2:documentation id="_KFVCfnQaEeuCM8KqVoRWiA" textFormat="text/plain">The client who will request the hardcopy of the book online &lt;br></bpmn2:documentation>
+    <bpmn2:startEvent id="_KFVCbnQaEeuCM8KqVoRWiA" name="Request For Books" isInterrupting="true">
+      <bpmn2:documentation id="_KFVCf3QaEeuCM8KqVoRWiA" textFormat="text/plain">The client enter the a web page service to make a request for a new book by filling the required information&lt;br></bpmn2:documentation>
+      <bpmn2:messageEventDefinition id="_KFVCgHQaEeuCM8KqVoRWiA"/>
+    </bpmn2:startEvent>
+    <bpmn2:startEvent id="_KFVCc3QaEeuCM8KqVoRWiA" name="Confirm Payment" isInterrupting="true">
+      <bpmn2:documentation id="_KFVCgXQaEeuCM8KqVoRWiA" textFormat="text/plain">Pay online &lt;br></bpmn2:documentation>
+      <bpmn2:messageEventDefinition id="_KFVCgnQaEeuCM8KqVoRWiA"/>
+    </bpmn2:startEvent>
+    <bpmn2:startEvent id="_KFVCdXQaEeuCM8KqVoRWiA" name="Books Received" isInterrupting="true">
+      <bpmn2:documentation id="_KFVpcHQaEeuCM8KqVoRWiA" textFormat="text/plain">the book is received to the costumer&lt;br></bpmn2:documentation>
+      <bpmn2:messageEventDefinition id="_KFVpcXQaEeuCM8KqVoRWiA"/>
+    </bpmn2:startEvent>
+    <bpmn2:startEvent id="_KFVCd3QaEeuCM8KqVoRWiA" name="Acknowledge&#xA;Receipt" isInterrupting="true">
+      <bpmn2:documentation id="_KFVpcnQaEeuCM8KqVoRWiA" textFormat="text/plain">Sign for the shipping delivered to the costumer&lt;br></bpmn2:documentation>
+      <bpmn2:messageEventDefinition id="_KFVpc3QaEeuCM8KqVoRWiA"/>
+    </bpmn2:startEvent>
+  </bpmn2:process>
+  <bpmn2:process id="_KFVCa3QaEeuCM8KqVoRWiA" name="process2" processType="None">
+    <bpmn2:documentation id="_KFVpdHQaEeuCM8KqVoRWiA" textFormat="text/plain">Manufacture is the Factory of the books which is ready to print all the required books &lt;br></bpmn2:documentation>
+    <bpmn2:startEvent id="_KFVCcXQaEeuCM8KqVoRWiA" name="Receive Requested List" isInterrupting="true">
+      <bpmn2:documentation id="_KFVpdnQaEeuCM8KqVoRWiA" textFormat="text/plain">Receive a list of required books for all customer every 3 days&lt;br></bpmn2:documentation>
+      <bpmn2:outgoing>_KFVpdXQaEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:messageEventDefinition id="_KFVpd3QaEeuCM8KqVoRWiA"/>
+    </bpmn2:startEvent>
+    <bpmn2:serviceTask id="_KFVpeHQaEeuCM8KqVoRWiA" name="Process Requset" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##WebService">
+      <bpmn2:documentation id="_KFVpeXQaEeuCM8KqVoRWiA" textFormat="text/plain">make the hardcopy of the required books and send them to the store in the Delivery Department&lt;br></bpmn2:documentation>
+      <bpmn2:incoming>_KFVpdXQaEeuCM8KqVoRWiA</bpmn2:incoming>
+    </bpmn2:serviceTask>
+    <bpmn2:sequenceFlow id="_KFVpdXQaEeuCM8KqVoRWiA" name="" sourceRef="_KFVCcXQaEeuCM8KqVoRWiA" targetRef="_KFVpeHQaEeuCM8KqVoRWiA"/>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="_KFVpenQaEeuCM8KqVoRWiA" name="collaboration-diagram">
+    <bpmndi:BPMNPlane id="_KFVpe3QaEeuCM8KqVoRWiA" bpmnElement="_KFVCY3QaEeuCM8KqVoRWiA">
+      <bpmndi:BPMNShape id="_KFVpfHQaEeuCM8KqVoRWiA" bpmnElement="_KFVCdXQaEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="1157.0" y="71.0"/>
+        <bpmndi:BPMNLabel id="_KFVpfXQaEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="1078.0" y="77.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_KFVpfnQaEeuCM8KqVoRWiA" bpmnElement="_KFVCZXQaEeuCM8KqVoRWiA" isHorizontal="true">
+        <dc:Bounds height="502.0" width="1423.0" x="26.0" y="216.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_KFVpf3QaEeuCM8KqVoRWiA" bpmnElement="_KFVCbnQaEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="298.0" y="58.0"/>
+        <bpmndi:BPMNLabel id="_KFVpgHQaEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="330.0" y="113.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_KFVpgXQaEeuCM8KqVoRWiA" bpmnElement="_KFTNNnQaEeuCM8KqVoRWiA">
+        <dc:Bounds height="40.0" width="40.0" x="424.0" y="313.0"/>
+        <bpmndi:BPMNLabel id="_KFVpgnQaEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="387.0" y="278.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_KFVpg3QaEeuCM8KqVoRWiA" bpmnElement="_KFTNPHQaEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="881.0" y="477.0"/>
+        <bpmndi:BPMNLabel id="_KFVphHQaEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="865.0" y="516.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_KFVphXQaEeuCM8KqVoRWiA" bpmnElement="_KFTNQnQaEeuCM8KqVoRWiA">
+        <dc:Bounds height="40.0" width="40.0" x="1011.0" y="632.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_KFVphnQaEeuCM8KqVoRWiA" bpmnElement="_KFTNQHQaEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="410.0" y="622.0"/>
+        <bpmndi:BPMNLabel id="_KFVph3QaEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_KFVpiHQaEeuCM8KqVoRWiA" bpmnElement="_KFTNPXQaEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="986.0" y="465.0"/>
+        <bpmndi:BPMNLabel id="_KFVpiXQaEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_KFVpinQaEeuCM8KqVoRWiA" bpmnElement="_KFTNNXQaEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="144.0" y="316.0"/>
+        <bpmndi:BPMNLabel id="_KFVpi3QaEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="128.0" y="355.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_KFVpjHQaEeuCM8KqVoRWiA" bpmnElement="_KFTNOnQaEeuCM8KqVoRWiA">
+        <dc:Bounds height="40.0" width="40.0" x="609.0" y="474.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_KFVpjXQaEeuCM8KqVoRWiA" bpmnElement="_KFVCc3QaEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="880.0" y="70.0"/>
+        <bpmndi:BPMNLabel id="_KFVpjnQaEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="926.0" y="76.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_KFVpj3QaEeuCM8KqVoRWiA" bpmnElement="_KFTNM3QaEeuCM8KqVoRWiA">
+        <dc:Bounds height="200.0" width="1390.0" x="56.0" y="216.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_KFVpkHQaEeuCM8KqVoRWiA" bpmnElement="_KFTNQXQaEeuCM8KqVoRWiA">
+        <dc:Bounds height="72.0" width="101.0" x="700.0" y="610.0"/>
+        <bpmndi:BPMNLabel id="_KFVpkXQaEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_KFVpknQaEeuCM8KqVoRWiA" bpmnElement="_KFTNOHQaEeuCM8KqVoRWiA">
+        <dc:Bounds height="150.0" width="1390.0" x="56.0" y="416.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_KFVpk3QaEeuCM8KqVoRWiA" bpmnElement="_KFVCZ3QaEeuCM8KqVoRWiA" isHorizontal="true">
+        <dc:Bounds height="122.0" width="1423.0" x="25.0" y="26.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_KFVplHQaEeuCM8KqVoRWiA" bpmnElement="_KFTNO3QaEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="711.0" y="464.0"/>
+        <bpmndi:BPMNLabel id="_KFVplXQaEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_KFVplnQaEeuCM8KqVoRWiA" bpmnElement="_KFTNRHQaEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="1266.0" y="632.0"/>
+        <bpmndi:BPMNLabel id="_KFVpl3QaEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_KFVpmHQaEeuCM8KqVoRWiA" bpmnElement="_KFTNQ3QaEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="1130.0" y="622.0"/>
+        <bpmndi:BPMNLabel id="_KFVpmXQaEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_KFVpmnQaEeuCM8KqVoRWiA" bpmnElement="_KFVCcXQaEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="426.0" y="823.0"/>
+        <bpmndi:BPMNLabel id="_KFVpm3QaEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="410.0" y="862.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_KFVpnHQaEeuCM8KqVoRWiA" bpmnElement="_KFVCanQaEeuCM8KqVoRWiA" isHorizontal="true">
+        <dc:Bounds height="131.0" width="1423.0" x="27.0" y="772.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_KFVpnXQaEeuCM8KqVoRWiA" bpmnElement="_KFTNP3QaEeuCM8KqVoRWiA">
+        <dc:Bounds height="150.0" width="1390.0" x="56.0" y="566.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_KFVpnnQaEeuCM8KqVoRWiA" bpmnElement="_KFVCd3QaEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="1293.0" y="72.0"/>
+        <bpmndi:BPMNLabel id="_KFVpn3QaEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="1339.0" y="78.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_KFVpoHQaEeuCM8KqVoRWiA" bpmnElement="_KFTNRXQaEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="1393.0" y="645.0"/>
+        <bpmndi:BPMNLabel id="_KFVpoXQaEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="1377.0" y="684.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_KFVponQaEeuCM8KqVoRWiA" bpmnElement="_KFTNNHQaEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="271.0" y="303.0"/>
+        <bpmndi:BPMNLabel id="_KFVpo3QaEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_KFVppHQaEeuCM8KqVoRWiA" bpmnElement="_KFVpeHQaEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="494.0" y="811.0"/>
+        <bpmndi:BPMNLabel id="_KFVppXQaEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_KFVppnQaEeuCM8KqVoRWiA" bpmnElement="_KFTNOXQaEeuCM8KqVoRWiA">
+        <dc:Bounds height="40.0" width="40.0" x="519.0" y="474.0"/>
+        <bpmndi:BPMNLabel id="_KFVpp3QaEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="470.0" y="518.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="_KFVpqHQaEeuCM8KqVoRWiA" bpmnElement="_KFT0S3QaEeuCM8KqVoRWiA">
+        <di:waypoint x="649.0" y="494.0"/>
+        <di:waypoint x="711.0" y="494.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_KFVpqXQaEeuCM8KqVoRWiA" bpmnElement="_KFT0SnQaEeuCM8KqVoRWiA">
+        <di:waypoint x="629.0" y="514.0"/>
+        <di:waypoint x="629.0" y="646.0"/>
+        <di:waypoint x="700.0" y="646.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_KFVpqnQaEeuCM8KqVoRWiA" bpmnElement="_KFT0TXQaEeuCM8KqVoRWiA">
+        <di:waypoint x="801.0" y="494.0"/>
+        <di:waypoint x="881.0" y="494.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_KFVpq3QaEeuCM8KqVoRWiA" bpmnElement="_KFT0R3QaEeuCM8KqVoRWiA">
+        <di:waypoint x="559.0" y="494.0"/>
+        <di:waypoint x="609.0" y="494.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_KFVprHQaEeuCM8KqVoRWiA" bpmnElement="_KFVCcnQaEeuCM8KqVoRWiA">
+        <di:waypoint x="898.0" y="105.0"/>
+        <di:waypoint x="898.0" y="477.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_KFVprXQaEeuCM8KqVoRWiA" bpmnElement="_KFT0RHQaEeuCM8KqVoRWiA">
+        <di:waypoint x="464.0" y="333.0"/>
+        <di:waypoint x="539.0" y="333.0"/>
+        <di:waypoint x="539.0" y="474.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_KFVprnQaEeuCM8KqVoRWiA" bpmnElement="_KFUbVHQaEeuCM8KqVoRWiA">
+        <di:waypoint x="1051.0" y="652.0"/>
+        <di:waypoint x="1130.0" y="652.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_KFVpr3QaEeuCM8KqVoRWiA" bpmnElement="_KFVCdHQaEeuCM8KqVoRWiA">
+        <di:waypoint x="1174.0" y="622.0"/>
+        <di:waypoint x="1174.0" y="106.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_KFVpsHQaEeuCM8KqVoRWiA" bpmnElement="_KFT0RnQaEeuCM8KqVoRWiA">
+        <di:waypoint x="500.0" y="652.0"/>
+        <di:waypoint x="539.0" y="652.0"/>
+        <di:waypoint x="539.0" y="514.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_KFVpsXQaEeuCM8KqVoRWiA" bpmnElement="_KFTNR3QaEeuCM8KqVoRWiA">
+        <di:waypoint x="179.0" y="333.0"/>
+        <di:waypoint x="271.0" y="333.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_KFVpsnQaEeuCM8KqVoRWiA" bpmnElement="_KFVpdXQaEeuCM8KqVoRWiA">
+        <di:waypoint x="461.0" y="840.0"/>
+        <di:waypoint x="494.0" y="840.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_KFVps3QaEeuCM8KqVoRWiA" bpmnElement="_KFTNSHQaEeuCM8KqVoRWiA">
+        <di:waypoint x="361.0" y="333.0"/>
+        <di:waypoint x="424.0" y="333.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_KFVptHQaEeuCM8KqVoRWiA" bpmnElement="_KFVCbXQaEeuCM8KqVoRWiA">
+        <di:waypoint x="315.0" y="93.0"/>
+        <di:waypoint x="315.0" y="303.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_KFVptXQaEeuCM8KqVoRWiA" bpmnElement="_KFUbUnQaEeuCM8KqVoRWiA">
+        <di:waypoint x="1031.0" y="525.0"/>
+        <di:waypoint x="1031.0" y="632.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_KFVptnQaEeuCM8KqVoRWiA" bpmnElement="_KFVCcHQaEeuCM8KqVoRWiA">
+        <di:waypoint x="443.0" y="682.0"/>
+        <di:waypoint x="443.0" y="823.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_KFVpt3QaEeuCM8KqVoRWiA" bpmnElement="_KFUbVnQaEeuCM8KqVoRWiA">
+        <di:waypoint x="1220.0" y="657.0"/>
+        <di:waypoint x="1266.0" y="657.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_KFVpuHQaEeuCM8KqVoRWiA" bpmnElement="_KFUbUHQaEeuCM8KqVoRWiA">
+        <di:waypoint x="801.0" y="652.0"/>
+        <di:waypoint x="1011.0" y="652.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_KFVpuXQaEeuCM8KqVoRWiA" bpmnElement="_KFVCdnQaEeuCM8KqVoRWiA">
+        <di:waypoint x="1310.0" y="107.0"/>
+        <di:waypoint x="1310.0" y="632.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_KFVpunQaEeuCM8KqVoRWiA" bpmnElement="_KFT0T3QaEeuCM8KqVoRWiA">
+        <di:waypoint x="916.0" y="494.0"/>
+        <di:waypoint x="986.0" y="494.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_KFVpu3QaEeuCM8KqVoRWiA" bpmnElement="_KFT0Q3QaEeuCM8KqVoRWiA">
+        <di:waypoint x="444.0" y="353.0"/>
+        <di:waypoint x="444.0" y="622.0"/>
+        <bpmndi:BPMNLabel id="_KFVpvHQaEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="85.0" x="353.0" y="468.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_KFVpvXQaEeuCM8KqVoRWiA" bpmnElement="_KFUbWHQaEeuCM8KqVoRWiA">
+        <di:waypoint x="1356.0" y="662.0"/>
+        <di:waypoint x="1393.0" y="662.0"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn2:definitions>

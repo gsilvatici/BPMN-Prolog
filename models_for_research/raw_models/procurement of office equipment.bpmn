@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn2:definitions xmlns="http://genmymodel.com/bpmn2" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="_BYUU0FDBEeuh5NpLcuE3vA" exporter="GenMyModel" exporterVersion="1.0" expressionLanguage="http://www.w3.org/1999/XPath" name="procurement of office equipment" targetNamespace="http://genmymodel.com/bpmn2" typeLanguage="http://www.w3.org/2001/XMLSchema">
+  <bpmn2:process id="_BYUU0VDBEeuh5NpLcuE3vA" name="Process" isClosed="true" processType="None">
+    <bpmn2:laneSet id="_BYUU0lDBEeuh5NpLcuE3vA">
+      <bpmn2:lane id="_BYUU01DBEeuh5NpLcuE3vA" name="staff members">
+        <bpmn2:flowNodeRef>_BYUU1FDBEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_BYUU1VDBEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_BYUU1lDBEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_BYUU11DBEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+      </bpmn2:lane>
+      <bpmn2:lane id="_BYUU2FDBEeuh5NpLcuE3vA" name="procurement team">
+        <bpmn2:flowNodeRef>_BYUU2VDBEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_BYUU2lDBEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_BYUU21DBEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_BYUU3FDBEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_BYUU3VDBEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_BYUU3lDBEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_BYUU31DBEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_BYUU4FDBEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_BYUU4VDBEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+      </bpmn2:lane>
+      <bpmn2:lane id="_BYUU4lDBEeuh5NpLcuE3vA" name="shop">
+        <bpmn2:flowNodeRef>_BYUU41DBEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_BYUU5FDBEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_BYUU5VDBEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_BYUU5lDBEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_BYUU51DBEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_BYUU6FDBEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_BYUU6VDBEeuh5NpLcuE3vA</bpmn2:flowNodeRef>
+      </bpmn2:lane>
+    </bpmn2:laneSet>
+    <bpmn2:task id="_BYUU2VDBEeuh5NpLcuE3vA" name="ask for the required equipments" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_BYUU6lDBEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_BYUU61DBEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:startEvent id="_BYUU11DBEeuh5NpLcuE3vA" name="Start" isInterrupting="true">
+      <bpmn2:outgoing>_BYUU7FDBEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:task id="_BYUU1FDBEeuh5NpLcuE3vA" name="provide the list of required equipments" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_BYUU7VDBEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:incoming>_BYUU7lDBEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_BYUU71DBEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:task id="_BYUU1VDBEeuh5NpLcuE3vA" name="discuss the requirments" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_BYUU61DBEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_BYUU7VDBEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:task id="_BYUU1lDBEeuh5NpLcuE3vA" name="request for the equipments" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_BYUU7FDBEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_BYUU6lDBEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_BYUU7FDBEeuh5NpLcuE3vA" sourceRef="_BYUU11DBEeuh5NpLcuE3vA" targetRef="_BYUU1lDBEeuh5NpLcuE3vA"/>
+    <bpmn2:sequenceFlow id="_BYUU6lDBEeuh5NpLcuE3vA" sourceRef="_BYUU1lDBEeuh5NpLcuE3vA" targetRef="_BYUU2VDBEeuh5NpLcuE3vA"/>
+    <bpmn2:sequenceFlow id="_BYUU61DBEeuh5NpLcuE3vA" sourceRef="_BYUU2VDBEeuh5NpLcuE3vA" targetRef="_BYUU1VDBEeuh5NpLcuE3vA"/>
+    <bpmn2:sequenceFlow id="_BYUU7VDBEeuh5NpLcuE3vA" sourceRef="_BYUU1VDBEeuh5NpLcuE3vA" targetRef="_BYUU1FDBEeuh5NpLcuE3vA"/>
+    <bpmn2:task id="_BYUU2lDBEeuh5NpLcuE3vA" name="review equipment list" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_BYUU71DBEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_BYUU8FDBEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_BYUU71DBEeuh5NpLcuE3vA" sourceRef="_BYUU1FDBEeuh5NpLcuE3vA" targetRef="_BYUU2lDBEeuh5NpLcuE3vA"/>
+    <bpmn2:task id="_BYUU21DBEeuh5NpLcuE3vA" name="check the budget" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_BYUU8FDBEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_BYUU8VDBEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_BYUU8FDBEeuh5NpLcuE3vA" sourceRef="_BYUU2lDBEeuh5NpLcuE3vA" targetRef="_BYUU21DBEeuh5NpLcuE3vA"/>
+    <bpmn2:exclusiveGateway id="_BYUU3FDBEeuh5NpLcuE3vA" name="budget okk?" gatewayDirection="Unspecified">
+      <bpmn2:incoming>_BYUU8VDBEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_BYUU8lDBEeuh5NpLcuE3vA</bpmn2:outgoing>
+      <bpmn2:outgoing>_BYUU81DBEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="_BYUU8VDBEeuh5NpLcuE3vA" sourceRef="_BYUU21DBEeuh5NpLcuE3vA" targetRef="_BYUU3FDBEeuh5NpLcuE3vA"/>
+    <bpmn2:task id="_BYUU3VDBEeuh5NpLcuE3vA" name="send list to shop" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_BYUU8lDBEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:incoming>_BYUU9FDBEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_BYUU9VDBEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_BYUU8lDBEeuh5NpLcuE3vA" name="yes" sourceRef="_BYUU3FDBEeuh5NpLcuE3vA" targetRef="_BYUU3VDBEeuh5NpLcuE3vA"/>
+    <bpmn2:task id="_BYUU3lDBEeuh5NpLcuE3vA" name="ask to make another list in budget" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_BYUU81DBEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_BYUU7lDBEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_BYUU81DBEeuh5NpLcuE3vA" name="no" sourceRef="_BYUU3FDBEeuh5NpLcuE3vA" targetRef="_BYUU3lDBEeuh5NpLcuE3vA"/>
+    <bpmn2:sequenceFlow id="_BYUU7lDBEeuh5NpLcuE3vA" sourceRef="_BYUU3lDBEeuh5NpLcuE3vA" targetRef="_BYUU1FDBEeuh5NpLcuE3vA"/>
+    <bpmn2:task id="_BYUU41DBEeuh5NpLcuE3vA" name="list recieved" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_BYUU9VDBEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_BYUU9lDBEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:task id="_BYUU5FDBEeuh5NpLcuE3vA" name="check equipment availability" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_BYUU9lDBEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_BYUU91DBEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_BYUU9VDBEeuh5NpLcuE3vA" sourceRef="_BYUU3VDBEeuh5NpLcuE3vA" targetRef="_BYUU41DBEeuh5NpLcuE3vA"/>
+    <bpmn2:sequenceFlow id="_BYUU9lDBEeuh5NpLcuE3vA" sourceRef="_BYUU41DBEeuh5NpLcuE3vA" targetRef="_BYUU5FDBEeuh5NpLcuE3vA"/>
+    <bpmn2:exclusiveGateway id="_BYUU5VDBEeuh5NpLcuE3vA" name="all equipments available?" gatewayDirection="Unspecified">
+      <bpmn2:incoming>_BYUU91DBEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_BYUU-FDBEeuh5NpLcuE3vA</bpmn2:outgoing>
+      <bpmn2:outgoing>_BYUU-VDBEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="_BYUU91DBEeuh5NpLcuE3vA" sourceRef="_BYUU5FDBEeuh5NpLcuE3vA" targetRef="_BYUU5VDBEeuh5NpLcuE3vA"/>
+    <bpmn2:task id="_BYUU5lDBEeuh5NpLcuE3vA" name="send the equipments" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_BYUU-FDBEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_BYUU-lDBEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_BYUU-FDBEeuh5NpLcuE3vA" name="yes" sourceRef="_BYUU5VDBEeuh5NpLcuE3vA" targetRef="_BYUU5lDBEeuh5NpLcuE3vA"/>
+    <bpmn2:task id="_BYUU31DBEeuh5NpLcuE3vA" name="equipments recieved" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_BYUU-lDBEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_BYUU-1DBEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_BYUU-lDBEeuh5NpLcuE3vA" sourceRef="_BYUU5lDBEeuh5NpLcuE3vA" targetRef="_BYUU31DBEeuh5NpLcuE3vA"/>
+    <bpmn2:task id="_BYUU4FDBEeuh5NpLcuE3vA" name="make payment" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_BYUU-1DBEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_BYUU_FDBEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_BYUU-1DBEeuh5NpLcuE3vA" sourceRef="_BYUU31DBEeuh5NpLcuE3vA" targetRef="_BYUU4FDBEeuh5NpLcuE3vA"/>
+    <bpmn2:task id="_BYUU51DBEeuh5NpLcuE3vA" name="payment recieved" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_BYUU_FDBEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_BYUU_VDBEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:endEvent id="_BYUU6FDBEeuh5NpLcuE3vA" name="End">
+      <bpmn2:incoming>_BYUU_VDBEeuh5NpLcuE3vA</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:sequenceFlow id="_BYUU_FDBEeuh5NpLcuE3vA" sourceRef="_BYUU4FDBEeuh5NpLcuE3vA" targetRef="_BYUU51DBEeuh5NpLcuE3vA"/>
+    <bpmn2:sequenceFlow id="_BYUU_VDBEeuh5NpLcuE3vA" sourceRef="_BYUU51DBEeuh5NpLcuE3vA" targetRef="_BYUU6FDBEeuh5NpLcuE3vA"/>
+    <bpmn2:task id="_BYUU6VDBEeuh5NpLcuE3vA" name="inform availability" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_BYUU-VDBEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_BYUU_lDBEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_BYUU-VDBEeuh5NpLcuE3vA" name="no" sourceRef="_BYUU5VDBEeuh5NpLcuE3vA" targetRef="_BYUU6VDBEeuh5NpLcuE3vA"/>
+    <bpmn2:task id="_BYUU4VDBEeuh5NpLcuE3vA" name="contact to other shop" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_BYUU_lDBEeuh5NpLcuE3vA</bpmn2:incoming>
+      <bpmn2:outgoing>_BYUU9FDBEeuh5NpLcuE3vA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_BYUU_lDBEeuh5NpLcuE3vA" sourceRef="_BYUU6VDBEeuh5NpLcuE3vA" targetRef="_BYUU4VDBEeuh5NpLcuE3vA"/>
+    <bpmn2:sequenceFlow id="_BYUU9FDBEeuh5NpLcuE3vA" sourceRef="_BYUU4VDBEeuh5NpLcuE3vA" targetRef="_BYUU3VDBEeuh5NpLcuE3vA"/>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="_BYUU_1DBEeuh5NpLcuE3vA" name="process-diagram">
+    <bpmndi:BPMNPlane id="_BYUVAFDBEeuh5NpLcuE3vA" bpmnElement="_BYUU0VDBEeuh5NpLcuE3vA">
+      <bpmndi:BPMNShape id="_BYUVAVDBEeuh5NpLcuE3vA" bpmnElement="_BYUU6VDBEeuh5NpLcuE3vA">
+        <dc:Bounds height="60.0" width="90.0" x="1215.0" y="357.0"/>
+        <bpmndi:BPMNLabel id="_BYUVAlDBEeuh5NpLcuE3vA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BYUVA1DBEeuh5NpLcuE3vA" bpmnElement="_BYUU21DBEeuh5NpLcuE3vA">
+        <dc:Bounds height="60.0" width="90.0" x="623.0" y="258.0"/>
+        <bpmndi:BPMNLabel id="_BYUVBFDBEeuh5NpLcuE3vA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BYUVBVDBEeuh5NpLcuE3vA" bpmnElement="_BYUU3lDBEeuh5NpLcuE3vA">
+        <dc:Bounds height="60.0" width="90.0" x="770.0" y="182.0"/>
+        <bpmndi:BPMNLabel id="_BYUVBlDBEeuh5NpLcuE3vA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BYUVB1DBEeuh5NpLcuE3vA" bpmnElement="_BYUU01DBEeuh5NpLcuE3vA">
+        <dc:Bounds height="140.0" width="1640.0" x="40.0" y="30.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BYUVCFDBEeuh5NpLcuE3vA" bpmnElement="_BYUU1lDBEeuh5NpLcuE3vA">
+        <dc:Bounds height="60.0" width="90.0" x="143.0" y="80.0"/>
+        <bpmndi:BPMNLabel id="_BYUVCVDBEeuh5NpLcuE3vA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BYUVClDBEeuh5NpLcuE3vA" bpmnElement="_BYUU3FDBEeuh5NpLcuE3vA">
+        <dc:Bounds height="40.0" width="40.0" x="795.0" y="268.0"/>
+        <bpmndi:BPMNLabel id="_BYUVC1DBEeuh5NpLcuE3vA">
+          <dc:Bounds height="5.0" width="68.0" x="781.0" y="312.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BYUVDFDBEeuh5NpLcuE3vA" bpmnElement="_BYUU4VDBEeuh5NpLcuE3vA">
+        <dc:Bounds height="60.0" width="90.0" x="1180.0" y="240.0"/>
+        <bpmndi:BPMNLabel id="_BYUVDVDBEeuh5NpLcuE3vA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BYUVDlDBEeuh5NpLcuE3vA" bpmnElement="_BYUU2lDBEeuh5NpLcuE3vA">
+        <dc:Bounds height="60.0" width="90.0" x="444.0" y="258.0"/>
+        <bpmndi:BPMNLabel id="_BYUVD1DBEeuh5NpLcuE3vA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BYUVEFDBEeuh5NpLcuE3vA" bpmnElement="_BYUU4lDBEeuh5NpLcuE3vA">
+        <dc:Bounds height="210.0" width="1640.0" x="40.0" y="340.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BYUVEVDBEeuh5NpLcuE3vA" bpmnElement="_BYUU2VDBEeuh5NpLcuE3vA">
+        <dc:Bounds height="60.0" width="90.0" x="143.0" y="225.0"/>
+        <bpmndi:BPMNLabel id="_BYUVElDBEeuh5NpLcuE3vA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BYUVE1DBEeuh5NpLcuE3vA" bpmnElement="_BYUU31DBEeuh5NpLcuE3vA">
+        <dc:Bounds height="60.0" width="90.0" x="1340.0" y="240.0"/>
+        <bpmndi:BPMNLabel id="_BYUVFFDBEeuh5NpLcuE3vA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BYUVFVDBEeuh5NpLcuE3vA" bpmnElement="_BYUU6FDBEeuh5NpLcuE3vA">
+        <dc:Bounds height="35.0" width="35.0" x="1619.0" y="453.0"/>
+        <bpmndi:BPMNLabel id="_BYUVFlDBEeuh5NpLcuE3vA">
+          <dc:Bounds height="5.0" width="68.0" x="1603.0" y="495.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BYUVF1DBEeuh5NpLcuE3vA" bpmnElement="_BYUU5FDBEeuh5NpLcuE3vA">
+        <dc:Bounds height="60.0" width="90.0" x="1072.0" y="444.0"/>
+        <bpmndi:BPMNLabel id="_BYUVGFDBEeuh5NpLcuE3vA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BYUVGVDBEeuh5NpLcuE3vA" bpmnElement="_BYUU2FDBEeuh5NpLcuE3vA">
+        <dc:Bounds height="170.0" width="1640.0" x="40.0" y="170.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BYUVGlDBEeuh5NpLcuE3vA" bpmnElement="_BYUU41DBEeuh5NpLcuE3vA">
+        <dc:Bounds height="60.0" width="90.0" x="899.0" y="444.0"/>
+        <bpmndi:BPMNLabel id="_BYUVG1DBEeuh5NpLcuE3vA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BYUVHFDBEeuh5NpLcuE3vA" bpmnElement="_BYUU5lDBEeuh5NpLcuE3vA">
+        <dc:Bounds height="60.0" width="90.0" x="1342.0" y="440.0"/>
+        <bpmndi:BPMNLabel id="_BYUVHVDBEeuh5NpLcuE3vA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BYUVHlDBEeuh5NpLcuE3vA" bpmnElement="_BYUU11DBEeuh5NpLcuE3vA">
+        <dc:Bounds height="35.0" width="35.0" x="82.0" y="88.0"/>
+        <bpmndi:BPMNLabel id="_BYUVH1DBEeuh5NpLcuE3vA">
+          <dc:Bounds height="5.0" width="68.0" x="66.0" y="130.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BYUVIFDBEeuh5NpLcuE3vA" bpmnElement="_BYUU1VDBEeuh5NpLcuE3vA">
+        <dc:Bounds height="60.0" width="90.0" x="285.0" y="80.0"/>
+        <bpmndi:BPMNLabel id="_BYU74FDBEeuh5NpLcuE3vA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BYU74VDBEeuh5NpLcuE3vA" bpmnElement="_BYUU3VDBEeuh5NpLcuE3vA">
+        <dc:Bounds height="60.0" width="90.0" x="899.0" y="246.0"/>
+        <bpmndi:BPMNLabel id="_BYU74lDBEeuh5NpLcuE3vA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BYU741DBEeuh5NpLcuE3vA" bpmnElement="_BYUU1FDBEeuh5NpLcuE3vA">
+        <dc:Bounds height="60.0" width="90.0" x="444.0" y="80.0"/>
+        <bpmndi:BPMNLabel id="_BYU75FDBEeuh5NpLcuE3vA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BYU75VDBEeuh5NpLcuE3vA" bpmnElement="_BYUU4FDBEeuh5NpLcuE3vA">
+        <dc:Bounds height="60.0" width="90.0" x="1483.0" y="240.0"/>
+        <bpmndi:BPMNLabel id="_BYU75lDBEeuh5NpLcuE3vA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BYU751DBEeuh5NpLcuE3vA" bpmnElement="_BYUU51DBEeuh5NpLcuE3vA">
+        <dc:Bounds height="60.0" width="90.0" x="1483.0" y="440.0"/>
+        <bpmndi:BPMNLabel id="_BYU76FDBEeuh5NpLcuE3vA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BYU76VDBEeuh5NpLcuE3vA" bpmnElement="_BYUU5VDBEeuh5NpLcuE3vA">
+        <dc:Bounds height="40.0" width="40.0" x="1240.0" y="450.0"/>
+        <bpmndi:BPMNLabel id="_BYU76lDBEeuh5NpLcuE3vA">
+          <dc:Bounds height="5.0" width="68.0" x="1226.0" y="494.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="_BYU761DBEeuh5NpLcuE3vA" bpmnElement="_BYUU8FDBEeuh5NpLcuE3vA">
+        <di:waypoint x="534.0" y="288.0"/>
+        <di:waypoint x="623.0" y="288.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_BYU77FDBEeuh5NpLcuE3vA" bpmnElement="_BYUU_lDBEeuh5NpLcuE3vA">
+        <di:waypoint x="1242.0" y="357.0"/>
+        <di:waypoint x="1242.0" y="300.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_BYU77VDBEeuh5NpLcuE3vA" bpmnElement="_BYUU-FDBEeuh5NpLcuE3vA">
+        <di:waypoint x="1280.0" y="470.0"/>
+        <di:waypoint x="1342.0" y="470.0"/>
+        <bpmndi:BPMNLabel id="_BYU77lDBEeuh5NpLcuE3vA">
+          <dc:Bounds height="5.0" width="38.0" x="1277.0" y="454.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_BYU771DBEeuh5NpLcuE3vA" bpmnElement="_BYUU91DBEeuh5NpLcuE3vA">
+        <di:waypoint x="1162.0" y="470.0"/>
+        <di:waypoint x="1240.0" y="470.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_BYU78FDBEeuh5NpLcuE3vA" bpmnElement="_BYUU81DBEeuh5NpLcuE3vA">
+        <di:waypoint x="815.0" y="268.0"/>
+        <di:waypoint x="815.0" y="242.0"/>
+        <bpmndi:BPMNLabel id="_BYU78VDBEeuh5NpLcuE3vA">
+          <dc:Bounds height="5.0" width="38.0" x="821.0" y="258.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_BYU78lDBEeuh5NpLcuE3vA" bpmnElement="_BYUU9lDBEeuh5NpLcuE3vA">
+        <di:waypoint x="989.0" y="474.0"/>
+        <di:waypoint x="1072.0" y="474.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_BYU781DBEeuh5NpLcuE3vA" bpmnElement="_BYUU_VDBEeuh5NpLcuE3vA">
+        <di:waypoint x="1573.0" y="470.0"/>
+        <di:waypoint x="1619.0" y="470.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_BYU79FDBEeuh5NpLcuE3vA" bpmnElement="_BYUU6lDBEeuh5NpLcuE3vA">
+        <di:waypoint x="188.0" y="140.0"/>
+        <di:waypoint x="188.0" y="225.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_BYU79VDBEeuh5NpLcuE3vA" bpmnElement="_BYUU8VDBEeuh5NpLcuE3vA">
+        <di:waypoint x="713.0" y="288.0"/>
+        <di:waypoint x="795.0" y="288.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_BYU79lDBEeuh5NpLcuE3vA" bpmnElement="_BYUU9VDBEeuh5NpLcuE3vA">
+        <di:waypoint x="944.0" y="306.0"/>
+        <di:waypoint x="944.0" y="444.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_BYU791DBEeuh5NpLcuE3vA" bpmnElement="_BYUU8lDBEeuh5NpLcuE3vA">
+        <di:waypoint x="835.0" y="287.0"/>
+        <di:waypoint x="899.0" y="287.0"/>
+        <bpmndi:BPMNLabel id="_BYU7-FDBEeuh5NpLcuE3vA">
+          <dc:Bounds height="5.0" width="38.0" x="856.0" y="290.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_BYU7-VDBEeuh5NpLcuE3vA" bpmnElement="_BYUU7FDBEeuh5NpLcuE3vA">
+        <di:waypoint x="117.0" y="105.0"/>
+        <di:waypoint x="143.0" y="105.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_BYU7-lDBEeuh5NpLcuE3vA" bpmnElement="_BYUU_FDBEeuh5NpLcuE3vA">
+        <di:waypoint x="1528.0" y="300.0"/>
+        <di:waypoint x="1528.0" y="440.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_BYU7-1DBEeuh5NpLcuE3vA" bpmnElement="_BYUU9FDBEeuh5NpLcuE3vA">
+        <di:waypoint x="1180.0" y="273.0"/>
+        <di:waypoint x="989.0" y="273.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_BYU7_FDBEeuh5NpLcuE3vA" bpmnElement="_BYUU-1DBEeuh5NpLcuE3vA">
+        <di:waypoint x="1430.0" y="270.0"/>
+        <di:waypoint x="1483.0" y="270.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_BYU7_VDBEeuh5NpLcuE3vA" bpmnElement="_BYUU-VDBEeuh5NpLcuE3vA">
+        <di:waypoint x="1260.0" y="450.0"/>
+        <di:waypoint x="1260.0" y="417.0"/>
+        <bpmndi:BPMNLabel id="_BYU7_lDBEeuh5NpLcuE3vA">
+          <dc:Bounds height="5.0" width="38.0" x="1232.0" y="434.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_BYU7_1DBEeuh5NpLcuE3vA" bpmnElement="_BYUU71DBEeuh5NpLcuE3vA">
+        <di:waypoint x="489.0" y="140.0"/>
+        <di:waypoint x="489.0" y="258.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_BYU8AFDBEeuh5NpLcuE3vA" bpmnElement="_BYUU61DBEeuh5NpLcuE3vA">
+        <di:waypoint x="233.0" y="255.0"/>
+        <di:waypoint x="259.0" y="255.0"/>
+        <di:waypoint x="259.0" y="110.0"/>
+        <di:waypoint x="285.0" y="110.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_BYU8AVDBEeuh5NpLcuE3vA" bpmnElement="_BYUU-lDBEeuh5NpLcuE3vA">
+        <di:waypoint x="1386.0" y="440.0"/>
+        <di:waypoint x="1386.0" y="300.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_BYU8AlDBEeuh5NpLcuE3vA" bpmnElement="_BYUU7lDBEeuh5NpLcuE3vA">
+        <di:waypoint x="816.0" y="182.0"/>
+        <di:waypoint x="816.0" y="110.0"/>
+        <di:waypoint x="534.0" y="110.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_BYU8A1DBEeuh5NpLcuE3vA" bpmnElement="_BYUU7VDBEeuh5NpLcuE3vA">
+        <di:waypoint x="375.0" y="110.0"/>
+        <di:waypoint x="444.0" y="110.0"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn2:definitions>

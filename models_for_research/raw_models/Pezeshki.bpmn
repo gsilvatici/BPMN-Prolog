@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn2:definitions xmlns="http://genmymodel.com/bpmn2" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="_ieQGUHQgEeuCM8KqVoRWiA" exporter="GenMyModel" exporterVersion="1.0" expressionLanguage="http://www.w3.org/1999/XPath" name="Pezeshki" targetNamespace="http://genmymodel.com/bpmn2" typeLanguage="http://www.w3.org/2001/XMLSchema">
+  <bpmn2:collaboration id="_ieQGUXQgEeuCM8KqVoRWiA" isClosed="true" name="Collaboration">
+    <bpmn2:participant id="_ieQGUnQgEeuCM8KqVoRWiA" name="سازمان بنادر و دریانوردی" processRef="_ieQGU3QgEeuCM8KqVoRWiA"/>
+  </bpmn2:collaboration>
+  <bpmn2:process id="_ieQGU3QgEeuCM8KqVoRWiA" name="Process" processType="None">
+    <bpmn2:laneSet id="_ieQGVHQgEeuCM8KqVoRWiA">
+      <bpmn2:lane id="_ieQGVXQgEeuCM8KqVoRWiA" name="پزشک متقاضی">
+        <bpmn2:flowNodeRef>_ieQGVnQgEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_ieQGV3QgEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_ieQGWHQgEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+      </bpmn2:lane>
+      <bpmn2:lane id="_ieQGWXQgEeuCM8KqVoRWiA" name="پزشک ناظر بندر/مرکز">
+        <bpmn2:flowNodeRef>_ieQGWnQgEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_ieQGW3QgEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_ieQGXHQgEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_ieQGXXQgEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_ieQGXnQgEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_ieQGX3QgEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_ieQGYHQgEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_ieQGYXQgEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_ieQGYnQgEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_ieQGY3QgEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_ieQGZHQgEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+      </bpmn2:lane>
+      <bpmn2:lane id="_ieQGZXQgEeuCM8KqVoRWiA" name="رئیس اداره کل">
+        <bpmn2:flowNodeRef>_ieQGZnQgEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_ieQGZ3QgEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_ieQGaHQgEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+      </bpmn2:lane>
+      <bpmn2:lane id="_ieQGaXQgEeuCM8KqVoRWiA" name="رئیس اداره امور دریانوردان">
+        <bpmn2:flowNodeRef>_ieQGanQgEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_ieQGa3QgEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_ieQGbHQgEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+      </bpmn2:lane>
+      <bpmn2:lane id="_ieQGbXQgEeuCM8KqVoRWiA" name="مدیر کل">
+        <bpmn2:flowNodeRef>_ieQGbnQgEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_ieQGb3QgEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_ieQGcHQgEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+      </bpmn2:lane>
+    </bpmn2:laneSet>
+    <bpmn2:startEvent id="_ieQGVnQgEeuCM8KqVoRWiA" name="شروع" isInterrupting="true">
+      <bpmn2:outgoing>_ieQGcXQgEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:userTask id="_ieQGV3QgEeuCM8KqVoRWiA" name="بارگذاری مدارک پزشکی و ورود اطلاعات " completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_ieQGcXQgEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_ieQGcnQgEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="_ieQGcXQgEeuCM8KqVoRWiA" sourceRef="_ieQGVnQgEeuCM8KqVoRWiA" targetRef="_ieQGV3QgEeuCM8KqVoRWiA"/>
+    <bpmn2:userTask id="_ieQGWnQgEeuCM8KqVoRWiA" name="بررسی اطلاعات ارائه شده " completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_ieQGcnQgEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_ieQGc3QgEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="_ieQGcnQgEeuCM8KqVoRWiA" sourceRef="_ieQGV3QgEeuCM8KqVoRWiA" targetRef="_ieQGWnQgEeuCM8KqVoRWiA"/>
+    <bpmn2:userTask id="_ieQGW3QgEeuCM8KqVoRWiA" name="ارائه گزارش بازدید/بازدید مجدد از مطب توسط بازرس مربوطه" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_ieQGdHQgEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:incoming>_ieQGdXQgEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_ieQGdnQgEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:exclusiveGateway id="_ieQGXHQgEeuCM8KqVoRWiA" gatewayDirection="Unspecified">
+      <bpmn2:incoming>_ieQGc3QgEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_ieQGd3QgEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:outgoing>_ieQGeHQgEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="_ieQGc3QgEeuCM8KqVoRWiA" name="" sourceRef="_ieQGWnQgEeuCM8KqVoRWiA" targetRef="_ieQGXHQgEeuCM8KqVoRWiA"/>
+    <bpmn2:endEvent id="_ieQGXXQgEeuCM8KqVoRWiA" name="پایان">
+      <bpmn2:incoming>_ieQGeXQgEeuCM8KqVoRWiA</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:sequenceFlow id="_ieQGd3QgEeuCM8KqVoRWiA" name="رد درخواست با ذکر توضیحات" sourceRef="_ieQGXHQgEeuCM8KqVoRWiA" targetRef="_ieQGXnQgEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_ieQGeHQgEeuCM8KqVoRWiA" name="تایید" sourceRef="_ieQGXHQgEeuCM8KqVoRWiA" targetRef="_ieQGZnQgEeuCM8KqVoRWiA"/>
+    <bpmn2:serviceTask id="_ieQGXnQgEeuCM8KqVoRWiA" name="اطلاع رسانی به متقاضی از درگاه پیامک و ایمیل" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##WebService">
+      <bpmn2:incoming>_ieQGd3QgEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_ieQGeXQgEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:serviceTask>
+    <bpmn2:sequenceFlow id="_ieQGeXQgEeuCM8KqVoRWiA" sourceRef="_ieQGXnQgEeuCM8KqVoRWiA" targetRef="_ieQGXXQgEeuCM8KqVoRWiA"/>
+    <bpmn2:serviceTask id="_ieQGX3QgEeuCM8KqVoRWiA" name="ثبت پزشک متقاضی در بانک اطلاعاتی پزشکان معتمد" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##WebService">
+      <bpmn2:incoming>_ieQGenQgEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_ieQGe3QgEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:serviceTask>
+    <bpmn2:userTask id="_ieQGWHQgEeuCM8KqVoRWiA" name="رفع نواقص امکانات مطب" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_ieQGfHQgEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_ieQGdHQgEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="_ieQGfXQgEeuCM8KqVoRWiA" name="نیاز به رفع کمبود ها" sourceRef="_ieQGYHQgEeuCM8KqVoRWiA" targetRef="_ieQGYXQgEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_ieQGdHQgEeuCM8KqVoRWiA" sourceRef="_ieQGWHQgEeuCM8KqVoRWiA" targetRef="_ieQGW3QgEeuCM8KqVoRWiA"/>
+    <bpmn2:exclusiveGateway id="_ieQGYHQgEeuCM8KqVoRWiA" gatewayDirection="Unspecified">
+      <bpmn2:incoming>_ieQGdnQgEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_ieQGfXQgEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:outgoing>_ieQGfnQgEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="_ieQGdnQgEeuCM8KqVoRWiA" name="" sourceRef="_ieQGW3QgEeuCM8KqVoRWiA" targetRef="_ieQGYHQgEeuCM8KqVoRWiA"/>
+    <bpmn2:serviceTask id="_ieQGYXQgEeuCM8KqVoRWiA" name="اطلاع رسانی به متقاضی از درگاه پیامک و ایمیل" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##WebService">
+      <bpmn2:incoming>_ieQGfXQgEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_ieQGfHQgEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:serviceTask>
+    <bpmn2:sequenceFlow id="_ieQGfHQgEeuCM8KqVoRWiA" sourceRef="_ieQGYXQgEeuCM8KqVoRWiA" targetRef="_ieQGWHQgEeuCM8KqVoRWiA"/>
+    <bpmn2:userTask id="_ieQGYnQgEeuCM8KqVoRWiA" name="بارگذاری تاییدیه تحویل فرم های خام گواهی سلامت پزشکی به متقاضی" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_ieQGf3QgEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_ieQGgHQgEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="_ieQGe3QgEeuCM8KqVoRWiA" sourceRef="_ieQGX3QgEeuCM8KqVoRWiA" targetRef="_ieQGZHQgEeuCM8KqVoRWiA"/>
+    <bpmn2:endEvent id="_ieQGY3QgEeuCM8KqVoRWiA" name="پایان">
+      <bpmn2:incoming>_ieQGgHQgEeuCM8KqVoRWiA</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:sequenceFlow id="_ieQGgHQgEeuCM8KqVoRWiA" sourceRef="_ieQGYnQgEeuCM8KqVoRWiA" targetRef="_ieQGY3QgEeuCM8KqVoRWiA"/>
+    <bpmn2:serviceTask id="_ieQGZHQgEeuCM8KqVoRWiA" name="اطلاع رسانی به متقاضی از درگاه پیامک و ایمیل" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##WebService">
+      <bpmn2:incoming>_ieQGe3QgEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_ieQGf3QgEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:serviceTask>
+    <bpmn2:sequenceFlow id="_ieQGf3QgEeuCM8KqVoRWiA" sourceRef="_ieQGZHQgEeuCM8KqVoRWiA" targetRef="_ieQGYnQgEeuCM8KqVoRWiA"/>
+    <bpmn2:userTask id="_ieQGZnQgEeuCM8KqVoRWiA" name="بررسی نیاز به استخدام" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_ieQGeHQgEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_ieQGgXQgEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:exclusiveGateway id="_ieQGZ3QgEeuCM8KqVoRWiA" gatewayDirection="Unspecified">
+      <bpmn2:incoming>_ieQGgXQgEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_ieQGdXQgEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:outgoing>_ieQGgnQgEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="_ieQGdXQgEeuCM8KqVoRWiA" name="تایید جهت استخدام" sourceRef="_ieQGZ3QgEeuCM8KqVoRWiA" targetRef="_ieQGW3QgEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_ieQGgXQgEeuCM8KqVoRWiA" sourceRef="_ieQGZnQgEeuCM8KqVoRWiA" targetRef="_ieQGZ3QgEeuCM8KqVoRWiA"/>
+    <bpmn2:userTask id="_ieQGanQgEeuCM8KqVoRWiA" name="بررسی گزارشات و تصمیم گیری جهت به کار گیری پزشک معتمد" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_ieQGfnQgEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_ieQGg3QgEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:endEvent id="_ieQGa3QgEeuCM8KqVoRWiA" name="پایان">
+      <bpmn2:incoming>_ieQGhHQgEeuCM8KqVoRWiA</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:exclusiveGateway id="_ieQGbHQgEeuCM8KqVoRWiA" gatewayDirection="Unspecified">
+      <bpmn2:incoming>_ieQGg3QgEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_ieQGhHQgEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:outgoing>_ieQGhXQgEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="_ieQGg3QgEeuCM8KqVoRWiA" sourceRef="_ieQGanQgEeuCM8KqVoRWiA" targetRef="_ieQGbHQgEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_ieQGhHQgEeuCM8KqVoRWiA" name="عدم تایید" sourceRef="_ieQGbHQgEeuCM8KqVoRWiA" targetRef="_ieQGa3QgEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_ieQGhXQgEeuCM8KqVoRWiA" name="تایید" sourceRef="_ieQGbHQgEeuCM8KqVoRWiA" targetRef="_ieQGbnQgEeuCM8KqVoRWiA"/>
+    <bpmn2:userTask id="_ieQGbnQgEeuCM8KqVoRWiA" name="تصمیم گیر نهایی جهت به کارگیری پزشک معتمد" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_ieQGhXQgEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_ieQGhnQgEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="_ieQGhnQgEeuCM8KqVoRWiA" name="" sourceRef="_ieQGbnQgEeuCM8KqVoRWiA" targetRef="_ieQGb3QgEeuCM8KqVoRWiA"/>
+    <bpmn2:exclusiveGateway id="_ieQGb3QgEeuCM8KqVoRWiA" gatewayDirection="Unspecified">
+      <bpmn2:incoming>_ieQGhnQgEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_ieQGenQgEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:outgoing>_ieQGh3QgEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="_ieQGenQgEeuCM8KqVoRWiA" name="تایید نهایی" sourceRef="_ieQGb3QgEeuCM8KqVoRWiA" targetRef="_ieQGX3QgEeuCM8KqVoRWiA"/>
+    <bpmn2:endEvent id="_ieQGcHQgEeuCM8KqVoRWiA" name="پایان">
+      <bpmn2:incoming>_ieQGh3QgEeuCM8KqVoRWiA</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:sequenceFlow id="_ieQGh3QgEeuCM8KqVoRWiA" name="عدم تایید" sourceRef="_ieQGb3QgEeuCM8KqVoRWiA" targetRef="_ieQGcHQgEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_ieQGfnQgEeuCM8KqVoRWiA" name="تایید گزارش" sourceRef="_ieQGYHQgEeuCM8KqVoRWiA" targetRef="_ieQGanQgEeuCM8KqVoRWiA"/>
+    <bpmn2:endEvent id="_ieQGaHQgEeuCM8KqVoRWiA" name="پایان">
+      <bpmn2:incoming>_ieQGgnQgEeuCM8KqVoRWiA</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:sequenceFlow id="_ieQGgnQgEeuCM8KqVoRWiA" name="عدم مواقت" sourceRef="_ieQGZ3QgEeuCM8KqVoRWiA" targetRef="_ieQGaHQgEeuCM8KqVoRWiA"/>
+  </bpmn2:process>
+  <bpmn2:process id="_ieQGiHQgEeuCM8KqVoRWiA" name="Process3" processType="None">
+    <bpmn2:startEvent id="_ieQGiXQgEeuCM8KqVoRWiA" name="شروع" isInterrupting="true">
+      <bpmn2:outgoing>_ieQGinQgEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:task id="_ieQGi3QgEeuCM8KqVoRWiA" name="مراجعه به مطب یکی از پزشکان معتمد سازمان بنادر و دریانوردی همراه با مدارک شناسایی " completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_ieQGinQgEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_ieQGjHQgEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_ieQGinQgEeuCM8KqVoRWiA" sourceRef="_ieQGiXQgEeuCM8KqVoRWiA" targetRef="_ieQGi3QgEeuCM8KqVoRWiA"/>
+    <bpmn2:task id="_ieQGjXQgEeuCM8KqVoRWiA" name="انجام معاینات لازم توسط پزشک معتمد و ثبت در پرونده" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_ieQGjHQgEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_ieQGjnQgEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_ieQGjHQgEeuCM8KqVoRWiA" sourceRef="_ieQGi3QgEeuCM8KqVoRWiA" targetRef="_ieQGjXQgEeuCM8KqVoRWiA"/>
+    <bpmn2:task id="_ieQGj3QgEeuCM8KqVoRWiA" name="انجام آزمایشات در صورت صلاحدید پزشک معتمد" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_ieQGjnQgEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_ieQGkHQgEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_ieQGjnQgEeuCM8KqVoRWiA" sourceRef="_ieQGjXQgEeuCM8KqVoRWiA" targetRef="_ieQGj3QgEeuCM8KqVoRWiA"/>
+    <bpmn2:task id="_ieQGkXQgEeuCM8KqVoRWiA" name="صدور گواهی سلامت پزشکی توسط پزشک معتمد" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_ieQGkHQgEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_ieQGknQgEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_ieQGkHQgEeuCM8KqVoRWiA" sourceRef="_ieQGj3QgEeuCM8KqVoRWiA" targetRef="_ieQGkXQgEeuCM8KqVoRWiA"/>
+    <bpmn2:endEvent id="_ieQGk3QgEeuCM8KqVoRWiA" name="پایان">
+      <bpmn2:incoming>_ieQGknQgEeuCM8KqVoRWiA</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:sequenceFlow id="_ieQGknQgEeuCM8KqVoRWiA" sourceRef="_ieQGkXQgEeuCM8KqVoRWiA" targetRef="_ieQGk3QgEeuCM8KqVoRWiA"/>
+  </bpmn2:process>
+  <bpmn2:process id="_ieQGlHQgEeuCM8KqVoRWiA" name="Process4" processType="None"/>
+  <bpmn2:collaboration id="_ieQGlXQgEeuCM8KqVoRWiA" isClosed="true" name="Collaboration2">
+    <bpmn2:participant id="_ieQGlnQgEeuCM8KqVoRWiA" name="Pool" processRef="_ieQGlHQgEeuCM8KqVoRWiA"/>
+  </bpmn2:collaboration>
+  <bpmn2:process id="_ieQGl3QgEeuCM8KqVoRWiA" name="Process5" processType="None">
+    <bpmn2:startEvent id="_ieQGmHQgEeuCM8KqVoRWiA" name="شروع" isInterrupting="true">
+      <bpmn2:outgoing>_ieQGmXQgEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:task id="_ieQGmnQgEeuCM8KqVoRWiA" name="ارائه مدارک و ثبت درخواست" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_ieQGmXQgEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_ieQGm3QgEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_ieQGmXQgEeuCM8KqVoRWiA" sourceRef="_ieQGmHQgEeuCM8KqVoRWiA" targetRef="_ieQGmnQgEeuCM8KqVoRWiA"/>
+    <bpmn2:task id="_ieQGnHQgEeuCM8KqVoRWiA" name="بررسی درخواست و تصمیم گیری توسط پزشک ناظر" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_ieQGnXQgEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_ieQGnnQgEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_ieQGnXQgEeuCM8KqVoRWiA" sourceRef="_ieQGn3QgEeuCM8KqVoRWiA" targetRef="_ieQGnHQgEeuCM8KqVoRWiA"/>
+    <bpmn2:task id="_ieQGn3QgEeuCM8KqVoRWiA" name="بازرسی از مطب" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_ieQGm3QgEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_ieQGnXQgEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_ieQGm3QgEeuCM8KqVoRWiA" sourceRef="_ieQGmnQgEeuCM8KqVoRWiA" targetRef="_ieQGn3QgEeuCM8KqVoRWiA"/>
+    <bpmn2:endEvent id="_ieQGoHQgEeuCM8KqVoRWiA" name="پایان">
+      <bpmn2:incoming>_ieQGnnQgEeuCM8KqVoRWiA</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:sequenceFlow id="_ieQGnnQgEeuCM8KqVoRWiA" sourceRef="_ieQGnHQgEeuCM8KqVoRWiA" targetRef="_ieQGoHQgEeuCM8KqVoRWiA"/>
+    <bpmn2:startEvent id="_ieQGoXQgEeuCM8KqVoRWiA" name="شروع" isInterrupting="true">
+      <bpmn2:outgoing>_ieQGonQgEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:task id="_ieQGo3QgEeuCM8KqVoRWiA" name="ارائه مدارک و ثبت درخواست" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_ieQGonQgEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_ieQGpHQgEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_ieQGonQgEeuCM8KqVoRWiA" sourceRef="_ieQGoXQgEeuCM8KqVoRWiA" targetRef="_ieQGo3QgEeuCM8KqVoRWiA"/>
+    <bpmn2:task id="_ieQGpXQgEeuCM8KqVoRWiA" name="مصاحبه حضوری با متقاضی در صورت احراز شرایط اولیه" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_ieQGpHQgEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_ieQGpnQgEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_ieQGpHQgEeuCM8KqVoRWiA" sourceRef="_ieQGo3QgEeuCM8KqVoRWiA" targetRef="_ieQGpXQgEeuCM8KqVoRWiA"/>
+    <bpmn2:task id="_ieQGp3QgEeuCM8KqVoRWiA" name="ارائه آموزش های توجیحی پس از انتخاب به عنوان پزشک ناظر" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_ieQGpnQgEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_ieQGqHQgEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_ieQGpnQgEeuCM8KqVoRWiA" sourceRef="_ieQGpXQgEeuCM8KqVoRWiA" targetRef="_ieQGp3QgEeuCM8KqVoRWiA"/>
+    <bpmn2:endEvent id="_ieQGqXQgEeuCM8KqVoRWiA" name="پایان">
+      <bpmn2:incoming>_ieQGqHQgEeuCM8KqVoRWiA</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:sequenceFlow id="_ieQGqHQgEeuCM8KqVoRWiA" sourceRef="_ieQGp3QgEeuCM8KqVoRWiA" targetRef="_ieQGqXQgEeuCM8KqVoRWiA"/>
+  </bpmn2:process>
+  <bpmn2:process id="_ieQGqnQgEeuCM8KqVoRWiA" name="Process6" processType="None"/>
+  <bpmndi:BPMNDiagram id="_ieQGq3QgEeuCM8KqVoRWiA" name="process-diagram2">
+    <bpmndi:BPMNPlane id="_ieQGrHQgEeuCM8KqVoRWiA" bpmnElement="_ieQGqnQgEeuCM8KqVoRWiA"/>
+  </bpmndi:BPMNDiagram>
+  <bpmndi:BPMNDiagram id="_ieQGrXQgEeuCM8KqVoRWiA" name="Collaboration-diagram">
+    <bpmndi:BPMNPlane id="_ieQGrnQgEeuCM8KqVoRWiA" bpmnElement="_ieQGlXQgEeuCM8KqVoRWiA">
+      <bpmndi:BPMNShape id="_ieQGr3QgEeuCM8KqVoRWiA" bpmnElement="_ieQGlnQgEeuCM8KqVoRWiA" isHorizontal="true">
+        <dc:Bounds height="302.0" width="833.0" x="20.0" y="20.0"/>
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+  <bpmndi:BPMNDiagram id="_ieQGsHQgEeuCM8KqVoRWiA" name="شناسنامه خدمت صدور گواهی سلامت پزشکی">
+    <bpmndi:BPMNPlane id="_ieQGsXQgEeuCM8KqVoRWiA" bpmnElement="_ieQGiHQgEeuCM8KqVoRWiA">
+      <bpmndi:BPMNShape id="_ieQGsnQgEeuCM8KqVoRWiA" bpmnElement="_ieQGk3QgEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="653.0" y="229.0"/>
+        <bpmndi:BPMNLabel id="_ieQGs3QgEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="637.0" y="271.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQGtHQgEeuCM8KqVoRWiA" bpmnElement="_ieQGjXQgEeuCM8KqVoRWiA">
+        <dc:Bounds height="72.0" width="120.0" x="256.0" y="103.0"/>
+        <bpmndi:BPMNLabel id="_ieQGtXQgEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQGtnQgEeuCM8KqVoRWiA" bpmnElement="_ieQGiXQgEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="70.0" y="21.0"/>
+        <bpmndi:BPMNLabel id="_ieQGt3QgEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="90.0" y="33.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQGuHQgEeuCM8KqVoRWiA" bpmnElement="_ieQGj3QgEeuCM8KqVoRWiA">
+        <dc:Bounds height="72.0" width="120.0" x="256.0" y="209.0"/>
+        <bpmndi:BPMNLabel id="_ieQGuXQgEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQGunQgEeuCM8KqVoRWiA" bpmnElement="_ieQGi3QgEeuCM8KqVoRWiA">
+        <dc:Bounds height="72.0" width="120.0" x="50.0" y="103.0"/>
+        <bpmndi:BPMNLabel id="_ieQGu3QgEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQGvHQgEeuCM8KqVoRWiA" bpmnElement="_ieQGkXQgEeuCM8KqVoRWiA">
+        <dc:Bounds height="72.0" width="120.0" x="451.0" y="209.0"/>
+        <bpmndi:BPMNLabel id="_ieQGvXQgEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="_ieQGvnQgEeuCM8KqVoRWiA" bpmnElement="_ieQGinQgEeuCM8KqVoRWiA">
+        <di:waypoint x="87.0" y="56.0"/>
+        <di:waypoint x="87.0" y="103.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQGv3QgEeuCM8KqVoRWiA" bpmnElement="_ieQGjHQgEeuCM8KqVoRWiA">
+        <di:waypoint x="170.0" y="139.0"/>
+        <di:waypoint x="256.0" y="139.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQGwHQgEeuCM8KqVoRWiA" bpmnElement="_ieQGkHQgEeuCM8KqVoRWiA">
+        <di:waypoint x="376.0" y="245.0"/>
+        <di:waypoint x="451.0" y="245.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQGwXQgEeuCM8KqVoRWiA" bpmnElement="_ieQGknQgEeuCM8KqVoRWiA">
+        <di:waypoint x="571.0" y="246.0"/>
+        <di:waypoint x="653.0" y="246.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQGwnQgEeuCM8KqVoRWiA" bpmnElement="_ieQGjnQgEeuCM8KqVoRWiA">
+        <di:waypoint x="316.0" y="175.0"/>
+        <di:waypoint x="316.0" y="209.0"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+  <bpmndi:BPMNDiagram id="_ieQGw3QgEeuCM8KqVoRWiA" name="فرایند تقاضای همکاری به عنوان پزشک معتمد">
+    <bpmndi:BPMNPlane id="_ieQGxHQgEeuCM8KqVoRWiA" bpmnElement="_ieQGUXQgEeuCM8KqVoRWiA">
+      <bpmndi:BPMNShape id="_ieQGxXQgEeuCM8KqVoRWiA" bpmnElement="_ieQGbHQgEeuCM8KqVoRWiA">
+        <dc:Bounds height="40.0" width="40.0" x="417.0" y="738.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQGxnQgEeuCM8KqVoRWiA" bpmnElement="_ieQGV3QgEeuCM8KqVoRWiA">
+        <dc:Bounds height="70.0" width="110.0" x="285.0" y="57.0"/>
+        <bpmndi:BPMNLabel id="_ieQGx3QgEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQGyHQgEeuCM8KqVoRWiA" bpmnElement="_ieQGbnQgEeuCM8KqVoRWiA">
+        <dc:Bounds height="70.0" width="110.0" x="529.0" y="841.0"/>
+        <bpmndi:BPMNLabel id="_ieQGyXQgEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQtYHQgEeuCM8KqVoRWiA" bpmnElement="_ieQGanQgEeuCM8KqVoRWiA">
+        <dc:Bounds height="70.0" width="110.0" x="223.0" y="659.0"/>
+        <bpmndi:BPMNLabel id="_ieQtYXQgEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQtYnQgEeuCM8KqVoRWiA" bpmnElement="_ieQGVnQgEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="149.0" y="74.0"/>
+        <bpmndi:BPMNLabel id="_ieQtY3QgEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="133.0" y="116.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQtZHQgEeuCM8KqVoRWiA" bpmnElement="_ieQGYXQgEeuCM8KqVoRWiA">
+        <dc:Bounds height="70.0" width="110.0" x="470.0" y="214.0"/>
+        <bpmndi:BPMNLabel id="_ieQtZXQgEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQtZnQgEeuCM8KqVoRWiA" bpmnElement="_ieQGX3QgEeuCM8KqVoRWiA">
+        <dc:Bounds height="70.0" width="110.0" x="708.0" y="400.0"/>
+        <bpmndi:BPMNLabel id="_ieQtZ3QgEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQtaHQgEeuCM8KqVoRWiA" bpmnElement="_ieQGXnQgEeuCM8KqVoRWiA">
+        <dc:Bounds height="70.0" width="110.0" x="99.0" y="300.0"/>
+        <bpmndi:BPMNLabel id="_ieQtaXQgEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQtanQgEeuCM8KqVoRWiA" bpmnElement="_ieQGYnQgEeuCM8KqVoRWiA">
+        <dc:Bounds height="70.0" width="110.0" x="708.0" y="174.0"/>
+        <bpmndi:BPMNLabel id="_ieQta3QgEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQtbHQgEeuCM8KqVoRWiA" bpmnElement="_ieQGaHQgEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="470.0" y="564.0"/>
+        <bpmndi:BPMNLabel id="_ieQtbXQgEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="454.0" y="606.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQtbnQgEeuCM8KqVoRWiA" bpmnElement="_ieQGUnQgEeuCM8KqVoRWiA" isHorizontal="true">
+        <dc:Bounds height="942.0" width="835.0" x="19.0" y="14.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQtb3QgEeuCM8KqVoRWiA" bpmnElement="_ieQGXHQgEeuCM8KqVoRWiA">
+        <dc:Bounds height="40.0" width="40.0" x="294.0" y="314.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQtcHQgEeuCM8KqVoRWiA" bpmnElement="_ieQGWXQgEeuCM8KqVoRWiA">
+        <dc:Bounds height="350.0" width="802.0" x="49.0" y="154.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQtcXQgEeuCM8KqVoRWiA" bpmnElement="_ieQGZ3QgEeuCM8KqVoRWiA">
+        <dc:Bounds height="40.0" width="40.0" x="354.0" y="561.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQtcnQgEeuCM8KqVoRWiA" bpmnElement="_ieQGZHQgEeuCM8KqVoRWiA">
+        <dc:Bounds height="70.0" width="110.0" x="708.0" y="284.0"/>
+        <bpmndi:BPMNLabel id="_ieQtc3QgEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQtdHQgEeuCM8KqVoRWiA" bpmnElement="_ieQGaXQgEeuCM8KqVoRWiA">
+        <dc:Bounds height="160.0" width="802.0" x="49.0" y="644.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQtdXQgEeuCM8KqVoRWiA" bpmnElement="_ieQGcHQgEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="694.0" y="900.0"/>
+        <bpmndi:BPMNLabel id="_ieQtdnQgEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="678.0" y="939.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQtd3QgEeuCM8KqVoRWiA" bpmnElement="_ieQGXXQgEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="150.0" y="417.0"/>
+        <bpmndi:BPMNLabel id="_ieQteHQgEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="134.0" y="459.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQteXQgEeuCM8KqVoRWiA" bpmnElement="_ieQGW3QgEeuCM8KqVoRWiA">
+        <dc:Bounds height="70.0" width="110.0" x="354.0" y="400.0"/>
+        <bpmndi:BPMNLabel id="_ieQtenQgEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQte3QgEeuCM8KqVoRWiA" bpmnElement="_ieQGYHQgEeuCM8KqVoRWiA">
+        <dc:Bounds height="40.0" width="40.0" x="539.0" y="415.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQtfHQgEeuCM8KqVoRWiA" bpmnElement="_ieQGWHQgEeuCM8KqVoRWiA">
+        <dc:Bounds height="70.0" width="110.0" x="431.0" y="57.0"/>
+        <bpmndi:BPMNLabel id="_ieQtfXQgEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQtfnQgEeuCM8KqVoRWiA" bpmnElement="_ieQGb3QgEeuCM8KqVoRWiA">
+        <dc:Bounds height="40.0" width="40.0" x="774.0" y="856.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQtf3QgEeuCM8KqVoRWiA" bpmnElement="_ieQGZnQgEeuCM8KqVoRWiA">
+        <dc:Bounds height="70.0" width="110.0" x="150.0" y="546.0"/>
+        <bpmndi:BPMNLabel id="_ieQtgHQgEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQtgXQgEeuCM8KqVoRWiA" bpmnElement="_ieQGbXQgEeuCM8KqVoRWiA">
+        <dc:Bounds height="150.0" width="802.0" x="49.0" y="804.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQtgnQgEeuCM8KqVoRWiA" bpmnElement="_ieQGZXQgEeuCM8KqVoRWiA">
+        <dc:Bounds height="140.0" width="802.0" x="49.0" y="504.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQtg3QgEeuCM8KqVoRWiA" bpmnElement="_ieQGVXQgEeuCM8KqVoRWiA">
+        <dc:Bounds height="140.0" width="802.0" x="49.0" y="14.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQthHQgEeuCM8KqVoRWiA" bpmnElement="_ieQGWnQgEeuCM8KqVoRWiA">
+        <dc:Bounds height="70.0" width="110.0" x="259.0" y="192.0"/>
+        <bpmndi:BPMNLabel id="_ieQthXQgEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQthnQgEeuCM8KqVoRWiA" bpmnElement="_ieQGY3QgEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="610.0" y="192.0"/>
+        <bpmndi:BPMNLabel id="_ieQth3QgEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="28.0" x="614.0" y="231.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQtiHQgEeuCM8KqVoRWiA" bpmnElement="_ieQGa3QgEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="567.0" y="740.0"/>
+        <bpmndi:BPMNLabel id="_ieQtiXQgEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="551.0" y="779.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="_ieQtinQgEeuCM8KqVoRWiA" bpmnElement="_ieQGcnQgEeuCM8KqVoRWiA">
+        <di:waypoint x="327.0" y="127.0"/>
+        <di:waypoint x="327.0" y="192.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQti3QgEeuCM8KqVoRWiA" bpmnElement="_ieQGfXQgEeuCM8KqVoRWiA">
+        <di:waypoint x="559.0" y="415.0"/>
+        <di:waypoint x="559.0" y="284.0"/>
+        <bpmndi:BPMNLabel id="_ieQtjHQgEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="38.0" x="565.0" y="347.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQtjXQgEeuCM8KqVoRWiA" bpmnElement="_ieQGhHQgEeuCM8KqVoRWiA">
+        <di:waypoint x="457.0" y="757.0"/>
+        <di:waypoint x="567.0" y="757.0"/>
+        <bpmndi:BPMNLabel id="_ieQtjnQgEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="38.0" x="517.0" y="760.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQtj3QgEeuCM8KqVoRWiA" bpmnElement="_ieQGdnQgEeuCM8KqVoRWiA">
+        <di:waypoint x="464.0" y="435.0"/>
+        <di:waypoint x="539.0" y="435.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQtkHQgEeuCM8KqVoRWiA" bpmnElement="_ieQGhXQgEeuCM8KqVoRWiA">
+        <di:waypoint x="436.0" y="778.0"/>
+        <di:waypoint x="436.0" y="881.0"/>
+        <di:waypoint x="529.0" y="881.0"/>
+        <bpmndi:BPMNLabel id="_ieQtkXQgEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="38.0" x="442.0" y="843.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQtknQgEeuCM8KqVoRWiA" bpmnElement="_ieQGdXQgEeuCM8KqVoRWiA">
+        <di:waypoint x="374.0" y="561.0"/>
+        <di:waypoint x="374.0" y="470.0"/>
+        <bpmndi:BPMNLabel id="_ieQtk3QgEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="38.0" x="380.0" y="519.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQtlHQgEeuCM8KqVoRWiA" bpmnElement="_ieQGc3QgEeuCM8KqVoRWiA">
+        <di:waypoint x="314.0" y="262.0"/>
+        <di:waypoint x="314.0" y="314.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQtlXQgEeuCM8KqVoRWiA" bpmnElement="_ieQGg3QgEeuCM8KqVoRWiA">
+        <di:waypoint x="279.0" y="729.0"/>
+        <di:waypoint x="279.0" y="758.0"/>
+        <di:waypoint x="417.0" y="758.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQtlnQgEeuCM8KqVoRWiA" bpmnElement="_ieQGgXQgEeuCM8KqVoRWiA">
+        <di:waypoint x="260.0" y="581.0"/>
+        <di:waypoint x="354.0" y="581.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQtl3QgEeuCM8KqVoRWiA" bpmnElement="_ieQGh3QgEeuCM8KqVoRWiA">
+        <di:waypoint x="795.0" y="896.0"/>
+        <di:waypoint x="795.0" y="920.0"/>
+        <di:waypoint x="729.0" y="920.0"/>
+        <bpmndi:BPMNLabel id="_ieQtmHQgEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="38.0" x="801.0" y="921.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQtmXQgEeuCM8KqVoRWiA" bpmnElement="_ieQGf3QgEeuCM8KqVoRWiA">
+        <di:waypoint x="763.0" y="284.0"/>
+        <di:waypoint x="763.0" y="244.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQtmnQgEeuCM8KqVoRWiA" bpmnElement="_ieQGhnQgEeuCM8KqVoRWiA">
+        <di:waypoint x="639.0" y="876.0"/>
+        <di:waypoint x="774.0" y="876.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQtm3QgEeuCM8KqVoRWiA" bpmnElement="_ieQGcXQgEeuCM8KqVoRWiA">
+        <di:waypoint x="184.0" y="91.0"/>
+        <di:waypoint x="285.0" y="91.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQtnHQgEeuCM8KqVoRWiA" bpmnElement="_ieQGe3QgEeuCM8KqVoRWiA">
+        <di:waypoint x="763.0" y="400.0"/>
+        <di:waypoint x="763.0" y="354.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQtnXQgEeuCM8KqVoRWiA" bpmnElement="_ieQGfHQgEeuCM8KqVoRWiA">
+        <di:waypoint x="524.0" y="214.0"/>
+        <di:waypoint x="524.0" y="127.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQtnnQgEeuCM8KqVoRWiA" bpmnElement="_ieQGeXQgEeuCM8KqVoRWiA">
+        <di:waypoint x="167.0" y="370.0"/>
+        <di:waypoint x="167.0" y="417.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQtn3QgEeuCM8KqVoRWiA" bpmnElement="_ieQGenQgEeuCM8KqVoRWiA">
+        <di:waypoint x="794.0" y="856.0"/>
+        <di:waypoint x="794.0" y="470.0"/>
+        <bpmndi:BPMNLabel id="_ieQtoHQgEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="38.0" x="800.0" y="741.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQtoXQgEeuCM8KqVoRWiA" bpmnElement="_ieQGeHQgEeuCM8KqVoRWiA">
+        <di:waypoint x="316.0" y="354.0"/>
+        <di:waypoint x="316.0" y="561.0"/>
+        <di:waypoint x="260.0" y="561.0"/>
+        <bpmndi:BPMNLabel id="_ieQtonQgEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="38.0" x="272.0" y="448.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQto3QgEeuCM8KqVoRWiA" bpmnElement="_ieQGd3QgEeuCM8KqVoRWiA">
+        <di:waypoint x="294.0" y="334.0"/>
+        <di:waypoint x="209.0" y="334.0"/>
+        <bpmndi:BPMNLabel id="_ieQtpHQgEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="38.0" x="236.0" y="285.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQtpXQgEeuCM8KqVoRWiA" bpmnElement="_ieQGdHQgEeuCM8KqVoRWiA">
+        <di:waypoint x="447.0" y="127.0"/>
+        <di:waypoint x="447.0" y="400.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQtpnQgEeuCM8KqVoRWiA" bpmnElement="_ieQGgnQgEeuCM8KqVoRWiA">
+        <di:waypoint x="394.0" y="581.0"/>
+        <di:waypoint x="470.0" y="581.0"/>
+        <bpmndi:BPMNLabel id="_ieQtp3QgEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="38.0" x="400.0" y="584.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQtqHQgEeuCM8KqVoRWiA" bpmnElement="_ieQGgHQgEeuCM8KqVoRWiA">
+        <di:waypoint x="708.0" y="209.0"/>
+        <di:waypoint x="645.0" y="209.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQtqXQgEeuCM8KqVoRWiA" bpmnElement="_ieQGfnQgEeuCM8KqVoRWiA">
+        <di:waypoint x="559.0" y="455.0"/>
+        <di:waypoint x="559.0" y="694.0"/>
+        <di:waypoint x="333.0" y="694.0"/>
+        <bpmndi:BPMNLabel id="_ieQtqnQgEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="38.0" x="565.0" y="588.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+  <bpmndi:BPMNDiagram id="_ieQtq3QgEeuCM8KqVoRWiA" name="process-diagram">
+    <bpmndi:BPMNPlane id="_ieQtrHQgEeuCM8KqVoRWiA" bpmnElement="_ieQGl3QgEeuCM8KqVoRWiA">
+      <bpmndi:BPMNShape id="_ieQtrXQgEeuCM8KqVoRWiA" bpmnElement="_ieQGp3QgEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="582.0" y="254.0"/>
+        <bpmndi:BPMNLabel id="_ieQtrnQgEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQtr3QgEeuCM8KqVoRWiA" bpmnElement="_ieQGmHQgEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="170.0" y="130.0"/>
+        <bpmndi:BPMNLabel id="_ieQtsHQgEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="154.0" y="172.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQtsXQgEeuCM8KqVoRWiA" bpmnElement="_ieQGmnQgEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="268.0" y="118.0"/>
+        <bpmndi:BPMNLabel id="_ieQtsnQgEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQts3QgEeuCM8KqVoRWiA" bpmnElement="_ieQGpXQgEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="425.0" y="254.0"/>
+        <bpmndi:BPMNLabel id="_ieQttHQgEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQttXQgEeuCM8KqVoRWiA" bpmnElement="_ieQGo3QgEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="268.0" y="254.0"/>
+        <bpmndi:BPMNLabel id="_ieQttnQgEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQtt3QgEeuCM8KqVoRWiA" bpmnElement="_ieQGqXQgEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="732.0" y="267.0"/>
+        <bpmndi:BPMNLabel id="_ieQtuHQgEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="716.0" y="309.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQtuXQgEeuCM8KqVoRWiA" bpmnElement="_ieQGn3QgEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="425.0" y="118.0"/>
+        <bpmndi:BPMNLabel id="_ieQtunQgEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQtu3QgEeuCM8KqVoRWiA" bpmnElement="_ieQGoHQgEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="731.0" y="131.0"/>
+        <bpmndi:BPMNLabel id="_ieQtvHQgEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="715.0" y="173.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQtvXQgEeuCM8KqVoRWiA" bpmnElement="_ieQGoXQgEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="171.0" y="266.0"/>
+        <bpmndi:BPMNLabel id="_ieQtvnQgEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="155.0" y="308.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_ieQtv3QgEeuCM8KqVoRWiA" bpmnElement="_ieQGnHQgEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="582.0" y="118.0"/>
+        <bpmndi:BPMNLabel id="_ieQtwHQgEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="_ieQtwXQgEeuCM8KqVoRWiA" bpmnElement="_ieQGnXQgEeuCM8KqVoRWiA">
+        <di:waypoint x="515.0" y="148.0"/>
+        <di:waypoint x="582.0" y="148.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQtwnQgEeuCM8KqVoRWiA" bpmnElement="_ieQGm3QgEeuCM8KqVoRWiA">
+        <di:waypoint x="358.0" y="148.0"/>
+        <di:waypoint x="425.0" y="148.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQtw3QgEeuCM8KqVoRWiA" bpmnElement="_ieQGnnQgEeuCM8KqVoRWiA">
+        <di:waypoint x="672.0" y="148.0"/>
+        <di:waypoint x="731.0" y="148.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQtxHQgEeuCM8KqVoRWiA" bpmnElement="_ieQGmXQgEeuCM8KqVoRWiA">
+        <di:waypoint x="205.0" y="147.0"/>
+        <di:waypoint x="268.0" y="147.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQtxXQgEeuCM8KqVoRWiA" bpmnElement="_ieQGqHQgEeuCM8KqVoRWiA">
+        <di:waypoint x="672.0" y="284.0"/>
+        <di:waypoint x="732.0" y="284.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQtxnQgEeuCM8KqVoRWiA" bpmnElement="_ieQGpHQgEeuCM8KqVoRWiA">
+        <di:waypoint x="358.0" y="284.0"/>
+        <di:waypoint x="425.0" y="284.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQtx3QgEeuCM8KqVoRWiA" bpmnElement="_ieQGpnQgEeuCM8KqVoRWiA">
+        <di:waypoint x="515.0" y="284.0"/>
+        <di:waypoint x="582.0" y="284.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_ieQtyHQgEeuCM8KqVoRWiA" bpmnElement="_ieQGonQgEeuCM8KqVoRWiA">
+        <di:waypoint x="206.0" y="283.0"/>
+        <di:waypoint x="268.0" y="283.0"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn2:definitions>

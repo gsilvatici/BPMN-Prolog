@@ -1,0 +1,1295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn2:definitions xmlns="http://genmymodel.com/bpmn2" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:color_1.0="http://www.omg.org/spec/BPMN/non-normative/color/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="_V-9tYHQbEeuCM8KqVoRWiA" exporter="GenMyModel" exporterVersion="1.0" expressionLanguage="http://www.w3.org/1999/XPath" name="refrigerator-production" targetNamespace="http://genmymodel.com/bpmn2" typeLanguage="http://www.w3.org/2001/XMLSchema">
+  <bpmn2:process id="_V-9tYXQbEeuCM8KqVoRWiA" name="Process2" processType="None">
+    <bpmn2:laneSet id="_V-9tYnQbEeuCM8KqVoRWiA">
+      <bpmn2:lane id="_V-9tY3QbEeuCM8KqVoRWiA" name="Склад">
+        <bpmn2:flowNodeRef>_V-9tZHQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_V-9tZXQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_V-9tZnQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_V-9tZ3QbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_V-9taHQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+      </bpmn2:lane>
+      <bpmn2:lane id="_V-9taXQbEeuCM8KqVoRWiA" name="Производство деталей (полуфабрикатов)">
+        <bpmn2:childLaneSet id="_V-9tanQbEeuCM8KqVoRWiA">
+          <bpmn2:lane id="_V-9ta3QbEeuCM8KqVoRWiA" name="Участок подготовки металл-форм">
+            <bpmn2:childLaneSet id="_V-9tbHQbEeuCM8KqVoRWiA">
+              <bpmn2:lane id="_V-9tbXQbEeuCM8KqVoRWiA" name="Участок вырезки метала">
+                <bpmn2:flowNodeRef>_V-9tbnQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+                <bpmn2:flowNodeRef>_V-9tb3QbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+                <bpmn2:flowNodeRef>_V-9tcHQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+              </bpmn2:lane>
+              <bpmn2:lane id="_V-9tcXQbEeuCM8KqVoRWiA" name="Участок гибки металла">
+                <bpmn2:flowNodeRef>_V-9tcnQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+                <bpmn2:flowNodeRef>_V-9tc3QbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+                <bpmn2:flowNodeRef>_V-9tdHQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+                <bpmn2:flowNodeRef>_V-9tdXQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+              </bpmn2:lane>
+            </bpmn2:childLaneSet>
+          </bpmn2:lane>
+          <bpmn2:lane id="_V-9tdnQbEeuCM8KqVoRWiA" name="Посты сборки изделий">
+            <bpmn2:childLaneSet id="_V-9td3QbEeuCM8KqVoRWiA">
+              <bpmn2:lane id="_V-9teHQbEeuCM8KqVoRWiA" name="Буфер постов">
+                <bpmn2:flowNodeRef>_V-9teXQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+                <bpmn2:flowNodeRef>_V-9tenQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+              </bpmn2:lane>
+              <bpmn2:lane id="_V-9te3QbEeuCM8KqVoRWiA" name="ПП">
+                <bpmn2:flowNodeRef>_V-9tfHQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+                <bpmn2:flowNodeRef>_V-9tfXQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+              </bpmn2:lane>
+              <bpmn2:lane id="_V-9tfnQbEeuCM8KqVoRWiA" name="ДВ">
+                <bpmn2:flowNodeRef>_V-9tf3QbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+                <bpmn2:flowNodeRef>_V-9tgHQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+              </bpmn2:lane>
+              <bpmn2:lane id="_V-9tgXQbEeuCM8KqVoRWiA" name="КС">
+                <bpmn2:flowNodeRef>_V-9tgnQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+                <bpmn2:flowNodeRef>_V-9tg3QbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+              </bpmn2:lane>
+              <bpmn2:lane id="_V-9thHQbEeuCM8KqVoRWiA" name="ПР">
+                <bpmn2:flowNodeRef>_V-9thXQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+                <bpmn2:flowNodeRef>_V-9thnQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+              </bpmn2:lane>
+              <bpmn2:lane id="_V-9th3QbEeuCM8KqVoRWiA" name="Д">
+                <bpmn2:flowNodeRef>_V-9tiHQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+                <bpmn2:flowNodeRef>_V-9tiXQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+              </bpmn2:lane>
+              <bpmn2:lane id="_V-9tinQbEeuCM8KqVoRWiA" name="ДФ">
+                <bpmn2:flowNodeRef>_V-9ti3QbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+                <bpmn2:flowNodeRef>_V-9tjHQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+              </bpmn2:lane>
+              <bpmn2:lane id="_V-9tjXQbEeuCM8KqVoRWiA" name="ЭП">
+                <bpmn2:flowNodeRef>_V-9tjnQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+                <bpmn2:flowNodeRef>_V-9tj3QbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+              </bpmn2:lane>
+              <bpmn2:lane id="_V-9tkHQbEeuCM8KqVoRWiA" name="МТ">
+                <bpmn2:flowNodeRef>_V-9tkXQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+                <bpmn2:flowNodeRef>_V-9tknQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+              </bpmn2:lane>
+              <bpmn2:lane id="_V-9tk3QbEeuCM8KqVoRWiA" name="ИС">
+                <bpmn2:flowNodeRef>_V-9tlHQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+                <bpmn2:flowNodeRef>_V-9tlXQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+              </bpmn2:lane>
+            </bpmn2:childLaneSet>
+          </bpmn2:lane>
+        </bpmn2:childLaneSet>
+      </bpmn2:lane>
+      <bpmn2:lane id="_V-9tlnQbEeuCM8KqVoRWiA" name="Линия сборки холодильника">
+        <bpmn2:childLaneSet id="_V-9tl3QbEeuCM8KqVoRWiA">
+          <bpmn2:lane id="_V-9tmHQbEeuCM8KqVoRWiA" name="Буфер линии сборки">
+            <bpmn2:flowNodeRef>_V-9tmXQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+          </bpmn2:lane>
+          <bpmn2:lane id="_V-9tmnQbEeuCM8KqVoRWiA" name="Пост сборки корпусов">
+            <bpmn2:flowNodeRef>_V-9tm3QbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_V-9tnHQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_V-9tnXQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_V-9tnnQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_V-9tn3QbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+          </bpmn2:lane>
+          <bpmn2:lane id="_V-9toHQbEeuCM8KqVoRWiA" name="МУЛДы">
+            <bpmn2:flowNodeRef>_V-9toXQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_V-9tonQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_V-9to3QbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_V-9tpHQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_V-9tpXQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+          </bpmn2:lane>
+          <bpmn2:lane id="_V-9tpnQbEeuCM8KqVoRWiA" name="Посты сборки">
+            <bpmn2:flowNodeRef>_V-9tp3QbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_V-9tqHQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_V-9tqXQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_V-9tqnQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+          </bpmn2:lane>
+          <bpmn2:lane id="_V-9tq3QbEeuCM8KqVoRWiA" name="Пост пайки">
+            <bpmn2:flowNodeRef>_V-9trHQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_V-9trXQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_V-9trnQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+          </bpmn2:lane>
+          <bpmn2:lane id="_V-9tr3QbEeuCM8KqVoRWiA" name="Пост тестирования">
+            <bpmn2:flowNodeRef>_V-9tsHQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_V-9tsXQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_V-9tsnQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_V-9ts3QbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+          </bpmn2:lane>
+          <bpmn2:lane id="_V-9ttHQbEeuCM8KqVoRWiA" name="Пост  брака">
+            <bpmn2:flowNodeRef>_V-9ttXQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_V-9ttnQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_V-9tt3QbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+          </bpmn2:lane>
+          <bpmn2:lane id="_V-9tuHQbEeuCM8KqVoRWiA" name="Участок внешнего вида">
+            <bpmn2:flowNodeRef>_V-9tuXQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_V-9tunQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_V-9tu3QbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_V-9tvHQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+          </bpmn2:lane>
+          <bpmn2:lane id="_V-9tvXQbEeuCM8KqVoRWiA" name="Участок оклейки">
+            <bpmn2:flowNodeRef>_V-9tvnQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_V-9tv3QbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_V-9twHQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+          </bpmn2:lane>
+          <bpmn2:lane id="_V-9twXQbEeuCM8KqVoRWiA" name="Упаковка">
+            <bpmn2:flowNodeRef>_V-9twnQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_V-9tw3QbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_V-9txHQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_V-9txXQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+            <bpmn2:flowNodeRef>_V-9txnQbEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+          </bpmn2:lane>
+        </bpmn2:childLaneSet>
+      </bpmn2:lane>
+    </bpmn2:laneSet>
+    <bpmn2:startEvent id="_V-9tZnQbEeuCM8KqVoRWiA" name="Заказ на производство" isInterrupting="true">
+      <bpmn2:outgoing>_V-9tx3QbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:sequenceFlow id="_V-9tx3QbEeuCM8KqVoRWiA" name="" sourceRef="_V-9tZnQbEeuCM8KqVoRWiA" targetRef="_V-9tZXQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V-9tyHQbEeuCM8KqVoRWiA" name="" sourceRef="_V-9tZXQbEeuCM8KqVoRWiA" targetRef="_V-9tZHQbEeuCM8KqVoRWiA"/>
+    <bpmn2:parallelGateway id="_V-9tZ3QbEeuCM8KqVoRWiA" gatewayDirection="Unspecified">
+      <bpmn2:incoming>_V-9tyXQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9tynQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:outgoing>_V-9ty3QbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:parallelGateway>
+    <bpmn2:sequenceFlow id="_V-9tyXQbEeuCM8KqVoRWiA" sourceRef="_V-9tZHQbEeuCM8KqVoRWiA" targetRef="_V-9tZ3QbEeuCM8KqVoRWiA"/>
+    <bpmn2:task id="_V-9tb3QbEeuCM8KqVoRWiA" name="Получение деталей (листов)" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_V-9tynQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9tzHQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_V-9tzHQbEeuCM8KqVoRWiA" name="" sourceRef="_V-9tb3QbEeuCM8KqVoRWiA" targetRef="_V-9tbnQbEeuCM8KqVoRWiA"/>
+    <bpmn2:userTask id="_V-9tZXQbEeuCM8KqVoRWiA" name="Сбор деталей указаных в спецификации" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V-9tx3QbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9tyHQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="_V-9tZHQbEeuCM8KqVoRWiA" name="Отправка деталей и изготовленых комплектующих на посты" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V-9tyHQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:incoming>_V-9tzXQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9tyXQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="_V-9tbnQbEeuCM8KqVoRWiA" name="Резка деталей на станке" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V-9tzHQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9tznQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="_V-9tznQbEeuCM8KqVoRWiA" name="" sourceRef="_V-9tbnQbEeuCM8KqVoRWiA" targetRef="_V-9tcHQbEeuCM8KqVoRWiA"/>
+    <bpmn2:task id="_V-9tcHQbEeuCM8KqVoRWiA" name="Сбор и отправка деталей на гибку" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_V-9tznQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9tz3QbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_V-9tynQbEeuCM8KqVoRWiA" sourceRef="_V-9tZ3QbEeuCM8KqVoRWiA" targetRef="_V-9tb3QbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V-9t0HQbEeuCM8KqVoRWiA" name="" sourceRef="_V-9tcnQbEeuCM8KqVoRWiA" targetRef="_V-9tc3QbEeuCM8KqVoRWiA"/>
+    <bpmn2:task id="_V-9tdHQbEeuCM8KqVoRWiA" name="Сбор и отправка металл-форм" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_V-9t0XQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9t0nQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_V-9t0XQbEeuCM8KqVoRWiA" sourceRef="_V-9tc3QbEeuCM8KqVoRWiA" targetRef="_V-9tdHQbEeuCM8KqVoRWiA"/>
+    <bpmn2:parallelGateway id="_V-9tdXQbEeuCM8KqVoRWiA" gatewayDirection="Unspecified">
+      <bpmn2:incoming>_V-9t0nQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9t03QbEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:outgoing>_V-9t1HQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:parallelGateway>
+    <bpmn2:task id="_V-9taHQbEeuCM8KqVoRWiA" name="Приём изготовленых комплектующих на склад" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_V-9t03QbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9tzXQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_V-9t03QbEeuCM8KqVoRWiA" sourceRef="_V-9tdXQbEeuCM8KqVoRWiA" targetRef="_V-9taHQbEeuCM8KqVoRWiA"/>
+    <bpmn2:userTask id="_V-9tc3QbEeuCM8KqVoRWiA" name="Гибка деталей" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V-9t0HQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9t0XQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="_V-9tcnQbEeuCM8KqVoRWiA" name="Получение резаных металл деталей" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V-9tz3QbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9t0HQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="_V-9tzXQbEeuCM8KqVoRWiA" sourceRef="_V-9taHQbEeuCM8KqVoRWiA" targetRef="_V-9tZHQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V-9t0nQbEeuCM8KqVoRWiA" sourceRef="_V-9tdHQbEeuCM8KqVoRWiA" targetRef="_V-9tdXQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V-9tz3QbEeuCM8KqVoRWiA" sourceRef="_V-9tcHQbEeuCM8KqVoRWiA" targetRef="_V-9tcnQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V-9t1XQbEeuCM8KqVoRWiA" sourceRef="_V-9tnHQbEeuCM8KqVoRWiA" targetRef="_V-9tnnQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V-9t1nQbEeuCM8KqVoRWiA" sourceRef="_V-9tnHQbEeuCM8KqVoRWiA" targetRef="_V-9tn3QbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V-9t13QbEeuCM8KqVoRWiA" sourceRef="_V-9tnnQbEeuCM8KqVoRWiA" targetRef="_V-9tnXQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V-9t2HQbEeuCM8KqVoRWiA" sourceRef="_V-9tn3QbEeuCM8KqVoRWiA" targetRef="_V-9tnXQbEeuCM8KqVoRWiA"/>
+    <bpmn2:userTask id="_V-9tnnQbEeuCM8KqVoRWiA" name="Скрепление лайнера" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V-9t1XQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9t13QbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="_V-9tn3QbEeuCM8KqVoRWiA" name="Скрепление внешнего корпуса" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V-9t1nQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9t2HQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="_V-9tnXQbEeuCM8KqVoRWiA" name="Объединение корпусов" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V-9t13QbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:incoming>_V-9t2HQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9t2XQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:task id="_V-9teXQbEeuCM8KqVoRWiA" name="Распределение деталей по постам" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_V-9t1HQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:incoming>_V-9ty3QbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9t2nQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_V-9t1HQbEeuCM8KqVoRWiA" sourceRef="_V-9tdXQbEeuCM8KqVoRWiA" targetRef="_V-9teXQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V-9ty3QbEeuCM8KqVoRWiA" sourceRef="_V-9tZ3QbEeuCM8KqVoRWiA" targetRef="_V-9teXQbEeuCM8KqVoRWiA"/>
+    <bpmn2:parallelGateway id="_V-9tenQbEeuCM8KqVoRWiA" gatewayDirection="Unspecified">
+      <bpmn2:incoming>_V-9t2nQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9t23QbEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:outgoing>_V-9t3HQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:outgoing>_V-9t3XQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:outgoing>_V-9t3nQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:outgoing>_V-9t33QbEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:outgoing>_V-9t4HQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:outgoing>_V-9t4XQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:outgoing>_V-9t4nQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:outgoing>_V-9t43QbEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:outgoing>_V-9t5HQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:parallelGateway>
+    <bpmn2:sequenceFlow id="_V-9t2nQbEeuCM8KqVoRWiA" sourceRef="_V-9teXQbEeuCM8KqVoRWiA" targetRef="_V-9tenQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V-9t5XQbEeuCM8KqVoRWiA" name="" sourceRef="_V-9tfHQbEeuCM8KqVoRWiA" targetRef="_V-9tfXQbEeuCM8KqVoRWiA"/>
+    <bpmn2:task id="_V-9tfXQbEeuCM8KqVoRWiA" name="Отправка издения на посты сборки холодильника" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_V-9t5XQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9t5nQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:task id="_V-9tgHQbEeuCM8KqVoRWiA" name="Отправка издения на посты сборки холодильника" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_V-9t53QbEeuCM8KqVoRWiA</bpmn2:incoming>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_V-9t53QbEeuCM8KqVoRWiA" name="" sourceRef="_V-9tf3QbEeuCM8KqVoRWiA" targetRef="_V-9tgHQbEeuCM8KqVoRWiA"/>
+    <bpmn2:task id="_V-9tg3QbEeuCM8KqVoRWiA" name="Отправка издения на посты сборки холодильника" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_V-9t6HQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9t6XQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_V-9t6HQbEeuCM8KqVoRWiA" name="" sourceRef="_V-9tgnQbEeuCM8KqVoRWiA" targetRef="_V-9tg3QbEeuCM8KqVoRWiA"/>
+    <bpmn2:task id="_V-9thnQbEeuCM8KqVoRWiA" name="Отправка издения на посты сборки холодильника" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_V-9t6nQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9t63QbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_V-9t6nQbEeuCM8KqVoRWiA" name="" sourceRef="_V-9thXQbEeuCM8KqVoRWiA" targetRef="_V-9thnQbEeuCM8KqVoRWiA"/>
+    <bpmn2:task id="_V-9tiXQbEeuCM8KqVoRWiA" name="Отправка издения на посты сборки холодильника" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_V-9t7HQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9t7XQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_V-9t7HQbEeuCM8KqVoRWiA" name="" sourceRef="_V-9tiHQbEeuCM8KqVoRWiA" targetRef="_V-9tiXQbEeuCM8KqVoRWiA"/>
+    <bpmn2:task id="_V-9tjHQbEeuCM8KqVoRWiA" name="Отправка издения на посты сборки холодильника" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_V-9t7nQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9t73QbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_V-9t7nQbEeuCM8KqVoRWiA" name="" sourceRef="_V-9ti3QbEeuCM8KqVoRWiA" targetRef="_V-9tjHQbEeuCM8KqVoRWiA"/>
+    <bpmn2:task id="_V-9tj3QbEeuCM8KqVoRWiA" name="Отправка издения на посты сборки холодильника" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_V-9t8HQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9t8XQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_V-9t8HQbEeuCM8KqVoRWiA" name="" sourceRef="_V-9tjnQbEeuCM8KqVoRWiA" targetRef="_V-9tj3QbEeuCM8KqVoRWiA"/>
+    <bpmn2:task id="_V-9tknQbEeuCM8KqVoRWiA" name="Отправка издения на посты сборки холодильника" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_V-9t8nQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9t83QbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_V-9t8nQbEeuCM8KqVoRWiA" name="" sourceRef="_V-9tkXQbEeuCM8KqVoRWiA" targetRef="_V-9tknQbEeuCM8KqVoRWiA"/>
+    <bpmn2:task id="_V-9tlXQbEeuCM8KqVoRWiA" name="Отправка издения на посты сборки холодильника" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_V-9t9HQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9t9XQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_V-9t9HQbEeuCM8KqVoRWiA" name="" sourceRef="_V-9tlHQbEeuCM8KqVoRWiA" targetRef="_V-9tlXQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V-9t23QbEeuCM8KqVoRWiA" sourceRef="_V-9tenQbEeuCM8KqVoRWiA" targetRef="_V-9tfHQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V-9t3HQbEeuCM8KqVoRWiA" sourceRef="_V-9tenQbEeuCM8KqVoRWiA" targetRef="_V-9tf3QbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V-9t3XQbEeuCM8KqVoRWiA" sourceRef="_V-9tenQbEeuCM8KqVoRWiA" targetRef="_V-9tlHQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V-9t3nQbEeuCM8KqVoRWiA" sourceRef="_V-9tenQbEeuCM8KqVoRWiA" targetRef="_V-9tmXQbEeuCM8KqVoRWiA"/>
+    <bpmn2:parallelGateway id="_V-9tmXQbEeuCM8KqVoRWiA" gatewayDirection="Unspecified">
+      <bpmn2:incoming>_V-9t3nQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:incoming>_V-9t5nQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:incoming>_V-9t6XQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:incoming>_V-9t63QbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:incoming>_V-9t7XQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:incoming>_V-9t73QbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:incoming>_V-9t8XQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:incoming>_V-9t83QbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:incoming>_V-9t9XQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9t9nQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:outgoing>_V-9t93QbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:parallelGateway>
+    <bpmn2:sequenceFlow id="_V-9t33QbEeuCM8KqVoRWiA" sourceRef="_V-9tenQbEeuCM8KqVoRWiA" targetRef="_V-9tgnQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V-9t9nQbEeuCM8KqVoRWiA" sourceRef="_V-9tmXQbEeuCM8KqVoRWiA" targetRef="_V-9tnHQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V-9t2XQbEeuCM8KqVoRWiA" name="" sourceRef="_V-9tnXQbEeuCM8KqVoRWiA" targetRef="_V-9tm3QbEeuCM8KqVoRWiA"/>
+    <bpmn2:scriptTask id="_V-9tpXQbEeuCM8KqVoRWiA" name="Нагревание корпуса (3мин)" completionQuantity="1" isForCompensation="false" startQuantity="1" scriptFormat="">
+      <bpmn2:incoming>_V-9t-HQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9t-XQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:script></bpmn2:script>
+    </bpmn2:scriptTask>
+    <bpmn2:sequenceFlow id="_V-9t-XQbEeuCM8KqVoRWiA" name="" sourceRef="_V-9tpXQbEeuCM8KqVoRWiA" targetRef="_V-9tpHQbEeuCM8KqVoRWiA"/>
+    <bpmn2:userTask id="_V-9tnHQbEeuCM8KqVoRWiA" name="Получение деталей для сборки" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V-9t9nQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9t1XQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:outgoing>_V-9t1nQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="_V-9tfHQbEeuCM8KqVoRWiA" name="Сборка изделения" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V-9t23QbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9t5XQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="_V-9tf3QbEeuCM8KqVoRWiA" name="Сборка изделения" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V-9t3HQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9t53QbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="_V-9tgnQbEeuCM8KqVoRWiA" name="Сборка изделения" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V-9t33QbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9t6HQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="_V-9thXQbEeuCM8KqVoRWiA" name="Сборка изделения" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V-9t4HQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9t6nQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="_V-9tiHQbEeuCM8KqVoRWiA" name="Сборка изделения" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V-9t4XQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9t7HQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="_V-9ti3QbEeuCM8KqVoRWiA" name="Сборка изделения" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V-9t4nQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9t7nQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="_V-9tjnQbEeuCM8KqVoRWiA" name="Сборка изделения" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V-9t43QbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9t8HQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="_V-9tkXQbEeuCM8KqVoRWiA" name="Сборка изделения" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V-9t5HQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9t8nQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="_V-9tlHQbEeuCM8KqVoRWiA" name="Сборка изделения" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V-9t3XQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9t9HQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:scriptTask id="_V-9tpHQbEeuCM8KqVoRWiA" name="Набор прочности (7 мин)" completionQuantity="1" isForCompensation="false" startQuantity="1" scriptFormat="">
+      <bpmn2:incoming>_V-9t-XQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V--UcHQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:script></bpmn2:script>
+    </bpmn2:scriptTask>
+    <bpmn2:sequenceFlow id="_V-9t4HQbEeuCM8KqVoRWiA" sourceRef="_V-9tenQbEeuCM8KqVoRWiA" targetRef="_V-9thXQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V-9t4XQbEeuCM8KqVoRWiA" sourceRef="_V-9tenQbEeuCM8KqVoRWiA" targetRef="_V-9tiHQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V-9t4nQbEeuCM8KqVoRWiA" sourceRef="_V-9tenQbEeuCM8KqVoRWiA" targetRef="_V-9ti3QbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V-9t43QbEeuCM8KqVoRWiA" sourceRef="_V-9tenQbEeuCM8KqVoRWiA" targetRef="_V-9tjnQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V--UcHQbEeuCM8KqVoRWiA" name="" sourceRef="_V-9tpHQbEeuCM8KqVoRWiA" targetRef="_V-9to3QbEeuCM8KqVoRWiA"/>
+    <bpmn2:userTask id="_V-9to3QbEeuCM8KqVoRWiA" name="Закачка пены" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V--UcHQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V--UcXQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="_V-9t-HQbEeuCM8KqVoRWiA" sourceRef="_V-9tm3QbEeuCM8KqVoRWiA" targetRef="_V-9tpXQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V--UcXQbEeuCM8KqVoRWiA" name="" sourceRef="_V-9to3QbEeuCM8KqVoRWiA" targetRef="_V-9tonQbEeuCM8KqVoRWiA"/>
+    <bpmn2:userTask id="_V-9tm3QbEeuCM8KqVoRWiA" name="Передача корпуса в МУЛД через корпусную машину" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V-9t2XQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V-9t-HQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="_V-9tonQbEeuCM8KqVoRWiA" name="Крепление кронштейнов для ламп" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V--UcXQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V--UcnQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="_V--UcnQbEeuCM8KqVoRWiA" name="" sourceRef="_V-9tonQbEeuCM8KqVoRWiA" targetRef="_V-9toXQbEeuCM8KqVoRWiA"/>
+    <bpmn2:userTask id="_V-9toXQbEeuCM8KqVoRWiA" name="Перемещение корпуса из мулда на накопитель" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V--UcnQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V--Uc3QbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="_V-9tqXQbEeuCM8KqVoRWiA" name="Получение корпуса с накопителя" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V--Uc3QbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V--UdHQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="_V--Uc3QbEeuCM8KqVoRWiA" sourceRef="_V-9toXQbEeuCM8KqVoRWiA" targetRef="_V-9tqXQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V--UdHQbEeuCM8KqVoRWiA" name="" sourceRef="_V-9tqXQbEeuCM8KqVoRWiA" targetRef="_V-9tqHQbEeuCM8KqVoRWiA"/>
+    <bpmn2:userTask id="_V-9tqHQbEeuCM8KqVoRWiA" name="Инсталяция деталей в корпус холодильника" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V--UdHQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:incoming>_V--UdXQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V--UdnQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="_V--UdnQbEeuCM8KqVoRWiA" name="" sourceRef="_V-9tqHQbEeuCM8KqVoRWiA" targetRef="_V-9tp3QbEeuCM8KqVoRWiA"/>
+    <bpmn2:userTask id="_V-9tp3QbEeuCM8KqVoRWiA" name="Перемещение корпуса на накопитель" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V--UdnQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V--Ud3QbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="_V-9tqnQbEeuCM8KqVoRWiA" name="Получение необходимых деталей для сборки" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V-9t93QbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V--UdXQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="_V-9t93QbEeuCM8KqVoRWiA" sourceRef="_V-9tmXQbEeuCM8KqVoRWiA" targetRef="_V-9tqnQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V--UdXQbEeuCM8KqVoRWiA" sourceRef="_V-9tqnQbEeuCM8KqVoRWiA" targetRef="_V-9tqHQbEeuCM8KqVoRWiA"/>
+    <bpmn2:scriptTask id="_V-9trnQbEeuCM8KqVoRWiA" name="Приём корпуса с накопителя на линию пайки" completionQuantity="1" isForCompensation="false" startQuantity="1" scriptFormat="">
+      <bpmn2:incoming>_V--Ud3QbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V--UeHQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:script></bpmn2:script>
+    </bpmn2:scriptTask>
+    <bpmn2:sequenceFlow id="_V--Ud3QbEeuCM8KqVoRWiA" sourceRef="_V-9tp3QbEeuCM8KqVoRWiA" targetRef="_V-9trnQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V--UeHQbEeuCM8KqVoRWiA" name="" sourceRef="_V-9trnQbEeuCM8KqVoRWiA" targetRef="_V-9trXQbEeuCM8KqVoRWiA"/>
+    <bpmn2:userTask id="_V-9trXQbEeuCM8KqVoRWiA" name="Пайка и закачка газа" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V--UeHQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V--UeXQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="_V--UeXQbEeuCM8KqVoRWiA" name="" sourceRef="_V-9trXQbEeuCM8KqVoRWiA" targetRef="_V-9trHQbEeuCM8KqVoRWiA"/>
+    <bpmn2:scriptTask id="_V-9trHQbEeuCM8KqVoRWiA" name="Отправка корпуса  по ленте" completionQuantity="1" isForCompensation="false" startQuantity="1" scriptFormat="">
+      <bpmn2:incoming>_V--UeXQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V--UenQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:script></bpmn2:script>
+    </bpmn2:scriptTask>
+    <bpmn2:userTask id="_V-9tsnQbEeuCM8KqVoRWiA" name="Приём корпуса на тестирование" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V--UenQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:incoming>_V--Ue3QbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V--UfHQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="_V--UfHQbEeuCM8KqVoRWiA" name="" sourceRef="_V-9tsnQbEeuCM8KqVoRWiA" targetRef="_V-9tsXQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V--UfXQbEeuCM8KqVoRWiA" name="" sourceRef="_V-9tsXQbEeuCM8KqVoRWiA" targetRef="_V-9tsHQbEeuCM8KqVoRWiA"/>
+    <bpmn2:userTask id="_V-9tsXQbEeuCM8KqVoRWiA" name="Контроль утечки" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V--UfHQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V--UfXQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:scriptTask id="_V-9tsHQbEeuCM8KqVoRWiA" name="Проверка на падение температуры" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_V--UfXQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V--UfnQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:scriptTask>
+    <bpmn2:sequenceFlow id="_V--UfnQbEeuCM8KqVoRWiA" name="" sourceRef="_V-9tsHQbEeuCM8KqVoRWiA" targetRef="_V-9ts3QbEeuCM8KqVoRWiA"/>
+    <bpmn2:exclusiveGateway id="_V-9ts3QbEeuCM8KqVoRWiA" name="Имеется брак" gatewayDirection="Unspecified">
+      <bpmn2:incoming>_V--UfnQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V--Uf3QbEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:outgoing>_V--UgHQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="_V--UenQbEeuCM8KqVoRWiA" sourceRef="_V-9trHQbEeuCM8KqVoRWiA" targetRef="_V-9tsnQbEeuCM8KqVoRWiA"/>
+    <bpmn2:userTask id="_V-9ttXQbEeuCM8KqVoRWiA" name="Приём бракованного корпуса" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V--Uf3QbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V--UgXQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="_V--UgXQbEeuCM8KqVoRWiA" name="" sourceRef="_V-9ttXQbEeuCM8KqVoRWiA" targetRef="_V-9ttnQbEeuCM8KqVoRWiA"/>
+    <bpmn2:task id="_V-9ttnQbEeuCM8KqVoRWiA" name="Анализ и исправление бага" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_V--UgXQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V--UgnQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_V--UgnQbEeuCM8KqVoRWiA" name="" sourceRef="_V-9ttnQbEeuCM8KqVoRWiA" targetRef="_V-9tt3QbEeuCM8KqVoRWiA"/>
+    <bpmn2:exclusiveGateway id="_V-9tt3QbEeuCM8KqVoRWiA" name="Баг исправен" gatewayDirection="Unspecified">
+      <bpmn2:incoming>_V--UgnQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V--Ue3QbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="_V--Ue3QbEeuCM8KqVoRWiA" name="Да" sourceRef="_V-9tt3QbEeuCM8KqVoRWiA" targetRef="_V-9tsnQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V--Uf3QbEeuCM8KqVoRWiA" name="Да" sourceRef="_V-9ts3QbEeuCM8KqVoRWiA" targetRef="_V-9ttXQbEeuCM8KqVoRWiA"/>
+    <bpmn2:userTask id="_V-9tu3QbEeuCM8KqVoRWiA" name="Получение холодильника" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V--UgHQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V--Ug3QbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="_V--UgHQbEeuCM8KqVoRWiA" name="Нет" sourceRef="_V-9ts3QbEeuCM8KqVoRWiA" targetRef="_V-9tu3QbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V--Ug3QbEeuCM8KqVoRWiA" name="" sourceRef="_V-9tu3QbEeuCM8KqVoRWiA" targetRef="_V-9tunQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V--UhHQbEeuCM8KqVoRWiA" name="" sourceRef="_V-9tunQbEeuCM8KqVoRWiA" targetRef="_V-9tuXQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V--UhXQbEeuCM8KqVoRWiA" name="" sourceRef="_V-9tuXQbEeuCM8KqVoRWiA" targetRef="_V-9tvHQbEeuCM8KqVoRWiA"/>
+    <bpmn2:userTask id="_V-9tunQbEeuCM8KqVoRWiA" name="Печать и инсталяция наклеек" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V--Ug3QbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V--UhHQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="_V-9tuXQbEeuCM8KqVoRWiA" name="Добовление полок и документации" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V--UhHQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V--UhXQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:task id="_V-9tvHQbEeuCM8KqVoRWiA" name="Отправка холодильника далее по ленте" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_V--UhXQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V--UhnQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:userTask id="_V-9twHQbEeuCM8KqVoRWiA" name="Получение холодильника" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V--UhnQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V--Uh3QbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="_V--UhnQbEeuCM8KqVoRWiA" sourceRef="_V-9tvHQbEeuCM8KqVoRWiA" targetRef="_V-9twHQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V--Uh3QbEeuCM8KqVoRWiA" name="" sourceRef="_V-9twHQbEeuCM8KqVoRWiA" targetRef="_V-9tv3QbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V--UiHQbEeuCM8KqVoRWiA" name="" sourceRef="_V-9tv3QbEeuCM8KqVoRWiA" targetRef="_V-9tvnQbEeuCM8KqVoRWiA"/>
+    <bpmn2:userTask id="_V-9tv3QbEeuCM8KqVoRWiA" name="Оклейка холодильника" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V--Uh3QbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V--UiHQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="_V-9tvnQbEeuCM8KqVoRWiA" name="Перемещение холодильника на линию упаковки" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V--UiHQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V--UiXQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="_V-9txXQbEeuCM8KqVoRWiA" name="Приём холодильника" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V--UiXQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V--UinQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="_V--UinQbEeuCM8KqVoRWiA" name="" sourceRef="_V-9txXQbEeuCM8KqVoRWiA" targetRef="_V-9txHQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V--Ui3QbEeuCM8KqVoRWiA" name="" sourceRef="_V-9txHQbEeuCM8KqVoRWiA" targetRef="_V-9tw3QbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V--UjHQbEeuCM8KqVoRWiA" name="" sourceRef="_V-9tw3QbEeuCM8KqVoRWiA" targetRef="_V-9twnQbEeuCM8KqVoRWiA"/>
+    <bpmn2:userTask id="_V-9txHQbEeuCM8KqVoRWiA" name="Упаковка" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V--UinQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V--Ui3QbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:scriptTask id="_V-9tw3QbEeuCM8KqVoRWiA" name="Пленка" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_V--Ui3QbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V--UjHQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:scriptTask>
+    <bpmn2:userTask id="_V-9twnQbEeuCM8KqVoRWiA" name="Отправка на склад годовой продукции" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_V--UjHQbEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_V--UjXQbEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="_V--UiXQbEeuCM8KqVoRWiA" sourceRef="_V-9tvnQbEeuCM8KqVoRWiA" targetRef="_V-9txXQbEeuCM8KqVoRWiA"/>
+    <bpmn2:endEvent id="_V-9txnQbEeuCM8KqVoRWiA" name="End">
+      <bpmn2:incoming>_V--UjXQbEeuCM8KqVoRWiA</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:sequenceFlow id="_V--UjXQbEeuCM8KqVoRWiA" sourceRef="_V-9twnQbEeuCM8KqVoRWiA" targetRef="_V-9txnQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V-9t5HQbEeuCM8KqVoRWiA" sourceRef="_V-9tenQbEeuCM8KqVoRWiA" targetRef="_V-9tkXQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V-9t5nQbEeuCM8KqVoRWiA" sourceRef="_V-9tfXQbEeuCM8KqVoRWiA" targetRef="_V-9tmXQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V-9t6XQbEeuCM8KqVoRWiA" sourceRef="_V-9tg3QbEeuCM8KqVoRWiA" targetRef="_V-9tmXQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V-9t63QbEeuCM8KqVoRWiA" sourceRef="_V-9thnQbEeuCM8KqVoRWiA" targetRef="_V-9tmXQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V-9t7XQbEeuCM8KqVoRWiA" sourceRef="_V-9tiXQbEeuCM8KqVoRWiA" targetRef="_V-9tmXQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V-9t73QbEeuCM8KqVoRWiA" sourceRef="_V-9tjHQbEeuCM8KqVoRWiA" targetRef="_V-9tmXQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V-9t8XQbEeuCM8KqVoRWiA" sourceRef="_V-9tj3QbEeuCM8KqVoRWiA" targetRef="_V-9tmXQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V-9t83QbEeuCM8KqVoRWiA" sourceRef="_V-9tknQbEeuCM8KqVoRWiA" targetRef="_V-9tmXQbEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_V-9t9XQbEeuCM8KqVoRWiA" sourceRef="_V-9tlXQbEeuCM8KqVoRWiA" targetRef="_V-9tmXQbEeuCM8KqVoRWiA"/>
+  </bpmn2:process>
+  <bpmn2:collaboration id="_V--UjnQbEeuCM8KqVoRWiA" isClosed="true" name="Участок оклейки стикеров">
+    <bpmn2:participant id="_V--Uj3QbEeuCM8KqVoRWiA" name="Производство холодильника" processRef="_V-9tYXQbEeuCM8KqVoRWiA"/>
+    <bpmn2:association id="_V--UkHQbEeuCM8KqVoRWiA" associationDirection="None" targetRef="_V-9tnXQbEeuCM8KqVoRWiA"/>
+    <bpmn2:association id="_V--UkXQbEeuCM8KqVoRWiA" associationDirection="None" sourceRef="_V-9tgnQbEeuCM8KqVoRWiA"/>
+    <bpmn2:association id="_V--UknQbEeuCM8KqVoRWiA" associationDirection="None" sourceRef="_V-9tqHQbEeuCM8KqVoRWiA" targetRef="_V--Uk3QbEeuCM8KqVoRWiA"/>
+    <bpmn2:textAnnotation id="_V--Uk3QbEeuCM8KqVoRWiA" textFormat="text/plain">
+      <bpmn2:text>На этом этапе возможна интеграция деталей с модулем Брискли</bpmn2:text>
+    </bpmn2:textAnnotation>
+  </bpmn2:collaboration>
+  <bpmndi:BPMNDiagram id="_V--UlHQbEeuCM8KqVoRWiA" name="process-diagram">
+    <bpmndi:BPMNPlane id="_V--UlXQbEeuCM8KqVoRWiA" bpmnElement="_V--UjnQbEeuCM8KqVoRWiA">
+      <bpmndi:BPMNShape id="_V--UlnQbEeuCM8KqVoRWiA" bpmnElement="_V-9txXQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="140.0" y="3250.0"/>
+        <bpmndi:BPMNLabel id="_V--Ul3QbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--UmHQbEeuCM8KqVoRWiA" bpmnElement="_V-9toXQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="120.0" x="150.0" y="2160.0"/>
+        <bpmndi:BPMNLabel id="_V--UmXQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--UmnQbEeuCM8KqVoRWiA" bpmnElement="_V-9tiXQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="330.0" y="1127.0"/>
+        <bpmndi:BPMNLabel id="_V--Um3QbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--UnHQbEeuCM8KqVoRWiA" color_1.0:background-color="#87c1e7" bpmnElement="_V-9taXQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="1367.0" width="1281.0" x="56.0" y="210.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--UnXQbEeuCM8KqVoRWiA" bpmnElement="_V-9te3QbEeuCM8KqVoRWiA">
+        <dc:Bounds height="82.0" width="1231.0" x="106.0" y="761.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--UnnQbEeuCM8KqVoRWiA" bpmnElement="_V-9tinQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="87.0" width="1231.0" x="106.0" y="1200.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--Un3QbEeuCM8KqVoRWiA" bpmnElement="_V-9tqXQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="120.0" x="150.0" y="2275.0"/>
+        <bpmndi:BPMNLabel id="_V--UoHQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--UoXQbEeuCM8KqVoRWiA" bpmnElement="_V-9tr3QbEeuCM8KqVoRWiA">
+        <dc:Bounds height="190.0" width="1256.0" x="81.0" y="2544.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--UonQbEeuCM8KqVoRWiA" bpmnElement="_V-9tmnQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="270.0" width="1256.0" x="81.0" y="1747.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--Uo3QbEeuCM8KqVoRWiA" bpmnElement="_V-9tvXQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="150.0" width="1256.0" x="81.0" y="3034.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--UpHQbEeuCM8KqVoRWiA" bpmnElement="_V-9tg3QbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="330.0" y="947.0"/>
+        <bpmndi:BPMNLabel id="_V--UpXQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--UpnQbEeuCM8KqVoRWiA" bpmnElement="_V-9twXQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="150.0" width="1256.0" x="81.0" y="3184.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--Up3QbEeuCM8KqVoRWiA" bpmnElement="_V-9tgHQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="324.0" y="864.0"/>
+        <bpmndi:BPMNLabel id="_V--UqHQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--UqXQbEeuCM8KqVoRWiA" bpmnElement="_V-9tpnQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="220.0" width="1256.0" x="81.0" y="2234.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--UqnQbEeuCM8KqVoRWiA" bpmnElement="_V-9tZXQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="203.0" y="36.0"/>
+        <bpmndi:BPMNLabel id="_V--Uq3QbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--UrHQbEeuCM8KqVoRWiA" bpmnElement="_V-9ttnQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="270.0" y="2790.0"/>
+        <bpmndi:BPMNLabel id="_V--UrXQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--UrnQbEeuCM8KqVoRWiA" bpmnElement="_V-9tjXQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="100.0" width="1231.0" x="106.0" y="1287.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--Ur3QbEeuCM8KqVoRWiA" bpmnElement="_V-9tqHQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="140.0" x="362.0" y="2332.0"/>
+        <bpmndi:BPMNLabel id="_V--UsHQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--UsXQbEeuCM8KqVoRWiA" bpmnElement="_V-9tnHQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="272.0" y="1795.0"/>
+        <bpmndi:BPMNLabel id="_V--UsnQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--Us3QbEeuCM8KqVoRWiA" bpmnElement="_V-9tb3QbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="175.0" y="224.0"/>
+        <bpmndi:BPMNLabel id="_V--UtHQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--UtXQbEeuCM8KqVoRWiA" bpmnElement="_V-9twHQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="140.0" y="3100.0"/>
+        <bpmndi:BPMNLabel id="_V--UtnQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--Ut3QbEeuCM8KqVoRWiA" bpmnElement="_V-9tmXQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="40.0" width="40.0" x="447.0" y="1629.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--UuHQbEeuCM8KqVoRWiA" bpmnElement="_V-9tpXQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="150.0" y="2072.0"/>
+        <bpmndi:BPMNLabel id="_V--UuXQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--UunQbEeuCM8KqVoRWiA" bpmnElement="_V-9tsnQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="110.0" x="140.0" y="2600.0"/>
+        <bpmndi:BPMNLabel id="_V--Uu3QbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--UvHQbEeuCM8KqVoRWiA" color_1.0:background-color="#333333" bpmnElement="_V-9tY3QbEeuCM8KqVoRWiA">
+        <dc:Bounds height="194.0" width="1281.0" x="56.0" y="16.0"/>
+        <bpmndi:BPMNLabel id="_V--UvXQbEeuCM8KqVoRWiA" color_1.0:color="#FFFFFF"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--UvnQbEeuCM8KqVoRWiA" bpmnElement="_V-9tt3QbEeuCM8KqVoRWiA">
+        <dc:Bounds height="40.0" width="40.0" x="400.0" y="2800.0"/>
+        <bpmndi:BPMNLabel id="_V--Uv3QbEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="408.0" y="2772.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--UwHQbEeuCM8KqVoRWiA" bpmnElement="_V-9tuXQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="398.0" y="2944.0"/>
+        <bpmndi:BPMNLabel id="_V--UwXQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--UwnQbEeuCM8KqVoRWiA" bpmnElement="_V-9tc3QbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="305.0" y="419.0"/>
+        <bpmndi:BPMNLabel id="_V--Uw3QbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--UxHQbEeuCM8KqVoRWiA" color_1.0:border-color="#6ADAFF" bpmnElement="_V-9teHQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="170.0" width="1231.0" x="106.0" y="591.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--UxXQbEeuCM8KqVoRWiA" bpmnElement="_V-9toHQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="217.0" width="1256.0" x="81.0" y="2017.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--UxnQbEeuCM8KqVoRWiA" bpmnElement="_V-9tf3QbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="191.0" y="864.0"/>
+        <bpmndi:BPMNLabel id="_V--Ux3QbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--UyHQbEeuCM8KqVoRWiA" bpmnElement="_V-9tcnQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="175.0" y="419.0"/>
+        <bpmndi:BPMNLabel id="_V--UyXQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--UynQbEeuCM8KqVoRWiA" bpmnElement="_V-9trnQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="110.0" x="140.0" y="2486.0"/>
+        <bpmndi:BPMNLabel id="_V--Uy3QbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--UzHQbEeuCM8KqVoRWiA" bpmnElement="_V-9tn3QbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="402.0" y="1795.0"/>
+        <bpmndi:BPMNLabel id="_V--UzXQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--UznQbEeuCM8KqVoRWiA" bpmnElement="_V-9tfnQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="87.0" width="1231.0" x="106.0" y="843.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--Uz3QbEeuCM8KqVoRWiA" bpmnElement="_V-9taHQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="514.0" y="36.0"/>
+        <bpmndi:BPMNLabel id="_V--U0HQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--U0XQbEeuCM8KqVoRWiA" color_1.0:background-color="#DFF2FF" bpmnElement="_V-9tcXQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="200.0" width="1231.0" x="106.0" y="391.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--U0nQbEeuCM8KqVoRWiA" bpmnElement="_V-9tm3QbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="120.0" x="257.0" y="1946.0"/>
+        <bpmndi:BPMNLabel id="_V--U03QbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--U1HQbEeuCM8KqVoRWiA" bpmnElement="_V-9thnQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="330.0" y="1037.0"/>
+        <bpmndi:BPMNLabel id="_V--U1XQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--U1nQbEeuCM8KqVoRWiA" bpmnElement="_V-9tenQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="40.0" width="40.0" x="441.0" y="713.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--U13QbEeuCM8KqVoRWiA" color_1.0:background-color="#bdabe9" bpmnElement="_V-9tlnQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="1757.0" width="1281.0" x="56.0" y="1577.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--U2HQbEeuCM8KqVoRWiA" bpmnElement="_V-9tdHQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="422.0" y="419.0"/>
+        <bpmndi:BPMNLabel id="_V--U2XQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--U2nQbEeuCM8KqVoRWiA" bpmnElement="_V-9trHQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="420.0" y="2486.0"/>
+        <bpmndi:BPMNLabel id="_V--U23QbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--U3HQbEeuCM8KqVoRWiA" bpmnElement="_V-9tZHQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="168.0" x="320.0" y="36.0"/>
+        <bpmndi:BPMNLabel id="_V--U3XQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--U3nQbEeuCM8KqVoRWiA" bpmnElement="_V-9tk3QbEeuCM8KqVoRWiA">
+        <dc:Bounds height="100.0" width="1231.0" x="106.0" y="1477.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--U33QbEeuCM8KqVoRWiA" bpmnElement="_V-9tiHQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="197.0" y="1127.0"/>
+        <bpmndi:BPMNLabel id="_V--U4HQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--U4XQbEeuCM8KqVoRWiA" bpmnElement="_V-9tw3QbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="400.0" y="3250.0"/>
+        <bpmndi:BPMNLabel id="_V--7gHQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7gXQbEeuCM8KqVoRWiA" bpmnElement="_V-9tnXQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="272.0" y="1869.0"/>
+        <bpmndi:BPMNLabel id="_V--7gnQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7g3QbEeuCM8KqVoRWiA" bpmnElement="_V-9tuHQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="150.0" width="1256.0" x="81.0" y="2884.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7hHQbEeuCM8KqVoRWiA" bpmnElement="_V-9tvHQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="528.0" y="2944.0"/>
+        <bpmndi:BPMNLabel id="_V--7hXQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7hnQbEeuCM8KqVoRWiA" bpmnElement="_V-9tZ3QbEeuCM8KqVoRWiA">
+        <dc:Bounds height="40.0" width="40.0" x="383.0" y="129.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7h3QbEeuCM8KqVoRWiA" bpmnElement="_V-9tq3QbEeuCM8KqVoRWiA">
+        <dc:Bounds height="90.0" width="1256.0" x="81.0" y="2454.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7iHQbEeuCM8KqVoRWiA" bpmnElement="_V--Uk3QbEeuCM8KqVoRWiA">
+        <dc:Bounds height="50.0" width="100.0" x="597.0" y="2347.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7iXQbEeuCM8KqVoRWiA" color_1.0:background-color="#6ADAFF" bpmnElement="_V-9tdnQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="986.0" width="1256.0" x="81.0" y="591.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7inQbEeuCM8KqVoRWiA" bpmnElement="_V-9tbnQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="298.0" y="224.0"/>
+        <bpmndi:BPMNLabel id="_V--7i3QbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7jHQbEeuCM8KqVoRWiA" bpmnElement="_V-9tvnQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="110.0" x="400.0" y="3100.0"/>
+        <bpmndi:BPMNLabel id="_V--7jXQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7jnQbEeuCM8KqVoRWiA" bpmnElement="_V-9tlXQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="330.0" y="1494.0"/>
+        <bpmndi:BPMNLabel id="_V--7j3QbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7kHQbEeuCM8KqVoRWiA" bpmnElement="_V-9tkXQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="197.0" y="1404.0"/>
+        <bpmndi:BPMNLabel id="_V--7kXQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7knQbEeuCM8KqVoRWiA" bpmnElement="_V-9tpHQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="280.0" y="2072.0"/>
+        <bpmndi:BPMNLabel id="_V--7k3QbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7lHQbEeuCM8KqVoRWiA" bpmnElement="_V-9tj3QbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="330.0" y="1304.0"/>
+        <bpmndi:BPMNLabel id="_V--7lXQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7lnQbEeuCM8KqVoRWiA" bpmnElement="_V-9tunQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="268.0" y="2944.0"/>
+        <bpmndi:BPMNLabel id="_V--7l3QbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7mHQbEeuCM8KqVoRWiA" bpmnElement="_V-9tnnQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="138.0" y="1795.0"/>
+        <bpmndi:BPMNLabel id="_V--7mXQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7mnQbEeuCM8KqVoRWiA" bpmnElement="_V-9tu3QbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="138.0" y="2944.0"/>
+        <bpmndi:BPMNLabel id="_V--7m3QbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7nHQbEeuCM8KqVoRWiA" bpmnElement="_V-9tfHQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="189.0" y="777.0"/>
+        <bpmndi:BPMNLabel id="_V--7nXQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7nnQbEeuCM8KqVoRWiA" bpmnElement="_V-9tkHQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="90.0" width="1231.0" x="106.0" y="1387.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7n3QbEeuCM8KqVoRWiA" bpmnElement="_V-9tlHQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="197.0" y="1494.0"/>
+        <bpmndi:BPMNLabel id="_V--7oHQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7oXQbEeuCM8KqVoRWiA" bpmnElement="_V-9tonQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="540.0" y="2072.0"/>
+        <bpmndi:BPMNLabel id="_V--7onQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7o3QbEeuCM8KqVoRWiA" bpmnElement="_V-9tsHQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="420.0" y="2600.0"/>
+        <bpmndi:BPMNLabel id="_V--7pHQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7pXQbEeuCM8KqVoRWiA" bpmnElement="_V-9ttXQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="140.0" y="2790.0"/>
+        <bpmndi:BPMNLabel id="_V--7pnQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7p3QbEeuCM8KqVoRWiA" bpmnElement="_V-9th3QbEeuCM8KqVoRWiA">
+        <dc:Bounds height="90.0" width="1231.0" x="106.0" y="1110.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7qHQbEeuCM8KqVoRWiA" bpmnElement="_V-9ts3QbEeuCM8KqVoRWiA">
+        <dc:Bounds height="40.0" width="40.0" x="457.0" y="2682.0"/>
+        <bpmndi:BPMNLabel id="_V--7qXQbEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="508.0" y="2690.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7qnQbEeuCM8KqVoRWiA" bpmnElement="_V-9tZnQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="128.0" y="48.0"/>
+        <bpmndi:BPMNLabel id="_V--7q3QbEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="112.0" y="90.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7rHQbEeuCM8KqVoRWiA" bpmnElement="_V-9tv3QbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="270.0" y="3100.0"/>
+        <bpmndi:BPMNLabel id="_V--7rXQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7rnQbEeuCM8KqVoRWiA" bpmnElement="_V-9tfXQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="322.0" y="777.0"/>
+        <bpmndi:BPMNLabel id="_V--7r3QbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7sHQbEeuCM8KqVoRWiA" color_1.0:background-color="#DFF2FF" bpmnElement="_V-9ta3QbEeuCM8KqVoRWiA">
+        <dc:Bounds height="381.0" width="1256.0" x="81.0" y="210.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7sXQbEeuCM8KqVoRWiA" bpmnElement="_V-9tgnQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="197.0" y="947.0"/>
+        <bpmndi:BPMNLabel id="_V--7snQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7s3QbEeuCM8KqVoRWiA" bpmnElement="_V-9tgXQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="90.0" width="1231.0" x="106.0" y="930.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7tHQbEeuCM8KqVoRWiA" bpmnElement="_V-9twnQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="530.0" y="3250.0"/>
+        <bpmndi:BPMNLabel id="_V--7tXQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7tnQbEeuCM8KqVoRWiA" bpmnElement="_V-9ti3QbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="197.0" y="1217.0"/>
+        <bpmndi:BPMNLabel id="_V--7t3QbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7uHQbEeuCM8KqVoRWiA" bpmnElement="_V-9txnQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="672.0" y="3263.0"/>
+        <bpmndi:BPMNLabel id="_V--7uXQbEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="656.0" y="3305.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7unQbEeuCM8KqVoRWiA" bpmnElement="_V-9tdXQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="40.0" width="40.0" x="447.0" y="524.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7u3QbEeuCM8KqVoRWiA" bpmnElement="_V-9trXQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="290.0" y="2486.0"/>
+        <bpmndi:BPMNLabel id="_V--7vHQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7vXQbEeuCM8KqVoRWiA" color_1.0:background-color="#DFF2FF" bpmnElement="_V-9tbXQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="181.0" width="1231.0" x="106.0" y="210.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7vnQbEeuCM8KqVoRWiA" color_1.0:background-color="#66CDAA" bpmnElement="_V--Uj3QbEeuCM8KqVoRWiA" isHorizontal="true">
+        <dc:Bounds height="3320.0" width="1314.0" x="26.0" y="16.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7v3QbEeuCM8KqVoRWiA" bpmnElement="_V-9tjnQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="197.0" y="1304.0"/>
+        <bpmndi:BPMNLabel id="_V--7wHQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7wXQbEeuCM8KqVoRWiA" bpmnElement="_V-9tjHQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="330.0" y="1217.0"/>
+        <bpmndi:BPMNLabel id="_V--7wnQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7w3QbEeuCM8KqVoRWiA" bpmnElement="_V-9tknQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="330.0" y="1404.0"/>
+        <bpmndi:BPMNLabel id="_V--7xHQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7xXQbEeuCM8KqVoRWiA" bpmnElement="_V-9teXQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="416.0" y="627.0"/>
+        <bpmndi:BPMNLabel id="_V--7xnQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7x3QbEeuCM8KqVoRWiA" bpmnElement="_V-9tcHQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="175.0" y="310.0"/>
+        <bpmndi:BPMNLabel id="_V--7yHQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7yXQbEeuCM8KqVoRWiA" bpmnElement="_V-9tsXQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="290.0" y="2600.0"/>
+        <bpmndi:BPMNLabel id="_V--7ynQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7y3QbEeuCM8KqVoRWiA" bpmnElement="_V-9thXQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="197.0" y="1037.0"/>
+        <bpmndi:BPMNLabel id="_V--7zHQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7zXQbEeuCM8KqVoRWiA" bpmnElement="_V-9tmHQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="170.0" width="1256.0" x="81.0" y="1577.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--7znQbEeuCM8KqVoRWiA" bpmnElement="_V-9txHQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="270.0" y="3250.0"/>
+        <bpmndi:BPMNLabel id="_V--7z3QbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--70HQbEeuCM8KqVoRWiA" bpmnElement="_V-9tqnQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="140.0" x="540.0" y="2275.0"/>
+        <bpmndi:BPMNLabel id="_V--70XQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--70nQbEeuCM8KqVoRWiA" bpmnElement="_V-9to3QbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="410.0" y="2072.0"/>
+        <bpmndi:BPMNLabel id="_V--703QbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--71HQbEeuCM8KqVoRWiA" bpmnElement="_V-9ttHQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="150.0" width="1256.0" x="81.0" y="2734.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--71XQbEeuCM8KqVoRWiA" bpmnElement="_V-9tp3QbEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="150.0" y="2386.0"/>
+        <bpmndi:BPMNLabel id="_V--71nQbEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_V--713QbEeuCM8KqVoRWiA" bpmnElement="_V-9thHQbEeuCM8KqVoRWiA">
+        <dc:Bounds height="90.0" width="1231.0" x="106.0" y="1020.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="_V--72HQbEeuCM8KqVoRWiA" bpmnElement="_V--UdnQbEeuCM8KqVoRWiA">
+        <di:waypoint x="432.0" y="2392.0"/>
+        <di:waypoint x="432.0" y="2416.0"/>
+        <di:waypoint x="240.0" y="2416.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--72XQbEeuCM8KqVoRWiA" bpmnElement="_V--UhHQbEeuCM8KqVoRWiA">
+        <di:waypoint x="358.0" y="2974.0"/>
+        <di:waypoint x="398.0" y="2974.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--72nQbEeuCM8KqVoRWiA" bpmnElement="_V-9t2XQbEeuCM8KqVoRWiA">
+        <di:waypoint x="317.0" y="1929.0"/>
+        <di:waypoint x="317.0" y="1946.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--723QbEeuCM8KqVoRWiA" bpmnElement="_V--Ud3QbEeuCM8KqVoRWiA">
+        <di:waypoint x="195.0" y="2446.0"/>
+        <di:waypoint x="195.0" y="2486.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--73HQbEeuCM8KqVoRWiA" bpmnElement="_V-9t5HQbEeuCM8KqVoRWiA">
+        <di:waypoint x="441.0" y="733.0"/>
+        <di:waypoint x="157.0" y="733.0"/>
+        <di:waypoint x="157.0" y="1437.0"/>
+        <di:waypoint x="197.0" y="1437.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--73XQbEeuCM8KqVoRWiA" bpmnElement="_V-9t1HQbEeuCM8KqVoRWiA">
+        <di:waypoint x="467.0" y="564.0"/>
+        <di:waypoint x="467.0" y="627.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--73nQbEeuCM8KqVoRWiA" bpmnElement="_V-9t43QbEeuCM8KqVoRWiA">
+        <di:waypoint x="441.0" y="733.0"/>
+        <di:waypoint x="157.0" y="733.0"/>
+        <di:waypoint x="157.0" y="1340.0"/>
+        <di:waypoint x="197.0" y="1340.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--733QbEeuCM8KqVoRWiA" bpmnElement="_V-9t7XQbEeuCM8KqVoRWiA">
+        <di:waypoint x="420.0" y="1157.0"/>
+        <di:waypoint x="467.0" y="1157.0"/>
+        <di:waypoint x="467.0" y="1629.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--74HQbEeuCM8KqVoRWiA" bpmnElement="_V-9tzXQbEeuCM8KqVoRWiA">
+        <di:waypoint x="514.0" y="66.0"/>
+        <di:waypoint x="488.0" y="66.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--74XQbEeuCM8KqVoRWiA" bpmnElement="_V-9t3HQbEeuCM8KqVoRWiA">
+        <di:waypoint x="441.0" y="733.0"/>
+        <di:waypoint x="154.0" y="733.0"/>
+        <di:waypoint x="154.0" y="898.0"/>
+        <di:waypoint x="191.0" y="898.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--74nQbEeuCM8KqVoRWiA" bpmnElement="_V-9t83QbEeuCM8KqVoRWiA">
+        <di:waypoint x="420.0" y="1434.0"/>
+        <di:waypoint x="467.0" y="1434.0"/>
+        <di:waypoint x="467.0" y="1629.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--743QbEeuCM8KqVoRWiA" bpmnElement="_V--UdXQbEeuCM8KqVoRWiA">
+        <di:waypoint x="540.0" y="2298.0"/>
+        <di:waypoint x="442.0" y="2298.0"/>
+        <di:waypoint x="442.0" y="2332.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--75HQbEeuCM8KqVoRWiA" bpmnElement="_V--UiHQbEeuCM8KqVoRWiA">
+        <di:waypoint x="360.0" y="3130.0"/>
+        <di:waypoint x="400.0" y="3130.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--75XQbEeuCM8KqVoRWiA" bpmnElement="_V-9t2HQbEeuCM8KqVoRWiA">
+        <di:waypoint x="453.0" y="1855.0"/>
+        <di:waypoint x="453.0" y="1899.0"/>
+        <di:waypoint x="362.0" y="1899.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--75nQbEeuCM8KqVoRWiA" bpmnElement="_V-9t23QbEeuCM8KqVoRWiA">
+        <di:waypoint x="441.0" y="733.0"/>
+        <di:waypoint x="154.0" y="733.0"/>
+        <di:waypoint x="154.0" y="810.0"/>
+        <di:waypoint x="189.0" y="810.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--753QbEeuCM8KqVoRWiA" bpmnElement="_V-9t8HQbEeuCM8KqVoRWiA">
+        <di:waypoint x="287.0" y="1334.0"/>
+        <di:waypoint x="330.0" y="1334.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--76HQbEeuCM8KqVoRWiA" bpmnElement="_V-9t03QbEeuCM8KqVoRWiA">
+        <di:waypoint x="487.0" y="544.0"/>
+        <di:waypoint x="554.0" y="544.0"/>
+        <di:waypoint x="554.0" y="96.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--76XQbEeuCM8KqVoRWiA" bpmnElement="_V-9tyXQbEeuCM8KqVoRWiA">
+        <di:waypoint x="403.0" y="96.0"/>
+        <di:waypoint x="403.0" y="129.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--76nQbEeuCM8KqVoRWiA" bpmnElement="_V-9t33QbEeuCM8KqVoRWiA">
+        <di:waypoint x="441.0" y="733.0"/>
+        <di:waypoint x="157.0" y="733.0"/>
+        <di:waypoint x="157.0" y="978.0"/>
+        <di:waypoint x="197.0" y="978.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--763QbEeuCM8KqVoRWiA" bpmnElement="_V--UhnQbEeuCM8KqVoRWiA">
+        <di:waypoint x="567.0" y="3004.0"/>
+        <di:waypoint x="567.0" y="3025.0"/>
+        <di:waypoint x="185.0" y="3025.0"/>
+        <di:waypoint x="185.0" y="3100.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--77HQbEeuCM8KqVoRWiA" bpmnElement="_V-9t63QbEeuCM8KqVoRWiA">
+        <di:waypoint x="420.0" y="1067.0"/>
+        <di:waypoint x="467.0" y="1067.0"/>
+        <di:waypoint x="467.0" y="1629.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--77XQbEeuCM8KqVoRWiA" bpmnElement="_V-9t53QbEeuCM8KqVoRWiA">
+        <di:waypoint x="281.0" y="894.0"/>
+        <di:waypoint x="324.0" y="894.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--77nQbEeuCM8KqVoRWiA" bpmnElement="_V--Uh3QbEeuCM8KqVoRWiA">
+        <di:waypoint x="230.0" y="3130.0"/>
+        <di:waypoint x="270.0" y="3130.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--773QbEeuCM8KqVoRWiA" bpmnElement="_V-9t0HQbEeuCM8KqVoRWiA">
+        <di:waypoint x="265.0" y="449.0"/>
+        <di:waypoint x="305.0" y="449.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--78HQbEeuCM8KqVoRWiA" bpmnElement="_V-9t3XQbEeuCM8KqVoRWiA">
+        <di:waypoint x="441.0" y="733.0"/>
+        <di:waypoint x="157.0" y="733.0"/>
+        <di:waypoint x="157.0" y="1523.0"/>
+        <di:waypoint x="197.0" y="1523.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--78XQbEeuCM8KqVoRWiA" bpmnElement="_V-9t6XQbEeuCM8KqVoRWiA">
+        <di:waypoint x="420.0" y="977.0"/>
+        <di:waypoint x="467.0" y="977.0"/>
+        <di:waypoint x="467.0" y="1629.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--78nQbEeuCM8KqVoRWiA" bpmnElement="_V--UcnQbEeuCM8KqVoRWiA">
+        <di:waypoint x="630.0" y="2102.0"/>
+        <di:waypoint x="642.0" y="2102.0"/>
+        <di:waypoint x="642.0" y="2181.0"/>
+        <di:waypoint x="270.0" y="2181.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--783QbEeuCM8KqVoRWiA" bpmnElement="_V-9t5nQbEeuCM8KqVoRWiA">
+        <di:waypoint x="412.0" y="807.0"/>
+        <di:waypoint x="467.0" y="807.0"/>
+        <di:waypoint x="467.0" y="1629.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--79HQbEeuCM8KqVoRWiA" bpmnElement="_V-9t6nQbEeuCM8KqVoRWiA">
+        <di:waypoint x="287.0" y="1067.0"/>
+        <di:waypoint x="330.0" y="1067.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--79XQbEeuCM8KqVoRWiA" bpmnElement="_V-9t93QbEeuCM8KqVoRWiA">
+        <di:waypoint x="487.0" y="1649.0"/>
+        <di:waypoint x="713.0" y="1649.0"/>
+        <di:waypoint x="714.0" y="2304.0"/>
+        <di:waypoint x="680.0" y="2304.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--79nQbEeuCM8KqVoRWiA" bpmnElement="_V-9t4XQbEeuCM8KqVoRWiA">
+        <di:waypoint x="441.0" y="733.0"/>
+        <di:waypoint x="157.0" y="733.0"/>
+        <di:waypoint x="157.0" y="1161.0"/>
+        <di:waypoint x="197.0" y="1161.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--793QbEeuCM8KqVoRWiA" bpmnElement="_V-9t7nQbEeuCM8KqVoRWiA">
+        <di:waypoint x="287.0" y="1247.0"/>
+        <di:waypoint x="330.0" y="1247.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--7-HQbEeuCM8KqVoRWiA" bpmnElement="_V-9t6HQbEeuCM8KqVoRWiA">
+        <di:waypoint x="287.0" y="977.0"/>
+        <di:waypoint x="330.0" y="977.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--7-XQbEeuCM8KqVoRWiA" bpmnElement="_V-9t-XQbEeuCM8KqVoRWiA">
+        <di:waypoint x="240.0" y="2102.0"/>
+        <di:waypoint x="280.0" y="2102.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--7-nQbEeuCM8KqVoRWiA" bpmnElement="_V--UfnQbEeuCM8KqVoRWiA">
+        <di:waypoint x="477.0" y="2660.0"/>
+        <di:waypoint x="477.0" y="2682.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--7-3QbEeuCM8KqVoRWiA" bpmnElement="_V-9t9nQbEeuCM8KqVoRWiA">
+        <di:waypoint x="447.0" y="1649.0"/>
+        <di:waypoint x="315.0" y="1649.0"/>
+        <di:waypoint x="315.0" y="1795.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--7_HQbEeuCM8KqVoRWiA" bpmnElement="_V-9t4HQbEeuCM8KqVoRWiA">
+        <di:waypoint x="441.0" y="733.0"/>
+        <di:waypoint x="157.0" y="733.0"/>
+        <di:waypoint x="157.0" y="1069.0"/>
+        <di:waypoint x="197.0" y="1069.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--7_XQbEeuCM8KqVoRWiA" bpmnElement="_V-9ty3QbEeuCM8KqVoRWiA">
+        <di:waypoint x="423.0" y="169.0"/>
+        <di:waypoint x="519.0" y="169.0"/>
+        <di:waypoint x="519.0" y="627.0"/>
+        <di:waypoint x="506.0" y="627.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--7_nQbEeuCM8KqVoRWiA" bpmnElement="_V-9t5XQbEeuCM8KqVoRWiA">
+        <di:waypoint x="279.0" y="807.0"/>
+        <di:waypoint x="322.0" y="807.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--7_3QbEeuCM8KqVoRWiA" bpmnElement="_V-9t9HQbEeuCM8KqVoRWiA">
+        <di:waypoint x="287.0" y="1524.0"/>
+        <di:waypoint x="330.0" y="1524.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--8AHQbEeuCM8KqVoRWiA" bpmnElement="_V-9t1nQbEeuCM8KqVoRWiA">
+        <di:waypoint x="362.0" y="1825.0"/>
+        <di:waypoint x="402.0" y="1825.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--8AXQbEeuCM8KqVoRWiA" bpmnElement="_V--UjXQbEeuCM8KqVoRWiA">
+        <di:waypoint x="620.0" y="3280.0"/>
+        <di:waypoint x="672.0" y="3280.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--8AnQbEeuCM8KqVoRWiA" bpmnElement="_V--UfXQbEeuCM8KqVoRWiA">
+        <di:waypoint x="380.0" y="2630.0"/>
+        <di:waypoint x="420.0" y="2630.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--8A3QbEeuCM8KqVoRWiA" bpmnElement="_V-9t13QbEeuCM8KqVoRWiA">
+        <di:waypoint x="183.0" y="1855.0"/>
+        <di:waypoint x="183.0" y="1899.0"/>
+        <di:waypoint x="272.0" y="1899.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--8BHQbEeuCM8KqVoRWiA" bpmnElement="_V--UcXQbEeuCM8KqVoRWiA">
+        <di:waypoint x="500.0" y="2102.0"/>
+        <di:waypoint x="540.0" y="2102.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--8BXQbEeuCM8KqVoRWiA" bpmnElement="_V--UhXQbEeuCM8KqVoRWiA">
+        <di:waypoint x="488.0" y="2974.0"/>
+        <di:waypoint x="528.0" y="2974.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--8BnQbEeuCM8KqVoRWiA" bpmnElement="_V-9t7HQbEeuCM8KqVoRWiA">
+        <di:waypoint x="287.0" y="1157.0"/>
+        <di:waypoint x="330.0" y="1157.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--8B3QbEeuCM8KqVoRWiA" bpmnElement="_V-9tznQbEeuCM8KqVoRWiA">
+        <di:waypoint x="336.0" y="284.0"/>
+        <di:waypoint x="336.0" y="340.0"/>
+        <di:waypoint x="265.0" y="340.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--8CHQbEeuCM8KqVoRWiA" bpmnElement="_V--UgXQbEeuCM8KqVoRWiA">
+        <di:waypoint x="230.0" y="2820.0"/>
+        <di:waypoint x="270.0" y="2820.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--8CXQbEeuCM8KqVoRWiA" bpmnElement="_V--Ug3QbEeuCM8KqVoRWiA">
+        <di:waypoint x="228.0" y="2974.0"/>
+        <di:waypoint x="268.0" y="2974.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--8CnQbEeuCM8KqVoRWiA" bpmnElement="_V-9t9XQbEeuCM8KqVoRWiA">
+        <di:waypoint x="420.0" y="1524.0"/>
+        <di:waypoint x="467.0" y="1524.0"/>
+        <di:waypoint x="467.0" y="1629.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--8C3QbEeuCM8KqVoRWiA" bpmnElement="_V--UknQbEeuCM8KqVoRWiA">
+        <di:waypoint x="502.0" y="2369.0"/>
+        <di:waypoint x="597.0" y="2369.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--8DHQbEeuCM8KqVoRWiA" bpmnElement="_V-9t3nQbEeuCM8KqVoRWiA">
+        <di:waypoint x="464.0" y="753.0"/>
+        <di:waypoint x="464.0" y="1629.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--8DXQbEeuCM8KqVoRWiA" bpmnElement="_V-9t-HQbEeuCM8KqVoRWiA">
+        <di:waypoint x="317.0" y="2006.0"/>
+        <di:waypoint x="317.0" y="2046.0"/>
+        <di:waypoint x="190.0" y="2046.0"/>
+        <di:waypoint x="190.0" y="2072.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--8DnQbEeuCM8KqVoRWiA" bpmnElement="_V--UenQbEeuCM8KqVoRWiA">
+        <di:waypoint x="465.0" y="2546.0"/>
+        <di:waypoint x="465.0" y="2575.0"/>
+        <di:waypoint x="196.0" y="2575.0"/>
+        <di:waypoint x="196.0" y="2600.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--8D3QbEeuCM8KqVoRWiA" bpmnElement="_V-9t2nQbEeuCM8KqVoRWiA">
+        <di:waypoint x="461.0" y="687.0"/>
+        <di:waypoint x="461.0" y="713.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--8EHQbEeuCM8KqVoRWiA" bpmnElement="_V-9t1XQbEeuCM8KqVoRWiA">
+        <di:waypoint x="272.0" y="1825.0"/>
+        <di:waypoint x="228.0" y="1825.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--8EXQbEeuCM8KqVoRWiA" bpmnElement="_V--UfHQbEeuCM8KqVoRWiA">
+        <di:waypoint x="250.0" y="2630.0"/>
+        <di:waypoint x="290.0" y="2630.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--8EnQbEeuCM8KqVoRWiA" bpmnElement="_V--Uc3QbEeuCM8KqVoRWiA">
+        <di:waypoint x="210.0" y="2220.0"/>
+        <di:waypoint x="210.0" y="2275.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--8E3QbEeuCM8KqVoRWiA" bpmnElement="_V--Ui3QbEeuCM8KqVoRWiA">
+        <di:waypoint x="360.0" y="3280.0"/>
+        <di:waypoint x="400.0" y="3280.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--8FHQbEeuCM8KqVoRWiA" bpmnElement="_V-9t0nQbEeuCM8KqVoRWiA">
+        <di:waypoint x="467.0" y="479.0"/>
+        <di:waypoint x="467.0" y="524.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--8FXQbEeuCM8KqVoRWiA" bpmnElement="_V--UeHQbEeuCM8KqVoRWiA">
+        <di:waypoint x="250.0" y="2516.0"/>
+        <di:waypoint x="290.0" y="2516.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V--8FnQbEeuCM8KqVoRWiA" bpmnElement="_V--UdHQbEeuCM8KqVoRWiA">
+        <di:waypoint x="270.0" y="2299.0"/>
+        <di:waypoint x="404.0" y="2299.0"/>
+        <di:waypoint x="404.0" y="2332.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V-_ikHQbEeuCM8KqVoRWiA" bpmnElement="_V--UjHQbEeuCM8KqVoRWiA">
+        <di:waypoint x="490.0" y="3280.0"/>
+        <di:waypoint x="530.0" y="3280.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V-_ikXQbEeuCM8KqVoRWiA" bpmnElement="_V--UgnQbEeuCM8KqVoRWiA">
+        <di:waypoint x="360.0" y="2820.0"/>
+        <di:waypoint x="400.0" y="2820.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V-_iknQbEeuCM8KqVoRWiA" bpmnElement="_V--UcHQbEeuCM8KqVoRWiA">
+        <di:waypoint x="370.0" y="2102.0"/>
+        <di:waypoint x="410.0" y="2102.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V-_ik3QbEeuCM8KqVoRWiA" bpmnElement="_V-9t73QbEeuCM8KqVoRWiA">
+        <di:waypoint x="420.0" y="1247.0"/>
+        <di:waypoint x="467.0" y="1247.0"/>
+        <di:waypoint x="467.0" y="1629.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V-_ilHQbEeuCM8KqVoRWiA" bpmnElement="_V-9t8XQbEeuCM8KqVoRWiA">
+        <di:waypoint x="420.0" y="1334.0"/>
+        <di:waypoint x="467.0" y="1334.0"/>
+        <di:waypoint x="467.0" y="1629.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V-_ilXQbEeuCM8KqVoRWiA" bpmnElement="_V-9t8nQbEeuCM8KqVoRWiA">
+        <di:waypoint x="287.0" y="1434.0"/>
+        <di:waypoint x="330.0" y="1434.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V-_ilnQbEeuCM8KqVoRWiA" bpmnElement="_V-9t4nQbEeuCM8KqVoRWiA">
+        <di:waypoint x="441.0" y="733.0"/>
+        <di:waypoint x="157.0" y="733.0"/>
+        <di:waypoint x="157.0" y="1246.0"/>
+        <di:waypoint x="197.0" y="1246.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V-_il3QbEeuCM8KqVoRWiA" bpmnElement="_V--Uf3QbEeuCM8KqVoRWiA">
+        <di:waypoint x="457.0" y="2700.0"/>
+        <di:waypoint x="176.0" y="2700.0"/>
+        <di:waypoint x="176.0" y="2790.0"/>
+        <bpmndi:BPMNLabel id="_V-_imHQbEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="38.0" x="385.0" y="2703.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V-_imXQbEeuCM8KqVoRWiA" bpmnElement="_V-9tzHQbEeuCM8KqVoRWiA">
+        <di:waypoint x="265.0" y="254.0"/>
+        <di:waypoint x="298.0" y="254.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V-_imnQbEeuCM8KqVoRWiA" bpmnElement="_V-9tx3QbEeuCM8KqVoRWiA">
+        <di:waypoint x="163.0" y="65.0"/>
+        <di:waypoint x="203.0" y="65.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V-_im3QbEeuCM8KqVoRWiA" bpmnElement="_V-9tz3QbEeuCM8KqVoRWiA">
+        <di:waypoint x="220.0" y="370.0"/>
+        <di:waypoint x="220.0" y="419.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V-_inHQbEeuCM8KqVoRWiA" bpmnElement="_V-9t0XQbEeuCM8KqVoRWiA">
+        <di:waypoint x="395.0" y="449.0"/>
+        <di:waypoint x="422.0" y="449.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V-_inXQbEeuCM8KqVoRWiA" bpmnElement="_V--UeXQbEeuCM8KqVoRWiA">
+        <di:waypoint x="380.0" y="2516.0"/>
+        <di:waypoint x="420.0" y="2516.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V-_innQbEeuCM8KqVoRWiA" bpmnElement="_V-9tynQbEeuCM8KqVoRWiA">
+        <di:waypoint x="383.0" y="149.0"/>
+        <di:waypoint x="218.0" y="149.0"/>
+        <di:waypoint x="218.0" y="224.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V-_in3QbEeuCM8KqVoRWiA" bpmnElement="_V--UinQbEeuCM8KqVoRWiA">
+        <di:waypoint x="230.0" y="3280.0"/>
+        <di:waypoint x="270.0" y="3280.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V-_ioHQbEeuCM8KqVoRWiA" bpmnElement="_V--Ue3QbEeuCM8KqVoRWiA">
+        <di:waypoint x="420.0" y="2800.0"/>
+        <di:waypoint x="420.0" y="2743.0"/>
+        <di:waypoint x="201.0" y="2743.0"/>
+        <di:waypoint x="201.0" y="2660.0"/>
+        <bpmndi:BPMNLabel id="_V-_ioXQbEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="38.0" x="318.0" y="2746.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V-_ionQbEeuCM8KqVoRWiA" bpmnElement="_V-9tyHQbEeuCM8KqVoRWiA">
+        <di:waypoint x="293.0" y="66.0"/>
+        <di:waypoint x="320.0" y="66.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V-_io3QbEeuCM8KqVoRWiA" bpmnElement="_V--UiXQbEeuCM8KqVoRWiA">
+        <di:waypoint x="455.0" y="3160.0"/>
+        <di:waypoint x="455.0" y="3185.0"/>
+        <di:waypoint x="186.0" y="3185.0"/>
+        <di:waypoint x="186.0" y="3250.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_V-_ipHQbEeuCM8KqVoRWiA" bpmnElement="_V--UgHQbEeuCM8KqVoRWiA">
+        <di:waypoint x="479.0" y="2722.0"/>
+        <di:waypoint x="479.0" y="2890.0"/>
+        <di:waypoint x="183.0" y="2890.0"/>
+        <di:waypoint x="183.0" y="2944.0"/>
+        <bpmndi:BPMNLabel id="_V-_ipXQbEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="38.0" x="484.0" y="2736.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn2:definitions>

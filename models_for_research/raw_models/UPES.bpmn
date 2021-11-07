@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn2:definitions xmlns="http://genmymodel.com/bpmn2" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="_95_UoHQeEeuCM8KqVoRWiA" exporter="GenMyModel" exporterVersion="1.0" expressionLanguage="http://www.w3.org/1999/XPath" name="UPES" targetNamespace="http://genmymodel.com/bpmn2" typeLanguage="http://www.w3.org/2001/XMLSchema">
+  <bpmn2:process id="_95_UoXQeEeuCM8KqVoRWiA" name="Process2" processType="None">
+    <bpmn2:startEvent id="_95_UonQeEeuCM8KqVoRWiA" name="Start" isInterrupting="true">
+      <bpmn2:outgoing>_95_Uo3QeEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:task id="_95_UpHQeEeuCM8KqVoRWiA" name="Equipment required in office" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_95_Uo3QeEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_95_UpXQeEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_95_Uo3QeEeuCM8KqVoRWiA" sourceRef="_95_UonQeEeuCM8KqVoRWiA" targetRef="_95_UpHQeEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_95_UpXQeEeuCM8KqVoRWiA" sourceRef="_95_UpHQeEeuCM8KqVoRWiA" targetRef="_95_UpnQeEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_95_Up3QeEeuCM8KqVoRWiA" sourceRef="_95_UpnQeEeuCM8KqVoRWiA" targetRef="_95_UqHQeEeuCM8KqVoRWiA"/>
+    <bpmn2:startEvent id="_95_UqXQeEeuCM8KqVoRWiA" name="Receive notification" isInterrupting="true">
+      <bpmn2:outgoing>_95_UqnQeEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:messageEventDefinition id="_95_Uq3QeEeuCM8KqVoRWiA"/>
+    </bpmn2:startEvent>
+    <bpmn2:sequenceFlow id="_95_UqnQeEeuCM8KqVoRWiA" sourceRef="_95_UqXQeEeuCM8KqVoRWiA" targetRef="_95_UqHQeEeuCM8KqVoRWiA"/>
+    <bpmn2:endEvent id="_95_UrHQeEeuCM8KqVoRWiA" name="End">
+      <bpmn2:incoming>_95_UrXQeEeuCM8KqVoRWiA</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:userTask id="_95_UpnQeEeuCM8KqVoRWiA" name="Schedule meeting regarding this" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_95_UpXQeEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_95_Up3QeEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="_95_UqHQeEeuCM8KqVoRWiA" name="Prepare list " completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_95_Up3QeEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:incoming>_95_UqnQeEeuCM8KqVoRWiA</bpmn2:incoming>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="_95_UrnQeEeuCM8KqVoRWiA" name="Put equipments in " completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:outgoing>_95_UrXQeEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="_95_UrXQeEeuCM8KqVoRWiA" sourceRef="_95_UrnQeEeuCM8KqVoRWiA" targetRef="_95_UrHQeEeuCM8KqVoRWiA"/>
+  </bpmn2:process>
+  <bpmn2:collaboration id="_95_Ur3QeEeuCM8KqVoRWiA" isClosed="true">
+    <bpmn2:participant id="_95_UsHQeEeuCM8KqVoRWiA" name="UPES" processRef="_95_UoXQeEeuCM8KqVoRWiA"/>
+    <bpmn2:participant id="_95_UsXQeEeuCM8KqVoRWiA" name="Team" processRef="_95_UsnQeEeuCM8KqVoRWiA"/>
+    <bpmn2:participant id="_95_Us3QeEeuCM8KqVoRWiA" name="Shop" processRef="_95_UtHQeEeuCM8KqVoRWiA"/>
+    <bpmn2:messageFlow id="_95_UtXQeEeuCM8KqVoRWiA" name="" sourceRef="_95_UqHQeEeuCM8KqVoRWiA" targetRef="_95_UtnQeEeuCM8KqVoRWiA"/>
+    <bpmn2:messageFlow id="_95_Ut3QeEeuCM8KqVoRWiA" name="" sourceRef="_95_UuHQeEeuCM8KqVoRWiA" targetRef="_95_UqXQeEeuCM8KqVoRWiA"/>
+    <bpmn2:messageFlow id="_95_UuXQeEeuCM8KqVoRWiA" name="" sourceRef="_95_UunQeEeuCM8KqVoRWiA" targetRef="_95_Uu3QeEeuCM8KqVoRWiA"/>
+    <bpmn2:messageFlow id="_95_UvHQeEeuCM8KqVoRWiA" name="" sourceRef="_95_UvXQeEeuCM8KqVoRWiA" targetRef="_95_UvnQeEeuCM8KqVoRWiA"/>
+    <bpmn2:messageFlow id="_95_Uv3QeEeuCM8KqVoRWiA" name="" sourceRef="_95_UwHQeEeuCM8KqVoRWiA" targetRef="_95_UwXQeEeuCM8KqVoRWiA"/>
+    <bpmn2:messageFlow id="_95_UwnQeEeuCM8KqVoRWiA" name="" sourceRef="_95_Uw3QeEeuCM8KqVoRWiA" targetRef="_95_UxHQeEeuCM8KqVoRWiA"/>
+    <bpmn2:messageFlow id="_95_UxXQeEeuCM8KqVoRWiA" name="" sourceRef="_95_UxnQeEeuCM8KqVoRWiA" targetRef="_95_Ux3QeEeuCM8KqVoRWiA"/>
+    <bpmn2:messageFlow id="_95_UyHQeEeuCM8KqVoRWiA" name="" sourceRef="_95_UyXQeEeuCM8KqVoRWiA" targetRef="_95_UrnQeEeuCM8KqVoRWiA"/>
+  </bpmn2:collaboration>
+  <bpmn2:process id="_95_UsnQeEeuCM8KqVoRWiA" name="Pool" processType="None">
+    <bpmn2:startEvent id="_95_UtnQeEeuCM8KqVoRWiA" name="Receives list" isInterrupting="true">
+      <bpmn2:outgoing>_95_UynQeEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:messageEventDefinition id="_95_Uy3QeEeuCM8KqVoRWiA"/>
+    </bpmn2:startEvent>
+    <bpmn2:sequenceFlow id="_95_UynQeEeuCM8KqVoRWiA" sourceRef="_95_UtnQeEeuCM8KqVoRWiA" targetRef="_95_UzHQeEeuCM8KqVoRWiA"/>
+    <bpmn2:exclusiveGateway id="_95_UzXQeEeuCM8KqVoRWiA" name="Does equipment required lies in a budget" gatewayDirection="Unspecified">
+      <bpmn2:incoming>_95_UznQeEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_95_Uz3QeEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:outgoing>_95_U0HQeEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="_95_UznQeEeuCM8KqVoRWiA" sourceRef="_95_UzHQeEeuCM8KqVoRWiA" targetRef="_95_UzXQeEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_95_Uz3QeEeuCM8KqVoRWiA" name="yes" sourceRef="_95_UzXQeEeuCM8KqVoRWiA" targetRef="_95_U0XQeEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_95_U0nQeEeuCM8KqVoRWiA" sourceRef="_95_U0XQeEeuCM8KqVoRWiA" targetRef="_95_UunQeEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_95_U0HQeEeuCM8KqVoRWiA" name="no" sourceRef="_95_UzXQeEeuCM8KqVoRWiA" targetRef="_95_UuHQeEeuCM8KqVoRWiA"/>
+    <bpmn2:startEvent id="_95_UvnQeEeuCM8KqVoRWiA" name="Receive notification" isInterrupting="true">
+      <bpmn2:outgoing>_95_U03QeEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:messageEventDefinition id="_95_U1HQeEeuCM8KqVoRWiA"/>
+    </bpmn2:startEvent>
+    <bpmn2:sequenceFlow id="_95_U03QeEeuCM8KqVoRWiA" sourceRef="_95_UvnQeEeuCM8KqVoRWiA" targetRef="_95_UunQeEeuCM8KqVoRWiA"/>
+    <bpmn2:startEvent id="_95_UwXQeEeuCM8KqVoRWiA" name="Receive invoice" isInterrupting="true">
+      <bpmn2:outgoing>_95_U1XQeEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:outgoing>_95_U1nQeEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:messageEventDefinition id="_95_U13QeEeuCM8KqVoRWiA"/>
+    </bpmn2:startEvent>
+    <bpmn2:sequenceFlow id="_95_U1XQeEeuCM8KqVoRWiA" sourceRef="_95_UwXQeEeuCM8KqVoRWiA" targetRef="_95_UxnQeEeuCM8KqVoRWiA"/>
+    <bpmn2:startEvent id="_95_UxHQeEeuCM8KqVoRWiA" name="Receive notification" isInterrupting="true">
+      <bpmn2:outgoing>_95_U2HQeEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:messageEventDefinition id="_95_U2XQeEeuCM8KqVoRWiA"/>
+    </bpmn2:startEvent>
+    <bpmn2:sequenceFlow id="_95_U1nQeEeuCM8KqVoRWiA" sourceRef="_95_UwXQeEeuCM8KqVoRWiA" targetRef="_95_UyXQeEeuCM8KqVoRWiA"/>
+    <bpmn2:userTask id="_95_UxnQeEeuCM8KqVoRWiA" name="Pay bill" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_95_U1XQeEeuCM8KqVoRWiA</bpmn2:incoming>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="_95_UunQeEeuCM8KqVoRWiA" name="Send list to shop" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_95_U0nQeEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:incoming>_95_U03QeEeuCM8KqVoRWiA</bpmn2:incoming>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="_95_UzHQeEeuCM8KqVoRWiA" name="Review list" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_95_UynQeEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_95_UznQeEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="_95_UuHQeEeuCM8KqVoRWiA" name="Notify to prepare another list" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_95_U0HQeEeuCM8KqVoRWiA</bpmn2:incoming>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="_95_U0XQeEeuCM8KqVoRWiA" name="Finalize list" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_95_Uz3QeEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_95_U0nQeEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="_95_UyXQeEeuCM8KqVoRWiA" name="Receive equipment and bill " completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_95_U1nQeEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:incoming>_95_U2HQeEeuCM8KqVoRWiA</bpmn2:incoming>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="_95_U2HQeEeuCM8KqVoRWiA" sourceRef="_95_UxHQeEeuCM8KqVoRWiA" targetRef="_95_UyXQeEeuCM8KqVoRWiA"/>
+  </bpmn2:process>
+  <bpmn2:process id="_95_UtHQeEeuCM8KqVoRWiA" name="Pool2" processType="None">
+    <bpmn2:startEvent id="_95_Uu3QeEeuCM8KqVoRWiA" name="Receive list" isInterrupting="true">
+      <bpmn2:outgoing>_95_U2nQeEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:messageEventDefinition id="_95_U23QeEeuCM8KqVoRWiA"/>
+    </bpmn2:startEvent>
+    <bpmn2:sequenceFlow id="_95_U2nQeEeuCM8KqVoRWiA" sourceRef="_95_Uu3QeEeuCM8KqVoRWiA" targetRef="_95_U3HQeEeuCM8KqVoRWiA"/>
+    <bpmn2:exclusiveGateway id="_95_U3XQeEeuCM8KqVoRWiA" name="Item available" gatewayDirection="Unspecified">
+      <bpmn2:incoming>_95_U3nQeEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_95_U33QeEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:outgoing>_95_U4HQeEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:exclusiveGateway>
+    <bpmn2:sequenceFlow id="_95_U33QeEeuCM8KqVoRWiA" name="yes" sourceRef="_95_U3XQeEeuCM8KqVoRWiA" targetRef="_95_U4XQeEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_95_U3nQeEeuCM8KqVoRWiA" sourceRef="_95_U3HQeEeuCM8KqVoRWiA" targetRef="_95_U3XQeEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_95_U4nQeEeuCM8KqVoRWiA" sourceRef="_95_U4XQeEeuCM8KqVoRWiA" targetRef="_95_UwHQeEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_95_U4HQeEeuCM8KqVoRWiA" name="no" sourceRef="_95_U3XQeEeuCM8KqVoRWiA" targetRef="_95_UvXQeEeuCM8KqVoRWiA"/>
+    <bpmn2:task id="_95_Uw3QeEeuCM8KqVoRWiA" name="Deliver equipment" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_95_U43QeEeuCM8KqVoRWiA</bpmn2:incoming>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_95_U43QeEeuCM8KqVoRWiA" sourceRef="_95_UwHQeEeuCM8KqVoRWiA" targetRef="_95_Uw3QeEeuCM8KqVoRWiA"/>
+    <bpmn2:startEvent id="_95_Ux3QeEeuCM8KqVoRWiA" name="Payment received" isInterrupting="true">
+      <bpmn2:outgoing>_95_U5XQeEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:messageEventDefinition id="_95_U5nQeEeuCM8KqVoRWiA"/>
+    </bpmn2:startEvent>
+    <bpmn2:endEvent id="_95_U53QeEeuCM8KqVoRWiA" name="End">
+      <bpmn2:incoming>_95_U5XQeEeuCM8KqVoRWiA</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:sequenceFlow id="_95_U5XQeEeuCM8KqVoRWiA" sourceRef="_95_Ux3QeEeuCM8KqVoRWiA" targetRef="_95_U53QeEeuCM8KqVoRWiA"/>
+    <bpmn2:serviceTask id="_95_UwHQeEeuCM8KqVoRWiA" name="Prepare bill" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##WebService">
+      <bpmn2:incoming>_95_U4nQeEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_95_U43QeEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:serviceTask>
+    <bpmn2:userTask id="_95_U4XQeEeuCM8KqVoRWiA" name="Collect item" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_95_U33QeEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_95_U4nQeEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="_95_U3HQeEeuCM8KqVoRWiA" name="Look for an item" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_95_U2nQeEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_95_U3nQeEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="_95_UvXQeEeuCM8KqVoRWiA" name="Inform about it" completionQuantity="1" isForCompensation="false" startQuantity="1" implementation="##unspecified">
+      <bpmn2:incoming>_95_U4HQeEeuCM8KqVoRWiA</bpmn2:incoming>
+    </bpmn2:userTask>
+    <bpmn2:boundaryEvent id="_95_U5HQeEeuCM8KqVoRWiA" attachedToRef="_95_Uw3QeEeuCM8KqVoRWiA" cancelActivity="true">
+      <bpmn2:timerEventDefinition id="_95_U6HQeEeuCM8KqVoRWiA"/>
+    </bpmn2:boundaryEvent>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="_95_U6XQeEeuCM8KqVoRWiA" name="process-diagram">
+    <bpmndi:BPMNPlane id="_95_U6nQeEeuCM8KqVoRWiA" bpmnElement="_95_Ur3QeEeuCM8KqVoRWiA">
+      <bpmndi:BPMNShape id="_95_U63QeEeuCM8KqVoRWiA" bpmnElement="_95_UpHQeEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="199.0" y="48.0"/>
+        <bpmndi:BPMNLabel id="_95_U7HQeEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_95_U7XQeEeuCM8KqVoRWiA" bpmnElement="_95_U53QeEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="2097.0" y="492.0"/>
+        <bpmndi:BPMNLabel id="_95_U7nQeEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="2081.0" y="534.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_95_U73QeEeuCM8KqVoRWiA" bpmnElement="_95_U0XQeEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="927.0" y="228.0"/>
+        <bpmndi:BPMNLabel id="_95_U8HQeEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_95_U8XQeEeuCM8KqVoRWiA" bpmnElement="_95_UpnQeEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="375.0" y="48.0"/>
+        <bpmndi:BPMNLabel id="_95_U8nQeEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_95_U83QeEeuCM8KqVoRWiA" bpmnElement="_95_UyXQeEeuCM8KqVoRWiA">
+        <dc:Bounds height="40.0" width="90.0" x="1850.0" y="170.0"/>
+        <bpmndi:BPMNLabel id="_95_U9HQeEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_95_U9XQeEeuCM8KqVoRWiA" bpmnElement="_95_UtnQeEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="570.0" y="240.0"/>
+        <bpmndi:BPMNLabel id="_95_U9nQeEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="554.0" y="282.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_95_U93QeEeuCM8KqVoRWiA" bpmnElement="_95_U3XQeEeuCM8KqVoRWiA">
+        <dc:Bounds height="40.0" width="40.0" x="1368.0" y="488.0"/>
+        <bpmndi:BPMNLabel id="_95_U-HQeEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="1354.0" y="532.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_95_U-XQeEeuCM8KqVoRWiA" bpmnElement="_95_U3HQeEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="1213.0" y="478.0"/>
+        <bpmndi:BPMNLabel id="_95_U-nQeEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_95_U-3QeEeuCM8KqVoRWiA" bpmnElement="_95_UqXQeEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="814.0" y="61.0"/>
+        <bpmndi:BPMNLabel id="_95_U_HQeEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="798.0" y="33.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_95_U_XQeEeuCM8KqVoRWiA" bpmnElement="_95_Uw3QeEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="1848.0" y="478.0"/>
+        <bpmndi:BPMNLabel id="_95_U_nQeEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_95_U_3QeEeuCM8KqVoRWiA" bpmnElement="_95_UrHQeEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="2050.0" y="40.0"/>
+        <bpmndi:BPMNLabel id="_95_VAHQeEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="2034.0" y="82.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_95_VAXQeEeuCM8KqVoRWiA" bpmnElement="_95_UsXQeEeuCM8KqVoRWiA" isHorizontal="true">
+        <dc:Bounds height="192.0" width="2183.0" x="3.0" y="148.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_95_VAnQeEeuCM8KqVoRWiA" bpmnElement="_95_U5HQeEeuCM8KqVoRWiA">
+        <dc:Bounds height="30.0" width="30.0" x="1848.0" y="463.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_95_VA3QeEeuCM8KqVoRWiA" bpmnElement="_95_UuHQeEeuCM8KqVoRWiA">
+        <dc:Bounds height="40.0" width="90.0" x="802.0" y="170.0"/>
+        <bpmndi:BPMNLabel id="_95_VBHQeEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_95_VBXQeEeuCM8KqVoRWiA" bpmnElement="_95_UzHQeEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="661.0" y="228.0"/>
+        <bpmndi:BPMNLabel id="_95_VBnQeEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_95_VB3QeEeuCM8KqVoRWiA" bpmnElement="_95_UqHQeEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="533.0" y="48.0"/>
+        <bpmndi:BPMNLabel id="_95_VCHQeEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_95_7sHQeEeuCM8KqVoRWiA" bpmnElement="_95_UrnQeEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="1850.0" y="24.0"/>
+        <bpmndi:BPMNLabel id="_95_7sXQeEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_95_7snQeEeuCM8KqVoRWiA" bpmnElement="_95_UvnQeEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="1371.0" y="241.0"/>
+        <bpmndi:BPMNLabel id="_95_7s3QeEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="1355.0" y="199.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_95_7tHQeEeuCM8KqVoRWiA" bpmnElement="_95_Uu3QeEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="1110.0" y="490.0"/>
+        <bpmndi:BPMNLabel id="_95_7tXQeEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="1094.0" y="532.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_95_7tnQeEeuCM8KqVoRWiA" bpmnElement="_95_UxHQeEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="1875.0" y="256.0"/>
+        <bpmndi:BPMNLabel id="_95_7t3QeEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="1921.0" y="262.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_95_7uHQeEeuCM8KqVoRWiA" bpmnElement="_95_UzXQeEeuCM8KqVoRWiA">
+        <dc:Bounds height="40.0" width="40.0" x="827.0" y="238.0"/>
+        <bpmndi:BPMNLabel id="_95_7uXQeEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="813.0" y="282.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_95_7unQeEeuCM8KqVoRWiA" bpmnElement="_95_UsHQeEeuCM8KqVoRWiA" isHorizontal="true">
+        <dc:Bounds height="152.0" width="2183.0" x="3.0" y="6.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_95_7u3QeEeuCM8KqVoRWiA" bpmnElement="_95_U4XQeEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="1475.0" y="478.0"/>
+        <bpmndi:BPMNLabel id="_95_7vHQeEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_95_7vXQeEeuCM8KqVoRWiA" bpmnElement="_95_UwHQeEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="1611.0" y="478.0"/>
+        <bpmndi:BPMNLabel id="_95_7vnQeEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_95_7v3QeEeuCM8KqVoRWiA" bpmnElement="_95_UvXQeEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="1330.0" y="356.0"/>
+        <bpmndi:BPMNLabel id="_95_7wHQeEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_95_7wXQeEeuCM8KqVoRWiA" bpmnElement="_95_UwXQeEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="1597.0" y="242.0"/>
+        <bpmndi:BPMNLabel id="_95_7wnQeEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="1518.0" y="248.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_95_7w3QeEeuCM8KqVoRWiA" bpmnElement="_95_UxnQeEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="1683.0" y="230.0"/>
+        <bpmndi:BPMNLabel id="_95_7xHQeEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_95_7xXQeEeuCM8KqVoRWiA" bpmnElement="_95_Us3QeEeuCM8KqVoRWiA" isHorizontal="true">
+        <dc:Bounds height="302.0" width="2183.0" x="3.0" y="339.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_95_7xnQeEeuCM8KqVoRWiA" bpmnElement="_95_UonQeEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="70.0" y="60.0"/>
+        <bpmndi:BPMNLabel id="_95_7x3QeEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="54.0" y="102.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_95_7yHQeEeuCM8KqVoRWiA" bpmnElement="_95_UunQeEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="1078.0" y="228.0"/>
+        <bpmndi:BPMNLabel id="_95_7yXQeEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_95_7ynQeEeuCM8KqVoRWiA" bpmnElement="_95_Ux3QeEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="2002.0" y="491.0"/>
+        <bpmndi:BPMNLabel id="_95_7y3QeEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="1986.0" y="530.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="_95_7zHQeEeuCM8KqVoRWiA" bpmnElement="_95_U1XQeEeuCM8KqVoRWiA">
+        <di:waypoint x="1632.0" y="259.0"/>
+        <di:waypoint x="1683.0" y="259.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_95_7zXQeEeuCM8KqVoRWiA" bpmnElement="_95_UyHQeEeuCM8KqVoRWiA">
+        <di:waypoint x="1895.0" y="170.0"/>
+        <di:waypoint x="1895.0" y="84.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_95_7znQeEeuCM8KqVoRWiA" bpmnElement="_95_U4HQeEeuCM8KqVoRWiA">
+        <di:waypoint x="1388.0" y="488.0"/>
+        <di:waypoint x="1388.0" y="416.0"/>
+        <bpmndi:BPMNLabel id="_95_7z3QeEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="38.0" x="1394.0" y="455.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_95_70HQeEeuCM8KqVoRWiA" bpmnElement="_95_UtXQeEeuCM8KqVoRWiA">
+        <di:waypoint x="587.0" y="108.0"/>
+        <di:waypoint x="587.0" y="240.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_95_70XQeEeuCM8KqVoRWiA" bpmnElement="_95_Uo3QeEeuCM8KqVoRWiA">
+        <di:waypoint x="105.0" y="77.0"/>
+        <di:waypoint x="199.0" y="77.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_95_70nQeEeuCM8KqVoRWiA" bpmnElement="_95_Up3QeEeuCM8KqVoRWiA">
+        <di:waypoint x="465.0" y="78.0"/>
+        <di:waypoint x="533.0" y="78.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_95_703QeEeuCM8KqVoRWiA" bpmnElement="_95_Ut3QeEeuCM8KqVoRWiA">
+        <di:waypoint x="831.0" y="170.0"/>
+        <di:waypoint x="831.0" y="96.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_95_71HQeEeuCM8KqVoRWiA" bpmnElement="_95_U43QeEeuCM8KqVoRWiA">
+        <di:waypoint x="1701.0" y="508.0"/>
+        <di:waypoint x="1848.0" y="508.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_95_71XQeEeuCM8KqVoRWiA" bpmnElement="_95_U0nQeEeuCM8KqVoRWiA">
+        <di:waypoint x="1017.0" y="258.0"/>
+        <di:waypoint x="1078.0" y="258.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_95_71nQeEeuCM8KqVoRWiA" bpmnElement="_95_U2HQeEeuCM8KqVoRWiA">
+        <di:waypoint x="1892.0" y="256.0"/>
+        <di:waypoint x="1892.0" y="210.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_95_713QeEeuCM8KqVoRWiA" bpmnElement="_95_UuXQeEeuCM8KqVoRWiA">
+        <di:waypoint x="1127.0" y="288.0"/>
+        <di:waypoint x="1127.0" y="490.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_95_72HQeEeuCM8KqVoRWiA" bpmnElement="_95_UynQeEeuCM8KqVoRWiA">
+        <di:waypoint x="605.0" y="257.0"/>
+        <di:waypoint x="661.0" y="257.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_95_72XQeEeuCM8KqVoRWiA" bpmnElement="_95_U3nQeEeuCM8KqVoRWiA">
+        <di:waypoint x="1303.0" y="508.0"/>
+        <di:waypoint x="1368.0" y="508.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_95_72nQeEeuCM8KqVoRWiA" bpmnElement="_95_UpXQeEeuCM8KqVoRWiA">
+        <di:waypoint x="289.0" y="78.0"/>
+        <di:waypoint x="375.0" y="78.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_95_723QeEeuCM8KqVoRWiA" bpmnElement="_95_U0HQeEeuCM8KqVoRWiA">
+        <di:waypoint x="847.0" y="238.0"/>
+        <di:waypoint x="847.0" y="210.0"/>
+        <bpmndi:BPMNLabel id="_95_73HQeEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="38.0" x="853.0" y="227.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_95_73XQeEeuCM8KqVoRWiA" bpmnElement="_95_U4nQeEeuCM8KqVoRWiA">
+        <di:waypoint x="1565.0" y="508.0"/>
+        <di:waypoint x="1611.0" y="508.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_95_73nQeEeuCM8KqVoRWiA" bpmnElement="_95_UznQeEeuCM8KqVoRWiA">
+        <di:waypoint x="751.0" y="258.0"/>
+        <di:waypoint x="827.0" y="258.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_95_733QeEeuCM8KqVoRWiA" bpmnElement="_95_UxXQeEeuCM8KqVoRWiA">
+        <di:waypoint x="1728.0" y="290.0"/>
+        <di:waypoint x="1728.0" y="391.0"/>
+        <di:waypoint x="2020.0" y="390.0"/>
+        <di:waypoint x="2020.0" y="491.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_95_74HQeEeuCM8KqVoRWiA" bpmnElement="_95_U1nQeEeuCM8KqVoRWiA">
+        <di:waypoint x="1615.0" y="242.0"/>
+        <di:waypoint x="1615.0" y="190.0"/>
+        <di:waypoint x="1850.0" y="190.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_95_74XQeEeuCM8KqVoRWiA" bpmnElement="_95_U33QeEeuCM8KqVoRWiA">
+        <di:waypoint x="1408.0" y="508.0"/>
+        <di:waypoint x="1475.0" y="508.0"/>
+        <bpmndi:BPMNLabel id="_95_74nQeEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="38.0" x="1431.0" y="511.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_95_743QeEeuCM8KqVoRWiA" bpmnElement="_95_U03QeEeuCM8KqVoRWiA">
+        <di:waypoint x="1371.0" y="258.0"/>
+        <di:waypoint x="1168.0" y="258.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_95_75HQeEeuCM8KqVoRWiA" bpmnElement="_95_UqnQeEeuCM8KqVoRWiA">
+        <di:waypoint x="814.0" y="78.0"/>
+        <di:waypoint x="623.0" y="78.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_95_75XQeEeuCM8KqVoRWiA" bpmnElement="_95_U5XQeEeuCM8KqVoRWiA">
+        <di:waypoint x="2037.0" y="509.0"/>
+        <di:waypoint x="2097.0" y="509.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_95_75nQeEeuCM8KqVoRWiA" bpmnElement="_95_UrXQeEeuCM8KqVoRWiA">
+        <di:waypoint x="1940.0" y="57.0"/>
+        <di:waypoint x="2050.0" y="57.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_95_753QeEeuCM8KqVoRWiA" bpmnElement="_95_Uz3QeEeuCM8KqVoRWiA">
+        <di:waypoint x="867.0" y="258.0"/>
+        <di:waypoint x="927.0" y="258.0"/>
+        <bpmndi:BPMNLabel id="_95_76HQeEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="38.0" x="883.0" y="261.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_95_76XQeEeuCM8KqVoRWiA" bpmnElement="_95_U2nQeEeuCM8KqVoRWiA">
+        <di:waypoint x="1145.0" y="507.0"/>
+        <di:waypoint x="1213.0" y="507.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_95_76nQeEeuCM8KqVoRWiA" bpmnElement="_95_UvHQeEeuCM8KqVoRWiA">
+        <di:waypoint x="1388.0" y="356.0"/>
+        <di:waypoint x="1388.0" y="276.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_95_763QeEeuCM8KqVoRWiA" bpmnElement="_95_Uv3QeEeuCM8KqVoRWiA">
+        <di:waypoint x="1621.0" y="478.0"/>
+        <di:waypoint x="1621.0" y="277.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_95_77HQeEeuCM8KqVoRWiA" bpmnElement="_95_UwnQeEeuCM8KqVoRWiA">
+        <di:waypoint x="1892.0" y="478.0"/>
+        <di:waypoint x="1892.0" y="291.0"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn2:definitions>

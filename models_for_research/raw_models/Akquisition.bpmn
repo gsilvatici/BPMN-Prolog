@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn2:definitions xmlns="http://genmymodel.com/bpmn2" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:color_1.0="http://www.omg.org/spec/BPMN/non-normative/color/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="_GYGQwHQcEeuCM8KqVoRWiA" exporter="GenMyModel" exporterVersion="1.0" expressionLanguage="http://www.w3.org/1999/XPath" name="Akquisition" targetNamespace="http://genmymodel.com/bpmn2" typeLanguage="http://www.w3.org/2001/XMLSchema">
+  <bpmn2:process id="_GYGQwXQcEeuCM8KqVoRWiA" name="Angebotserstellung" isClosed="true" processType="None">
+    <bpmn2:laneSet id="_GYGQwnQcEeuCM8KqVoRWiA">
+      <bpmn2:lane id="_GYGQw3QcEeuCM8KqVoRWiA" name="Angebotsverantwortlicher">
+        <bpmn2:flowNodeRef>_GYGQxHQcEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_GYGQxXQcEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_GYGQxnQcEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_GYGQx3QcEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_GYGQyHQcEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_GYGQyXQcEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_GYGQynQcEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_GYGQy3QcEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_GYGQzHQcEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_GYGQzXQcEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_GYGQznQcEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+      </bpmn2:lane>
+      <bpmn2:lane id="_GYGQz3QcEeuCM8KqVoRWiA" name="Abteilungsleiter">
+        <bpmn2:flowNodeRef>_GYGQ0HQcEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_GYGQ0XQcEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_GYGQ0nQcEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_GYGQ03QcEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_GYGQ1HQcEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_GYGQ1XQcEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+      </bpmn2:lane>
+      <bpmn2:lane id="_GYGQ1nQcEeuCM8KqVoRWiA" name="Akquisebord">
+        <bpmn2:flowNodeRef>_GYGQ13QcEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+      </bpmn2:lane>
+      <bpmn2:lane id="_GYGQ2HQcEeuCM8KqVoRWiA" name="VC">
+        <bpmn2:flowNodeRef>_GYGQ2XQcEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_GYGQ2nQcEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_GYGQ23QcEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_GYGQ3HQcEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_GYGQ3XQcEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_GYGQ3nQcEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+      </bpmn2:lane>
+      <bpmn2:lane id="_GYGQ33QcEeuCM8KqVoRWiA" name="PMC">
+        <bpmn2:flowNodeRef>_GYGQ4HQcEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_GYGQ4XQcEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_GYGQ4nQcEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_GYGQ43QcEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+      </bpmn2:lane>
+      <bpmn2:lane id="_GYGQ5HQcEeuCM8KqVoRWiA" name="Kunde">
+        <bpmn2:flowNodeRef>_GYGQ5XQcEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_GYGQ5nQcEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+      </bpmn2:lane>
+      <bpmn2:lane id="_GYGQ53QcEeuCM8KqVoRWiA" name="STT">
+        <bpmn2:flowNodeRef>_GYGQ6HQcEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_GYGQ6XQcEeuCM8KqVoRWiA</bpmn2:flowNodeRef>
+      </bpmn2:lane>
+    </bpmn2:laneSet>
+    <bpmn2:startEvent id="_GYGQ5XQcEeuCM8KqVoRWiA" name="Ausschreibung / Förderung bekanntgeben" isInterrupting="true">
+      <bpmn2:outgoing>_GYGQ6nQcEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:outgoing>_GYGQ63QcEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:task id="_GYGQ0HQcEeuCM8KqVoRWiA" name="AL's beauftragt AV" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:documentation id="_GYGQ7nQcEeuCM8KqVoRWiA" textFormat="text/plain">&lt;p>Den AV legt die federf&amp;uuml;hrende Abteilung fest. Die Akquisition kann vom AL abgebrochen werden, wenn der Aufwand zu hoch wird oder unvorhergesehene Risiken entstehen. In dem Fall informiert der AL alle Beteiligten, hier auch insbesondere das Akquiseboard informieren.&lt;/p>
+
+&lt;p>Der Angebotsverantwortliche bearbeitet das Thema bis einschlie&amp;szlig;lich zum H&amp;auml;rtegrad (2+3). Der AV arbeitet dabei mit den zust&amp;auml;ndigen (Fach-)Gruppen und Bereichen (z.B. Controlling/Auftragsmanagement) zusammen.&lt;/p>
+
+&lt;p>&amp;nbsp;&lt;/p>
+</bpmn2:documentation>
+      <bpmn2:incoming>_GYGQ7HQcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_GYGQ7XQcEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_GYGQ7XQcEeuCM8KqVoRWiA" name="" sourceRef="_GYGQ0HQcEeuCM8KqVoRWiA" targetRef="_GYGQxHQcEeuCM8KqVoRWiA"/>
+    <bpmn2:task id="_GYGQxHQcEeuCM8KqVoRWiA" name="Eintrag in die Statustabelle" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_GYGQ7XQcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_GYGQ73QcEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:outgoing>_GYGQ8HQcEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_GYGQ73QcEeuCM8KqVoRWiA" name="" sourceRef="_GYGQxHQcEeuCM8KqVoRWiA" targetRef="_GYGQxXQcEeuCM8KqVoRWiA"/>
+    <bpmn2:task id="_GYGQxXQcEeuCM8KqVoRWiA" name="Akquiselog anlegen" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_GYGQ73QcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_GYGQ8XQcEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_GYGQ8XQcEeuCM8KqVoRWiA" name="" sourceRef="_GYGQxXQcEeuCM8KqVoRWiA" targetRef="_GYGQxnQcEeuCM8KqVoRWiA"/>
+    <bpmn2:task id="_GYGQxnQcEeuCM8KqVoRWiA" name="Erste Version Leistungsbeschreibung erstellen" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_GYGQ8XQcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_GYGQ8nQcEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:outgoing>_GYGQ83QcEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:outgoing>_GYGQ9HQcEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_GYGQ8nQcEeuCM8KqVoRWiA" name="" sourceRef="_GYGQxnQcEeuCM8KqVoRWiA" targetRef="_GYGQx3QcEeuCM8KqVoRWiA"/>
+    <bpmn2:task id="_GYGQx3QcEeuCM8KqVoRWiA" name="Überschlägliche Kalkulation erstellen" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_GYGQ8nQcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_GYGQ9XQcEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:task id="_GYGQyHQcEeuCM8KqVoRWiA" name="Kundenfeedback berücksichtigen" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_GYGQ9nQcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_GYGQ93QcEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_GYGQ93QcEeuCM8KqVoRWiA" name="" sourceRef="_GYGQyHQcEeuCM8KqVoRWiA" targetRef="_GYGQyXQcEeuCM8KqVoRWiA"/>
+    <bpmn2:task id="_GYGQyXQcEeuCM8KqVoRWiA" name="Leistungsbeschreibung weiter bearbeiten" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_GYGQ93QcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:incoming>_GYGQ-HQcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:incoming>_GYGQ-XQcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:incoming>_GYGQ-nQcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_GYGQ-3QcEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:intermediateThrowEvent id="_GYGQ0XQcEeuCM8KqVoRWiA" name="Freigabe des Angebote (HG 2)">
+      <bpmn2:incoming>_GYGQ_HQcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_GYGQ_XQcEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:intermediateThrowEvent>
+    <bpmn2:task id="_GYGQ1HQcEeuCM8KqVoRWiA" name="Vorstellung Akquise AV / AL's" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_GYGQ_nQcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_GYGQ_HQcEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_GYGQ_HQcEeuCM8KqVoRWiA" sourceRef="_GYGQ1HQcEeuCM8KqVoRWiA" targetRef="_GYGQ0XQcEeuCM8KqVoRWiA"/>
+    <bpmn2:task id="_GYGQynQcEeuCM8KqVoRWiA" name="Ressourcen überprüfen" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_GYGQ9XQcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_GYGQ_3QcEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:task id="_GYGQy3QcEeuCM8KqVoRWiA" name="Angebot final prüfen " completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_GYGRAHQcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_GYGRAXQcEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:endEvent id="_GYGQ4nQcEeuCM8KqVoRWiA" name="Abgabe durch VC">
+      <bpmn2:incoming>_GYGRAnQcEeuCM8KqVoRWiA</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:task id="_GYGQ13QcEeuCM8KqVoRWiA" name="HG 0 Freigabe" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:documentation id="_GYGRBHQcEeuCM8KqVoRWiA" textFormat="text/plain">&lt;p>Der Protokollf&amp;uuml;hrer-Aquiseboard informiert alle Beteiligten &amp;uuml;ber Entscheidungen hinsichtlich HG0-Freigabe und Festlegung des AV&lt;/p>
+</bpmn2:documentation>
+      <bpmn2:incoming>_GYGRA3QcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_GYGQ7HQcEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_GYGQ7HQcEeuCM8KqVoRWiA" sourceRef="_GYGQ13QcEeuCM8KqVoRWiA" targetRef="_GYGQ0HQcEeuCM8KqVoRWiA"/>
+    <bpmn2:task id="_GYGQ6XQcEeuCM8KqVoRWiA" name="Aggregation der Statustabellen der AV" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_GYGQ8HQcEeuCM8KqVoRWiA</bpmn2:incoming>
+    </bpmn2:task>
+    <bpmn2:task id="_GYGQ4HQcEeuCM8KqVoRWiA" name="Kostenträger erstellen + Kapablatt erstellen" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_GYGRBXQcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_GYGRBnQcEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:parallelGateway id="_GYGRB3QcEeuCM8KqVoRWiA" gatewayDirection="Unspecified"/>
+    <bpmn2:task id="_GYGQ4XQcEeuCM8KqVoRWiA" name="AD Vorlage, Angebot erstellen" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_GYGRCHQcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_GYGRCXQcEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:task id="_GYGQ2XQcEeuCM8KqVoRWiA" name="Akquisitionsunterlagen + Kalkulation prüfen" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_GYGRCnQcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_GYGRBXQcEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:task id="_GYGQ2nQcEeuCM8KqVoRWiA" name="KAPA Blatt prüfen und IL freigeben lassen" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_GYGRBnQcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_GYGQ-XQcEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:task id="_GYGQ23QcEeuCM8KqVoRWiA" name="Akquisitionsunterlagen prüfen " completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_GYGQ_XQcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_GYGRC3QcEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:task id="_GYGQ3HQcEeuCM8KqVoRWiA" name="AD Vorlage prüfen und von IL freigeben" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_GYGRCXQcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_GYGRAHQcEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:task id="_GYGQ3XQcEeuCM8KqVoRWiA" name="Angebot unterschreiben lassen" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_GYGRAXQcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_GYGRAnQcEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:task id="_GYGQ0nQcEeuCM8KqVoRWiA" name="Ausschreibung / Förderung prüfen" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_GYG30HQcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:incoming>_GYG30XQcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_GYGRA3QcEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:ioSpecification id="_GYG30nQcEeuCM8KqVoRWiA">
+        <bpmn2:dataInput id="_GYG303QcEeuCM8KqVoRWiA" isCollection="false" name="Strategie"/>
+        <bpmn2:inputSet id="_GYG31HQcEeuCM8KqVoRWiA">
+          <bpmn2:dataInputRefs>_GYG303QcEeuCM8KqVoRWiA</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_GYG31XQcEeuCM8KqVoRWiA"/>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_GYG31nQcEeuCM8KqVoRWiA">
+        <bpmn2:sourceRef>_GYG313QcEeuCM8KqVoRWiA</bpmn2:sourceRef>
+        <bpmn2:targetRef>_GYG303QcEeuCM8KqVoRWiA</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_GYGRA3QcEeuCM8KqVoRWiA" sourceRef="_GYGQ0nQcEeuCM8KqVoRWiA" targetRef="_GYGQ13QcEeuCM8KqVoRWiA"/>
+    <bpmn2:intermediateThrowEvent id="_GYGQznQcEeuCM8KqVoRWiA" name="Kunden einbeziehen?">
+      <bpmn2:incoming>_GYGQ83QcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_GYG32HQcEeuCM8KqVoRWiA</bpmn2:outgoing>
+      <bpmn2:outgoing>_GYGQ-HQcEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:intermediateThrowEvent>
+    <bpmn2:sequenceFlow id="_GYGQ83QcEeuCM8KqVoRWiA" sourceRef="_GYGQxnQcEeuCM8KqVoRWiA" targetRef="_GYGQznQcEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_GYG32HQcEeuCM8KqVoRWiA" name="" sourceRef="_GYGQznQcEeuCM8KqVoRWiA" targetRef="_GYGQ5nQcEeuCM8KqVoRWiA"/>
+    <bpmn2:task id="_GYGQ5nQcEeuCM8KqVoRWiA" name="Abstimmung mit Kunden" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_GYG32HQcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_GYGQ9nQcEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_GYGQ9nQcEeuCM8KqVoRWiA" sourceRef="_GYGQ5nQcEeuCM8KqVoRWiA" targetRef="_GYGQyHQcEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_GYGQ-HQcEeuCM8KqVoRWiA" name="nein" sourceRef="_GYGQznQcEeuCM8KqVoRWiA" targetRef="_GYGQyXQcEeuCM8KqVoRWiA"/>
+    <bpmn2:intermediateThrowEvent id="_GYGQ03QcEeuCM8KqVoRWiA" name="HG 1 Freigabe?">
+      <bpmn2:documentation id="_GYG32XQcEeuCM8KqVoRWiA" textFormat="text/plain">&lt;p>Der AL hat zu jeder Zeit das Recht die Akquisition abzubrechen. Er entscheidet meist aufgrund der Eintr&amp;auml;ge im Statusbericht-Akquisition und weiterf&amp;uuml;hrender Informationen vom AV wie z.B.&lt;/p>
+
+&lt;ol>
+	&lt;li>zum Risiko (Akquiselogbuch)&lt;/li>
+	&lt;li>zur Finanzierung (bei EU-Projekten derGegenfinanzierung)&lt;!-- -->&lt;!-- -->&lt;/li>
+	&lt;li>zur Auftragswahrscheinlichkeit&lt;/li>
+	&lt;li>zur Projektkoordination&lt;/li>
+&lt;/ol>
+
+&lt;p>&lt;!-- -->Die Freigabe ist im Akquiselogbuch zu dokumentieren.&lt;/p>
+
+&lt;p>&amp;nbsp;&lt;/p>
+
+&lt;p>&amp;nbsp;&lt;/p>
+
+&lt;p>&lt;!--![endif]---->&lt;/p>
+</bpmn2:documentation>
+      <bpmn2:incoming>_GYGQ_3QcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_GYGRCnQcEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:intermediateThrowEvent>
+    <bpmn2:sequenceFlow id="_GYGQ9XQcEeuCM8KqVoRWiA" sourceRef="_GYGQx3QcEeuCM8KqVoRWiA" targetRef="_GYGQynQcEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_GYGRCnQcEeuCM8KqVoRWiA" sourceRef="_GYGQ03QcEeuCM8KqVoRWiA" targetRef="_GYGQ2XQcEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_GYGRBXQcEeuCM8KqVoRWiA" sourceRef="_GYGQ2XQcEeuCM8KqVoRWiA" targetRef="_GYGQ4HQcEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_GYGRBnQcEeuCM8KqVoRWiA" sourceRef="_GYGQ4HQcEeuCM8KqVoRWiA" targetRef="_GYGQ2nQcEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_GYGQ-XQcEeuCM8KqVoRWiA" sourceRef="_GYGQ2nQcEeuCM8KqVoRWiA" targetRef="_GYGQyXQcEeuCM8KqVoRWiA"/>
+    <bpmn2:task id="_GYGQzHQcEeuCM8KqVoRWiA" name="Kalkulation finalisieren" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_GYGQ-3QcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_GYGQ_nQcEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_GYGQ_nQcEeuCM8KqVoRWiA" sourceRef="_GYGQzHQcEeuCM8KqVoRWiA" targetRef="_GYGQ1HQcEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_GYGQ_XQcEeuCM8KqVoRWiA" sourceRef="_GYGQ0XQcEeuCM8KqVoRWiA" targetRef="_GYGQ23QcEeuCM8KqVoRWiA"/>
+    <bpmn2:intermediateThrowEvent id="_GYGQ3nQcEeuCM8KqVoRWiA" name="HG 2 freigeben">
+      <bpmn2:incoming>_GYGRC3QcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_GYGRCHQcEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:intermediateThrowEvent>
+    <bpmn2:sequenceFlow id="_GYGRC3QcEeuCM8KqVoRWiA" sourceRef="_GYGQ23QcEeuCM8KqVoRWiA" targetRef="_GYGQ3nQcEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_GYGRCHQcEeuCM8KqVoRWiA" sourceRef="_GYGQ3nQcEeuCM8KqVoRWiA" targetRef="_GYGQ4XQcEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_GYGRCXQcEeuCM8KqVoRWiA" sourceRef="_GYGQ4XQcEeuCM8KqVoRWiA" targetRef="_GYGQ3HQcEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_GYGRAHQcEeuCM8KqVoRWiA" sourceRef="_GYGQ3HQcEeuCM8KqVoRWiA" targetRef="_GYGQy3QcEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_GYGRAXQcEeuCM8KqVoRWiA" sourceRef="_GYGQy3QcEeuCM8KqVoRWiA" targetRef="_GYGQ3XQcEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_GYGRAnQcEeuCM8KqVoRWiA" sourceRef="_GYGQ3XQcEeuCM8KqVoRWiA" targetRef="_GYGQ4nQcEeuCM8KqVoRWiA"/>
+    <bpmn2:task id="_GYGQ43QcEeuCM8KqVoRWiA" name="Juristische Prüfung" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:documentation id="_GYG323QcEeuCM8KqVoRWiA" textFormat="text/plain">&lt;p>Erfordert die Projektakquise die Unterzeichnung eines LoI (Letter of Intent), so ist vor Unterzeichnung des LoI eine juristische Pr&amp;uuml;fung der Dokumentenvorlage zu initiieren. Hinweis: LoI immer nur auf DLR-TS und idealerweise auf z.B. die Branche begrenzen.&lt;/p>
+
+&lt;p>An dieser Stelle kann durch AD nur eine juristische Vorpr&amp;uuml;fung initiiert werden. Die eigentliche Pr&amp;uuml;fung durch AD findet erst statt, wenn alle Unterlagen (Kalkulation und Leistungsbeschreibung) vorliegen.&lt;/p>
+</bpmn2:documentation>
+      <bpmn2:incoming>_GYG32nQcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_GYGQ-nQcEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:intermediateThrowEvent id="_GYGQzXQcEeuCM8KqVoRWiA" name="Juristische Relevanz prüfen">
+      <bpmn2:incoming>_GYGQ9HQcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_GYG32nQcEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:intermediateThrowEvent>
+    <bpmn2:sequenceFlow id="_GYGQ9HQcEeuCM8KqVoRWiA" sourceRef="_GYGQxnQcEeuCM8KqVoRWiA" targetRef="_GYGQzXQcEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_GYG32nQcEeuCM8KqVoRWiA" sourceRef="_GYGQzXQcEeuCM8KqVoRWiA" targetRef="_GYGQ43QcEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_GYGQ_3QcEeuCM8KqVoRWiA" sourceRef="_GYGQynQcEeuCM8KqVoRWiA" targetRef="_GYGQ03QcEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_GYGQ-3QcEeuCM8KqVoRWiA" sourceRef="_GYGQyXQcEeuCM8KqVoRWiA" targetRef="_GYGQzHQcEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_GYGQ8HQcEeuCM8KqVoRWiA" sourceRef="_GYGQxHQcEeuCM8KqVoRWiA" targetRef="_GYGQ6XQcEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_GYGQ-nQcEeuCM8KqVoRWiA" sourceRef="_GYGQ43QcEeuCM8KqVoRWiA" targetRef="_GYGQyXQcEeuCM8KqVoRWiA"/>
+    <bpmn2:task id="_GYGQ1XQcEeuCM8KqVoRWiA" name="Ausschreibungsprotale prüfen Typ A" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_GYGQ6nQcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_GYG30HQcEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_GYGQ6nQcEeuCM8KqVoRWiA" sourceRef="_GYGQ5XQcEeuCM8KqVoRWiA" targetRef="_GYGQ1XQcEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_GYG30HQcEeuCM8KqVoRWiA" sourceRef="_GYGQ1XQcEeuCM8KqVoRWiA" targetRef="_GYGQ0nQcEeuCM8KqVoRWiA"/>
+    <bpmn2:task id="_GYGQ6HQcEeuCM8KqVoRWiA" name="Ausschreibungsportale prüfen Typ b" completionQuantity="1" isForCompensation="false" startQuantity="1">
+      <bpmn2:incoming>_GYGQ63QcEeuCM8KqVoRWiA</bpmn2:incoming>
+      <bpmn2:outgoing>_GYG30XQcEeuCM8KqVoRWiA</bpmn2:outgoing>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="_GYGQ63QcEeuCM8KqVoRWiA" sourceRef="_GYGQ5XQcEeuCM8KqVoRWiA" targetRef="_GYGQ6HQcEeuCM8KqVoRWiA"/>
+    <bpmn2:sequenceFlow id="_GYG30XQcEeuCM8KqVoRWiA" sourceRef="_GYGQ6HQcEeuCM8KqVoRWiA" targetRef="_GYGQ0nQcEeuCM8KqVoRWiA"/>
+    <bpmn2:dataObjectReference id="_GYG313QcEeuCM8KqVoRWiA" name="Strategie"/>
+    <bpmn2:association id="_GYG33HQcEeuCM8KqVoRWiA" associationDirection="None" sourceRef="_GYGQ5XQcEeuCM8KqVoRWiA"/>
+    <bpmn2:textAnnotation id="_GYG33XQcEeuCM8KqVoRWiA" textFormat="text/plain">
+      <bpmn2:text>Wenn mehrere Abteilungen beteiligt sind, stellt der AV die Akquise allen beteiligten AL's vor</bpmn2:text>
+    </bpmn2:textAnnotation>
+    <bpmn2:textAnnotation id="_GYG33nQcEeuCM8KqVoRWiA" textFormat="text/plain">
+      <bpmn2:text>AL's einigen sich auf einen gemeinsamen AV</bpmn2:text>
+    </bpmn2:textAnnotation>
+  </bpmn2:process>
+  <bpmn2:process id="_GYG333QcEeuCM8KqVoRWiA" name="Idee Anfrage bewerten" processType="None"/>
+  <bpmndi:BPMNDiagram id="_GYG34HQcEeuCM8KqVoRWiA" name="Angebotserstellung">
+    <bpmndi:BPMNPlane id="_GYG34XQcEeuCM8KqVoRWiA" bpmnElement="_GYGQwXQcEeuCM8KqVoRWiA">
+      <bpmndi:BPMNShape id="_GYG34nQcEeuCM8KqVoRWiA" bpmnElement="_GYGRB3QcEeuCM8KqVoRWiA">
+        <dc:Bounds height="40.0" width="40.0" x="1221.0" y="1341.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG343QcEeuCM8KqVoRWiA" bpmnElement="_GYGQyHQcEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="140.0" x="1290.0" y="541.0"/>
+        <bpmndi:BPMNLabel id="_GYG35HQcEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG35XQcEeuCM8KqVoRWiA" bpmnElement="_GYGQ3XQcEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="2147.0" y="916.0"/>
+        <bpmndi:BPMNLabel id="_GYG35nQcEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG353QcEeuCM8KqVoRWiA" bpmnElement="_GYGQ13QcEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="372.0" y="926.0"/>
+        <bpmndi:BPMNLabel id="_GYG36HQcEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG36XQcEeuCM8KqVoRWiA" color_1.0:background-color="#ff6347" bpmnElement="_GYGQ43QcEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="833.0" y="1312.0"/>
+        <bpmndi:BPMNLabel id="_GYG36nQcEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG363QcEeuCM8KqVoRWiA" bpmnElement="_GYGQy3QcEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="2147.0" y="647.0"/>
+        <bpmndi:BPMNLabel id="_GYG37HQcEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG37XQcEeuCM8KqVoRWiA" bpmnElement="_GYGQ1nQcEeuCM8KqVoRWiA">
+        <dc:Bounds height="150.0" width="170.0" x="336.0" y="870.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG37nQcEeuCM8KqVoRWiA" bpmnElement="_GYGQ0XQcEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="1725.0" y="363.0"/>
+        <bpmndi:BPMNLabel id="_GYG373QcEeuCM8KqVoRWiA" color_1.0:color="#FF6347">
+          <dc:Bounds height="5.0" width="108.0" x="1689.0" y="323.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG38HQcEeuCM8KqVoRWiA" bpmnElement="_GYGQ5nQcEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="170.0" x="1071.0" y="155.0"/>
+        <bpmndi:BPMNLabel id="_GYG38XQcEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG38nQcEeuCM8KqVoRWiA" bpmnElement="_GYGQzHQcEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="110.0" x="1471.0" y="541.0"/>
+        <bpmndi:BPMNLabel id="_GYG383QcEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG39HQcEeuCM8KqVoRWiA" bpmnElement="_GYGQz3QcEeuCM8KqVoRWiA">
+        <dc:Bounds height="207.0" width="2160.0" x="113.0" y="258.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG39XQcEeuCM8KqVoRWiA" bpmnElement="_GYG313QcEeuCM8KqVoRWiA">
+        <dc:Bounds height="40.0" width="30.0" x="402.0" y="276.0"/>
+        <bpmndi:BPMNLabel id="_GYG39nQcEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="383.0" y="320.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG393QcEeuCM8KqVoRWiA" bpmnElement="_GYGQ3nQcEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="1880.0" y="929.0"/>
+        <bpmndi:BPMNLabel id="_GYG3-HQcEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="1864.0" y="902.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG3-XQcEeuCM8KqVoRWiA" bpmnElement="_GYGQ03QcEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="999.0" y="373.0"/>
+        <bpmndi:BPMNLabel id="_GYG3-nQcEeuCM8KqVoRWiA" color_1.0:color="#FF6347">
+          <dc:Bounds height="5.0" width="68.0" x="983.0" y="334.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG3-3QcEeuCM8KqVoRWiA" bpmnElement="_GYGQ6HQcEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="140.0" x="113.0" y="1118.0"/>
+        <bpmndi:BPMNLabel id="_GYG3_HQcEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG3_XQcEeuCM8KqVoRWiA" color_1.0:background-color="#ffe591" bpmnElement="_GYGQ5HQcEeuCM8KqVoRWiA">
+        <dc:Bounds height="130.0" width="2160.0" x="113.0" y="110.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG3_nQcEeuCM8KqVoRWiA" bpmnElement="_GYGQ5XQcEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="212.0" y="168.0"/>
+        <bpmndi:BPMNLabel id="_GYG3_3QcEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="88.0" x="186.0" y="125.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG4AHQcEeuCM8KqVoRWiA" bpmnElement="_GYGQw3QcEeuCM8KqVoRWiA">
+        <dc:Bounds height="307.0" width="1940.0" x="335.0" y="517.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG4AXQcEeuCM8KqVoRWiA" bpmnElement="_GYGQ0HQcEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="560.0" y="360.0"/>
+        <bpmndi:BPMNLabel id="_GYG4AnQcEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG4A3QcEeuCM8KqVoRWiA" bpmnElement="_GYGQ0nQcEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="372.0" y="360.0"/>
+        <bpmndi:BPMNLabel id="_GYG4BHQcEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG4BXQcEeuCM8KqVoRWiA" bpmnElement="_GYGQxXQcEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="140.0" x="681.0" y="734.0"/>
+        <bpmndi:BPMNLabel id="_GYG4BnQcEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG4B3QcEeuCM8KqVoRWiA" bpmnElement="_GYGQ2HQcEeuCM8KqVoRWiA">
+        <dc:Bounds height="154.0" width="1560.0" x="713.0" y="870.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG4CHQcEeuCM8KqVoRWiA" bpmnElement="_GYGQ1HQcEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="1586.0" y="351.0"/>
+        <bpmndi:BPMNLabel id="_GYG4CXQcEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG4CnQcEeuCM8KqVoRWiA" bpmnElement="_GYGQ4nQcEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="2180.0" y="1325.0"/>
+        <bpmndi:BPMNLabel id="_GYG4C3QcEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="2164.0" y="1367.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG4DHQcEeuCM8KqVoRWiA" bpmnElement="_GYGQ53QcEeuCM8KqVoRWiA">
+        <dc:Bounds height="160.0" width="622.0" x="73.0" y="1068.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG4DXQcEeuCM8KqVoRWiA" bpmnElement="_GYGQxnQcEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="140.0" x="681.0" y="654.0"/>
+        <bpmndi:BPMNLabel id="_GYG4DnQcEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG4D3QcEeuCM8KqVoRWiA" bpmnElement="_GYGQ3HQcEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="1974.0" y="916.0"/>
+        <bpmndi:BPMNLabel id="_GYG4EHQcEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG4EXQcEeuCM8KqVoRWiA" bpmnElement="_GYGQ4XQcEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="1857.0" y="1313.0"/>
+        <bpmndi:BPMNLabel id="_GYG4EnQcEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG4E3QcEeuCM8KqVoRWiA" bpmnElement="_GYG33XQcEeuCM8KqVoRWiA">
+        <dc:Bounds height="50.0" width="300.0" x="1586.0" y="286.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG4FHQcEeuCM8KqVoRWiA" bpmnElement="_GYGQx3QcEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="140.0" x="681.0" y="569.0"/>
+        <bpmndi:BPMNLabel id="_GYG4FXQcEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG4FnQcEeuCM8KqVoRWiA" bpmnElement="_GYGQ33QcEeuCM8KqVoRWiA">
+        <dc:Bounds height="173.0" width="1500.0" x="773.0" y="1244.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG4F3QcEeuCM8KqVoRWiA" bpmnElement="_GYGQ2XQcEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="140.0" x="994.0" y="915.0"/>
+        <bpmndi:BPMNLabel id="_GYG4GHQcEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG4GXQcEeuCM8KqVoRWiA" bpmnElement="_GYGQynQcEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="110.0" x="896.0" y="569.0"/>
+        <bpmndi:BPMNLabel id="_GYG4GnQcEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG4G3QcEeuCM8KqVoRWiA" bpmnElement="_GYGQ1XQcEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="130.0" x="178.0" y="360.0"/>
+        <bpmndi:BPMNLabel id="_GYG4HHQcEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG4HXQcEeuCM8KqVoRWiA" bpmnElement="_GYGQ4HQcEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="130.0" x="1016.0" y="1312.0"/>
+        <bpmndi:BPMNLabel id="_GYG4HnQcEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG4H3QcEeuCM8KqVoRWiA" bpmnElement="_GYGQznQcEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="1138.0" y="661.0"/>
+        <bpmndi:BPMNLabel id="_GYG4IHQcEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="1122.0" y="703.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG4IXQcEeuCM8KqVoRWiA" bpmnElement="_GYGQxHQcEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="90.0" x="560.0" y="734.0"/>
+        <bpmndi:BPMNLabel id="_GYG4InQcEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG4I3QcEeuCM8KqVoRWiA" bpmnElement="_GYGQ23QcEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="140.0" x="1685.0" y="916.0"/>
+        <bpmndi:BPMNLabel id="_GYG4JHQcEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG4JXQcEeuCM8KqVoRWiA" bpmnElement="_GYGQyXQcEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="140.0" x="1288.0" y="649.0"/>
+        <bpmndi:BPMNLabel id="_GYG4JnQcEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG4J3QcEeuCM8KqVoRWiA" bpmnElement="_GYGQ2nQcEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="130.0" x="1176.0" y="915.0"/>
+        <bpmndi:BPMNLabel id="_GYG4KHQcEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG4KXQcEeuCM8KqVoRWiA" bpmnElement="_GYGQ6XQcEeuCM8KqVoRWiA">
+        <dc:Bounds height="60.0" width="110.0" x="550.0" y="1113.0"/>
+        <bpmndi:BPMNLabel id="_GYG4KnQcEeuCM8KqVoRWiA"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG4K3QcEeuCM8KqVoRWiA" bpmnElement="_GYG33nQcEeuCM8KqVoRWiA">
+        <dc:Bounds height="50.0" width="300.0" x="560.0" y="286.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_GYG4LHQcEeuCM8KqVoRWiA" bpmnElement="_GYGQzXQcEeuCM8KqVoRWiA">
+        <dc:Bounds height="35.0" width="35.0" x="860.0" y="734.0"/>
+        <bpmndi:BPMNLabel id="_GYG4LXQcEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="68.0" x="844.0" y="776.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="_GYG4LnQcEeuCM8KqVoRWiA" bpmnElement="_GYG30XQcEeuCM8KqVoRWiA">
+        <di:waypoint x="253.0" y="1148.0"/>
+        <di:waypoint x="316.0" y="1148.0"/>
+        <di:waypoint x="317.0" y="411.0"/>
+        <di:waypoint x="372.0" y="411.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYG4L3QcEeuCM8KqVoRWiA" bpmnElement="_GYGQ8HQcEeuCM8KqVoRWiA">
+        <di:waypoint x="605.0" y="794.0"/>
+        <di:waypoint x="605.0" y="1113.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYG4MHQcEeuCM8KqVoRWiA" bpmnElement="_GYGQ83QcEeuCM8KqVoRWiA">
+        <di:waypoint x="821.0" y="678.0"/>
+        <di:waypoint x="1138.0" y="678.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYG4MXQcEeuCM8KqVoRWiA" bpmnElement="_GYGQ-nQcEeuCM8KqVoRWiA">
+        <di:waypoint x="878.0" y="1372.0"/>
+        <di:waypoint x="878.0" y="1454.0"/>
+        <di:waypoint x="1400.0" y="1455.0"/>
+        <di:waypoint x="1400.0" y="709.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYG4MnQcEeuCM8KqVoRWiA" bpmnElement="_GYGQ_HQcEeuCM8KqVoRWiA">
+        <di:waypoint x="1676.0" y="380.0"/>
+        <di:waypoint x="1725.0" y="380.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYG4M3QcEeuCM8KqVoRWiA" bpmnElement="_GYGQ-3QcEeuCM8KqVoRWiA">
+        <di:waypoint x="1428.0" y="679.0"/>
+        <di:waypoint x="1525.0" y="679.0"/>
+        <di:waypoint x="1525.0" y="601.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYG4NHQcEeuCM8KqVoRWiA" bpmnElement="_GYGQ_XQcEeuCM8KqVoRWiA">
+        <di:waypoint x="1742.0" y="398.0"/>
+        <di:waypoint x="1742.0" y="916.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYG4NXQcEeuCM8KqVoRWiA" bpmnElement="_GYGQ-XQcEeuCM8KqVoRWiA">
+        <di:waypoint x="1297.0" y="915.0"/>
+        <di:waypoint x="1297.0" y="709.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYG4NnQcEeuCM8KqVoRWiA" bpmnElement="_GYGQ8XQcEeuCM8KqVoRWiA">
+        <di:waypoint x="751.0" y="734.0"/>
+        <di:waypoint x="751.0" y="714.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYG4N3QcEeuCM8KqVoRWiA" bpmnElement="_GYGRBnQcEeuCM8KqVoRWiA">
+        <di:waypoint x="1146.0" y="1340.0"/>
+        <di:waypoint x="1240.0" y="1340.0"/>
+        <di:waypoint x="1240.0" y="975.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYG4OHQcEeuCM8KqVoRWiA" bpmnElement="_GYGQ_3QcEeuCM8KqVoRWiA">
+        <di:waypoint x="950.0" y="569.0"/>
+        <di:waypoint x="950.0" y="390.0"/>
+        <di:waypoint x="999.0" y="390.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYG4OXQcEeuCM8KqVoRWiA" bpmnElement="_GYGQ63QcEeuCM8KqVoRWiA">
+        <di:waypoint x="212.0" y="186.0"/>
+        <di:waypoint x="167.0" y="186.0"/>
+        <di:waypoint x="167.0" y="1118.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYG4OnQcEeuCM8KqVoRWiA" bpmnElement="_GYGRC3QcEeuCM8KqVoRWiA">
+        <di:waypoint x="1825.0" y="946.0"/>
+        <di:waypoint x="1880.0" y="946.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYG4O3QcEeuCM8KqVoRWiA" bpmnElement="_GYG30HQcEeuCM8KqVoRWiA">
+        <di:waypoint x="308.0" y="390.0"/>
+        <di:waypoint x="372.0" y="390.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYG4PHQcEeuCM8KqVoRWiA" bpmnElement="_GYGQ9nQcEeuCM8KqVoRWiA">
+        <di:waypoint x="1241.0" y="183.0"/>
+        <di:waypoint x="1359.0" y="183.0"/>
+        <di:waypoint x="1359.0" y="541.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYG4PXQcEeuCM8KqVoRWiA" bpmnElement="_GYGRA3QcEeuCM8KqVoRWiA">
+        <di:waypoint x="417.0" y="420.0"/>
+        <di:waypoint x="417.0" y="926.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYG4PnQcEeuCM8KqVoRWiA" bpmnElement="_GYGRCXQcEeuCM8KqVoRWiA">
+        <di:waypoint x="1947.0" y="1350.0"/>
+        <di:waypoint x="2022.0" y="1350.0"/>
+        <di:waypoint x="2022.0" y="976.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYG4P3QcEeuCM8KqVoRWiA" bpmnElement="_GYGQ_nQcEeuCM8KqVoRWiA">
+        <di:waypoint x="1526.0" y="541.0"/>
+        <di:waypoint x="1526.0" y="381.0"/>
+        <di:waypoint x="1586.0" y="381.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYG4QHQcEeuCM8KqVoRWiA" bpmnElement="_GYGRAnQcEeuCM8KqVoRWiA">
+        <di:waypoint x="2197.0" y="976.0"/>
+        <di:waypoint x="2197.0" y="1325.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYG4QXQcEeuCM8KqVoRWiA" bpmnElement="_GYGRCHQcEeuCM8KqVoRWiA">
+        <di:waypoint x="1897.0" y="964.0"/>
+        <di:waypoint x="1897.0" y="1313.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYG4QnQcEeuCM8KqVoRWiA" bpmnElement="_GYGQ9XQcEeuCM8KqVoRWiA">
+        <di:waypoint x="821.0" y="599.0"/>
+        <di:waypoint x="896.0" y="599.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYG4Q3QcEeuCM8KqVoRWiA" bpmnElement="_GYG32HQcEeuCM8KqVoRWiA">
+        <di:waypoint x="1155.0" y="661.0"/>
+        <di:waypoint x="1155.0" y="215.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYG4RHQcEeuCM8KqVoRWiA" bpmnElement="_GYGRAXQcEeuCM8KqVoRWiA">
+        <di:waypoint x="2192.0" y="707.0"/>
+        <di:waypoint x="2192.0" y="916.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYG4RXQcEeuCM8KqVoRWiA" bpmnElement="_GYGQ93QcEeuCM8KqVoRWiA">
+        <di:waypoint x="1359.0" y="601.0"/>
+        <di:waypoint x="1359.0" y="649.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYG4RnQcEeuCM8KqVoRWiA" bpmnElement="_GYGQ73QcEeuCM8KqVoRWiA">
+        <di:waypoint x="650.0" y="764.0"/>
+        <di:waypoint x="681.0" y="764.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYG4R3QcEeuCM8KqVoRWiA" bpmnElement="_GYGQ6nQcEeuCM8KqVoRWiA">
+        <di:waypoint x="229.0" y="203.0"/>
+        <di:waypoint x="229.0" y="360.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYG4SHQcEeuCM8KqVoRWiA" bpmnElement="_GYG31nQcEeuCM8KqVoRWiA">
+        <di:waypoint x="417.0" y="316.0"/>
+        <di:waypoint x="417.0" y="360.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYHe4HQcEeuCM8KqVoRWiA" bpmnElement="_GYGQ-HQcEeuCM8KqVoRWiA">
+        <di:waypoint x="1173.0" y="678.0"/>
+        <di:waypoint x="1288.0" y="678.0"/>
+        <bpmndi:BPMNLabel id="_GYHe4XQcEeuCM8KqVoRWiA">
+          <dc:Bounds height="5.0" width="38.0" x="1211.0" y="663.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYHe4nQcEeuCM8KqVoRWiA" bpmnElement="_GYG32nQcEeuCM8KqVoRWiA">
+        <di:waypoint x="877.0" y="769.0"/>
+        <di:waypoint x="877.0" y="1312.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYHe43QcEeuCM8KqVoRWiA" bpmnElement="_GYGRCnQcEeuCM8KqVoRWiA">
+        <di:waypoint x="1034.0" y="391.0"/>
+        <di:waypoint x="1070.0" y="391.0"/>
+        <di:waypoint x="1070.0" y="915.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYHe5HQcEeuCM8KqVoRWiA" bpmnElement="_GYGQ7XQcEeuCM8KqVoRWiA">
+        <di:waypoint x="605.0" y="420.0"/>
+        <di:waypoint x="605.0" y="734.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYHe5XQcEeuCM8KqVoRWiA" bpmnElement="_GYGRAHQcEeuCM8KqVoRWiA">
+        <di:waypoint x="2025.0" y="916.0"/>
+        <di:waypoint x="2025.0" y="677.0"/>
+        <di:waypoint x="2147.0" y="677.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYHe5nQcEeuCM8KqVoRWiA" bpmnElement="_GYGQ7HQcEeuCM8KqVoRWiA">
+        <di:waypoint x="462.0" y="955.0"/>
+        <di:waypoint x="489.0" y="955.0"/>
+        <di:waypoint x="489.0" y="393.0"/>
+        <di:waypoint x="560.0" y="393.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYHe53QcEeuCM8KqVoRWiA" bpmnElement="_GYGQ9HQcEeuCM8KqVoRWiA">
+        <di:waypoint x="821.0" y="698.0"/>
+        <di:waypoint x="877.0" y="698.0"/>
+        <di:waypoint x="877.0" y="734.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYHe6HQcEeuCM8KqVoRWiA" bpmnElement="_GYGRBXQcEeuCM8KqVoRWiA">
+        <di:waypoint x="1075.0" y="975.0"/>
+        <di:waypoint x="1075.0" y="1312.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="_GYHe6XQcEeuCM8KqVoRWiA" bpmnElement="_GYGQ8nQcEeuCM8KqVoRWiA">
+        <di:waypoint x="751.0" y="654.0"/>
+        <di:waypoint x="751.0" y="629.0"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+  <bpmndi:BPMNDiagram id="_GYHe6nQcEeuCM8KqVoRWiA" name="Idee Anfrage bewerten">
+    <bpmndi:BPMNPlane id="_GYHe63QcEeuCM8KqVoRWiA" bpmnElement="_GYG333QcEeuCM8KqVoRWiA"/>
+  </bpmndi:BPMNDiagram>
+</bpmn2:definitions>
